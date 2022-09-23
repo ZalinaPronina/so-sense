@@ -75,6 +75,9 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 @media screen and (min-width: 750px) {
+  .menu-drawer {
+    width: 40rem;
+  }
 
   .no-js .menu-drawer {
     height: auto;
@@ -217,25 +220,9 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__utility-links {
-  padding: 1rem 3rem 4.5rem;
+  padding: 3rem;
 }
-.header-global-links{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0 3rem;
-}
-.header-global-links a{
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 150%;
-  color: #000000;
-  padding: .6rem 1rem;
-  text-decoration: none;
-  display: block;
-}
+
 .menu-drawer__account {
   display: inline-flex;
   align-items: center;
@@ -269,5 +256,9 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer .list-social__link{
-  padding: 1.3rem 1.6rem;
+  padding: 1.3rem 1.25rem;
+}
+.menu-drawer .list-social__link svg{
+  height: 24px;
+  width: 24px;
 }
