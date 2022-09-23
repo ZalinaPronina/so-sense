@@ -1,0 +1,67 @@
+<div class="section-column-count">
+    <div class="page-width-desktop">
+        <a class="btn-primary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
+        {% if section.settings.title != blank %}
+            <h2 class="h2">{{section.settings.title}}</h5>
+        {% endif %}
+        <div class="section-column-count__blocks">
+            {% assign count = 0 %}
+            {%- for block in section.blocks -%}
+            {% assign count = count | plus: 1 %}
+                <div class="block-content">
+                    <div class="block-content__header">
+                        <p class="number">{{count}}</p>
+                        <h5 class="heading">{{block.settings.title}}</h5>
+                    </div>
+                    <p class="block-text">{{block.settings.text}}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+  "name": "Column Block",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Btn Text"
+        },
+        {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Btn Url"
+        }
+    ],
+    "blocks": [
+    {
+        "type": "block",
+        "name": "Block",
+        "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+        }
+        ]
+    }
+
+    ],
+    "presets": [
+        {
+        "name": "Column Block"
+        }
+    ]
+}
+{% endschema %}

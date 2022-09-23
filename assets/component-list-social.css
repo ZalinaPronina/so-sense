@@ -1,0 +1,59 @@
+.list-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+footer .list-social {
+  gap: 4rem;
+}
+
+
+.list-social__item .icon {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.list-social__link {
+  align-items: center;
+  display: flex;
+  color: rgb(var(--color-foreground));
+}
+.list-social__item svg{
+  width: 2.8rem;
+  height: 2.8rem;
+}
+@media only screen and (max-width: 991px) {
+  .footer-block-image>img{
+    max-width: 125px !important;
+    margin-bottom: 32px;
+  }
+  .list-social {
+    justify-content: center;
+  }
+  .list-social__link svg{
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
+footer .list-social__link .icon-instagram-path{
+  fill: #283C92 !important;
+}
+footer .list-social__link path:not(:last-child){
+  fill: #fff;
+}
+.list-social__link:hover .icon {
+  transform: scale(1.07);
+}
+.menu-drawer .list-social__link path:last-child{
+  fill: #fff;
+}
+.menu-drawer .list-social__link path:not(:last-child), .menu-drawer .list-social__link .facebook-icon path{
+  fill: #283C92;
+}
+.menu-drawer .list-social__link .icon-instagram-path{
+  fill: #fff !important;
+}
+.list-social__link:hover path:not(:last-child), .list-social__link:hover .facebook-icon path, .list-social__link:focus path:not(:last-child), .list-social__link:focus .facebook-icon path{
+  fill: #F8989E;
+}

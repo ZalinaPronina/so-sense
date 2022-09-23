@@ -1,0 +1,120 @@
+<section class="page-width-desktop grid-installation">
+    <div class="title-description">
+        {% if section.settings.title != blank %}
+            <h2 class="h2">{{section.settings.title}}</h2>
+        {% endif %}
+        {% if section.settings.text != blank %}
+            <div class="text">{{section.settings.text}}</div>
+        {% endif %}
+        <div class="grid-installation__btn-wrapper">
+            {% if section.settings.btn_text_1 != blank %}
+                <a href="{{section.settings.btn_url_1}}" class="btn-secondary">{{section.settings.btn_text_1}} {% include 'icon-play' %}</a>
+            {% endif %}
+            {% if section.settings.btn_text_2 != blank %}
+                <a href="{{section.settings.btn_url_2}}" class="btn-secondary white-background">{{section.settings.btn_text_2}} {% include 'icon-download' %}</a>
+            {% endif %}
+        </div>
+    </div>
+    <div class="grid-installation__blocks">
+        {% assign count = 0 %}
+        {%- for block in section.blocks -%}
+            {% assign count = count | plus: 1 %}
+            <div class="block-text">
+                <div class="image-container">
+                    {% if block.settings.image_1 != blank %}
+                        <img src="{{block.settings.image_1 | img_url: 'master' }}" alt="">
+                    {% endif %}
+                    {% if block.settings.image_2 != blank %}
+                        <img src="{{block.settings.image_2 | img_url: 'master' }}" alt="">
+                    {% endif %}
+                </div>
+                <div class="flex-content">
+                    <div class="flex-content_heading">
+                        <span class="number">{{count}}</span>
+                        <h5 class="block-heading">{{block.settings.title}}</h5>
+                    </div>
+                    {% if block.settings.btn_text != blank %}
+                        <a class="btn-primary" href="{{block.settings.btn_url}}">{{block.settings.btn_text}}</a>
+                    {% endif %}
+                </div>
+                <div class="text">{{block.settings.text}}</div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Grid Installation",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+        },
+        {
+            "type": "text",
+            "id": "btn_text_1",
+            "label": "Btn Text 1"
+        },
+        {
+            "type": "url",
+            "id": "btn_url_1",
+            "label": "Btn Url 1"
+        },
+        {
+            "type": "text",
+            "id": "btn_text_2",
+            "label": "Btn Text 2"
+        },
+        {
+            "type": "url",
+            "id": "btn_url_2",
+            "label": "Btn Url 2"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "block",
+            "name": "Block",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "Text"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_1",
+                    "label": "Image 1"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_2",
+                    "label": "Image 2"
+                },
+                {
+                    "type": "text",
+                    "id": "btn_text",
+                    "label": "Btn Text"
+                },
+                {
+                    "type": "url",
+                    "id": "btn_url",
+                    "label": "Btn Url"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

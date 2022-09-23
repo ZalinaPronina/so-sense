@@ -1,0 +1,166 @@
+.contact-form{
+  padding: 15rem 0 17rem; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  background-color: #339999;
+}
+.contact-form label{
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: #D2E8E8;
+  margin: 0 0 .4rem 1.6rem;
+}
+.contact-form .checkbox-contact label:before{
+  content: '';
+  padding: 7px;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-flex;
+  margin-right: 1rem;
+}
+.checkbox-contact{
+  display: flex;
+}
+.contact-form input[type=checkbox]:checked + label:after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: .6rem;
+  left: .8rem;
+  width: .7rem;
+  height: 1.1rem;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(44deg);
+}
+.contact-form .checkbox-contact input{
+  display: none;
+}
+.checkbox-contact label{
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.contact-form input, .contact-form textarea{
+  padding: 1.6rem 2rem 1.6rem 5.6rem;
+  background: #FAFAFA;
+  border-radius: 1.6rem;
+  height: 6.4rem;
+  width: 100%;
+}
+.contact .h2{
+  color: #fff;
+  margin: 0 0 4rem;
+}
+.contact img {
+  max-width: 100%;
+}
+
+.contact .form__message {
+  align-items: flex-start;
+}
+
+.contact .icon-success {
+  margin-top: 0.2rem;
+}
+
+.contact .field {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .contact .field {
+    margin-bottom: 2rem;
+  }
+}
+
+.contact__button {
+  margin-top: 3rem;
+}
+.button-contact{
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 100px;
+  padding: 1.4rem 3.2rem;
+  background: none;
+}
+.contact__button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__fields .main-fields{
+  width: 40%;
+}
+.contact__fields .additional-fields{
+  width: 59%;
+}
+.contact__fields .contact-input-wrapper{
+  position: relative;
+}
+.contact__fields span.icon-E-mail {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+}
+.contact__fields span.icon-E-mail svg{
+  height: 2.4rem;
+  width: 2.4rem;
+}
+@media screen and (min-width: 750px) {
+  .contact__button {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .contact__fields {
+    display: flex;
+    column-gap: 4rem;
+  }
+}
+@media only screen and (max-width: 989px) {
+  .contact-form{
+    padding: 8rem 0;
+  }
+  .contact__fields .main-fields{
+    width: 100%;
+  }
+  .contact__fields .additional-fields{
+    width: 100%;
+  }
+  .contact-form input, .contact-form textarea{
+    padding: 1.4rem 2rem 1.4rem 5.4rem;
+    height: 6rem;
+  }
+  .contact__button{
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+  .contact-form .checkbox-contact label:before{
+    width: 2rem;
+    height: 2rem;
+  }
+  .contact-form .button-contact{
+    width: 100%;
+    justify-content: center;
+  }
+  .contact .field{
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Light.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-SemiBold.otf');
+    font-weight: 600;
+}
