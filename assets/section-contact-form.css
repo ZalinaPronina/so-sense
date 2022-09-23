@@ -1,48 +1,22 @@
 .contact-form{
-  padding: 15rem 0 17rem; 
+  padding: 150px 0 190px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  margin-bottom: -75px;
   position: relative;
-  background-color: #339999;
 }
 .contact-form label{
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 16px;
   line-height: 150%;
   color: #D2E8E8;
-  margin: 0 0 .4rem 1.6rem;
+  margin: 0 0 4px 16px;
 }
-.contact-form .checkbox-contact label:before{
-  content: '';
-  padding: 7px;
-  position: relative;
-  cursor: pointer;
-  border: 2px solid #fff;
-  border-radius: 2px;
-  width: 2.4rem;
-  height: 2.4rem;
-  display: inline-flex;
-  margin-right: 1rem;
-}
-.checkbox-contact{
-  display: flex;
-}
-.contact-form input[type=checkbox]:checked + label:after{
-  content: "";
-  display: block;
-  position: absolute;
-  top: .6rem;
-  left: .8rem;
-  width: .7rem;
-  height: 1.1rem;
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-  transform: rotate(44deg);
-}
-.contact-form .checkbox-contact input{
+.checkbox-contact input{
   display: none;
 }
+<<<<<<< HEAD
 .checkbox-contact label{
   margin: 0;
   position: relative;
@@ -51,9 +25,14 @@
 }
 .contact-form input, .contact-form textarea, .contact-form select{
   padding: 1.6rem 2rem 1.6rem 5.6rem;
+=======
+.contact-form input, .contact-form textarea{
+  padding: 16px 20px 16px 56px;
+>>>>>>> 7133d9711f85d0c68f7a733075a17bec1a0efb37
   background: #FAFAFA;
-  border-radius: 1.6rem;
+  border-radius: 16px;
   height: 6.4rem;
+<<<<<<< HEAD
   width: 100%;
   font-weight: 600;
   font-size: 1.8rem;
@@ -61,10 +40,15 @@
 }
 .contact-form select{
   padding: 2rem;
+=======
+>>>>>>> 7133d9711f85d0c68f7a733075a17bec1a0efb37
 }
-.contact .h2{
+.title{
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 130%;
   color: #fff;
-  margin: 0 0 4rem;
+  margin: 0 0 40px;
 }
 .contact img {
   max-width: 100%;
@@ -91,6 +75,7 @@
 .contact__button {
   margin-top: 3rem;
 }
+<<<<<<< HEAD
 .button-contact{
   font-weight: 600;
   font-size: 1.8rem;
@@ -130,6 +115,9 @@
   height: 2.4rem;
   width: 2.4rem;
 }
+=======
+
+>>>>>>> 7133d9711f85d0c68f7a733075a17bec1a0efb37
 @media screen and (min-width: 750px) {
   .contact__button {
     margin-top: 4rem;
@@ -138,10 +126,12 @@
 
 @media screen and (min-width: 750px) {
   .contact__fields {
-    display: flex;
-    column-gap: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
   }
 }
+<<<<<<< HEAD
 @media only screen and (max-width: 989px) {
   .contact__fields .additional-fields .select label{
     margin-bottom: 0;
@@ -179,3 +169,5 @@
     margin-bottom: 2rem;
   }
 }
+=======
+>>>>>>> 7133d9711f85d0c68f7a733075a17bec1a0efb37
