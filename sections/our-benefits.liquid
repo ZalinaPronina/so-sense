@@ -1,20 +1,20 @@
 <section class="page-width-desktop our-benefits">
     <div class="title-description">
-        {% if section.settings.title %}
-            <h2 class="title">{{section.settings.title}}</h2>
+        {% if section.settings.title != blank %}
+            <h2 class="h2">{{section.settings.title}}</h2>
         {% endif %}
-        {% if section.settings.text %}
-            <p class="text">{{section.settings.text}}</p>
+        {% if section.settings.text != blank %}
+            <div class="text">{{section.settings.text}}</div>
         {% endif %}
     </div>
     <div class="our-benefits__blocks">
         {%- for block in section.blocks -%}
             <div class="block-text">
-                {% if block.settings.image %}
+                {% if block.settings.image != blank %}
                     <img src="{{block.settings.image | img_url: 'master' }}" alt="">
                 {% endif %}
-                <h5  {% if block.settings.color %} style="color: {{block.settings.color}}" {% endif %} class="block-heading">{{block.settings.title}}</h5>
-                <p class="block-text">{{block.settings.text}}</p>
+                <h5 {% if block.settings.color != blank %} style="color: {{block.settings.color}}" {% endif %} class="block-heading">{{block.settings.title}}</h5>
+                <div class="text">{{block.settings.text}}</div>
             </div>
         {% endfor %}
     </div>

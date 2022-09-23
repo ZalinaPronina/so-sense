@@ -14,7 +14,8 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+<footer class="footer color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding" {% if section.settings.background != blank %}
+style="background-image: url('{{section.settings.background | img_url: 'master' }}')"{% endif %}>
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
@@ -53,7 +54,7 @@
                         loading="lazy"
                         width="{{ block.settings.image.width }}"
                         height="{{ block.settings.image.height }}"
-                        style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                        style="max-width: min(100%, {{ block.settings.image_width_1 }}rem);"
                       >
                     {%- else -%}
                       {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
@@ -231,7 +232,7 @@
         {%- endif -%}
         <div class="footer__copyright caption">
           <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }} All Rights Reserved.</small>
-          <small class="copyright__content shop-name">{{ shop.name | link_to: routes.root_url }}</small>
+          <small class="copyright__content shop-name">Sitemap</small>
         </div>
         <div class="footer__bottom_links">
           <ul>
@@ -362,12 +363,22 @@
         {
           "type": "range",
           "id": "image_width",
-          "min": 50,
+          "min": 5,
           "max": 200,
           "step": 5,
           "unit": "px",
           "label": "Image width",
           "default": 100
+        },
+        {
+          "type": "range",
+          "id": "image_width_1",
+          "min": 5,
+          "max": 20,
+          "step": 1,
+          "unit": "rem",
+          "label": "Image width",
+          "default": 5
         },
         {
           "type": "select",
