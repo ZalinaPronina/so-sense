@@ -155,6 +155,12 @@ style="background-image: url('{{section.settings.background | img_url: 'master' 
           </div>
         </div>
         <div class="additional-fields">
+          <div class="field select">
+              <label for="select_in-form" class="icon-E-mail">Subject</label>
+              <select  name="select" id="select_in-form" class="select_in-form__contact field__input">
+                  <option value="">What you are reaching out for</option>
+              </select>
+          </div>
           <div class="field">
             <label class="form__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
             <textarea

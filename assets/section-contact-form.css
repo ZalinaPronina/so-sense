@@ -16,11 +16,24 @@
 .checkbox-contact input{
   display: none;
 }
-.contact-form input, .contact-form textarea{
-  padding: 16px 20px 16px 56px;
+.checkbox-contact label{
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.contact-form input, .contact-form textarea, .contact-form select{
+  padding: 1.6rem 2rem 1.6rem 5.6rem;
   background: #FAFAFA;
   border-radius: 16px;
   height: 6.4rem;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 140%;
+}
+.contact-form select{
+  padding: 2rem;
 }
 .title{
   font-weight: 600;
@@ -54,7 +67,45 @@
 .contact__button {
   margin-top: 3rem;
 }
-
+.button-contact{
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 100px;
+  padding: 1.4rem 3.2rem;
+  background: none;
+}
+.contact__button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__fields .main-fields{
+  width: 40%;
+}
+.contact__fields .additional-fields{
+  width: 59%;
+}
+.contact__fields .additional-fields .select label{
+  opacity: 0;
+}
+.contact__fields .contact-input-wrapper{
+  position: relative;
+}
+.contact__fields span.icon-E-mail {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+}
+.contact__fields span.icon-E-mail svg{
+  height: 2.4rem;
+  width: 2.4rem;
+}
 @media screen and (min-width: 750px) {
   .contact__button {
     margin-top: 4rem;
@@ -66,5 +117,42 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
+  }
+}
+@media only screen and (max-width: 989px) {
+  .contact__fields .additional-fields .select label{
+    margin-bottom: 0;
+  }
+  .contact-form{
+    padding: 8rem 0;
+  }
+  .contact__fields .main-fields{
+    width: 100%;
+  }
+  .contact__fields .additional-fields{
+    width: 100%;
+  }
+  .contact-form input, .contact-form textarea{
+    padding: 1.4rem 2rem 1.4rem 5.4rem;
+    height: 6rem;
+  }
+  .contact-form select{
+    padding: 2rem;
+  }
+  .contact__button{
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+  .contact-form .checkbox-contact label:before{
+    width: 2rem;
+    height: 2rem;
+  }
+  .contact-form .button-contact{
+    width: 100%;
+    justify-content: center;
+  }
+  .contact .field{
+    margin-bottom: 2rem;
   }
 }
