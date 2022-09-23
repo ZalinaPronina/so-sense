@@ -16,3 +16,4 @@ development:
     - templates/password.json
     - templates/product.json
     - templates/search.json
+    - config/data.json
