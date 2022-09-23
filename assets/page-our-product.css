@@ -163,6 +163,7 @@
 .become-block .arrow{
     transform: rotate(135deg);
 }
+
 @media only screen and (max-width: 989px){
     .become-block{
         background: none;
@@ -186,13 +187,6 @@
         margin: 0 0 2rem;
     }
 }
-#shopify-section-template--14401305444398__166383686926e73919 .instruction-section .description-block{
-    max-width: 51rem;
-}
-#shopify-section-template--14401305444398__166383686926e73919 .instruction-section {
-
-}
-
 /* FAQ */
 .faq-section{
     margin-bottom: 19rem;
@@ -426,4 +420,16 @@
     .grid-installation .image-container img{
         width: 100%;
     }
+}
+
+#shopify-section-template--14401305444398__166383686926e73919 .instruction-section .description-block{
+    max-width: 51rem;
+}
+#shopify-section-template--14401305444398__1663836676d03533fb .instruction-section {
+    padding: 15rem 0;
+}
+@media only screen and (max-width: 989px){
+    #shopify-section-template--14401305444398__1663836676d03533fb .instruction-section {
+        padding: 8rem 0;
+    } 
 }
