@@ -16,7 +16,6 @@
 .checkbox-contact input{
   display: none;
 }
-<<<<<<< HEAD
 .checkbox-contact label{
   margin: 0;
   position: relative;
@@ -25,14 +24,9 @@
 }
 .contact-form input, .contact-form textarea, .contact-form select{
   padding: 1.6rem 2rem 1.6rem 5.6rem;
-=======
-.contact-form input, .contact-form textarea{
-  padding: 16px 20px 16px 56px;
->>>>>>> 7133d9711f85d0c68f7a733075a17bec1a0efb37
   background: #FAFAFA;
   border-radius: 16px;
   height: 6.4rem;
-<<<<<<< HEAD
   width: 100%;
   font-weight: 600;
   font-size: 1.8rem;
@@ -40,8 +34,6 @@
 }
 .contact-form select{
   padding: 2rem;
-=======
->>>>>>> 7133d9711f85d0c68f7a733075a17bec1a0efb37
 }
 .title{
   font-weight: 600;
@@ -75,7 +67,6 @@
 .contact__button {
   margin-top: 3rem;
 }
-<<<<<<< HEAD
 .button-contact{
   font-weight: 600;
   font-size: 1.8rem;
@@ -115,9 +106,6 @@
   height: 2.4rem;
   width: 2.4rem;
 }
-=======
-
->>>>>>> 7133d9711f85d0c68f7a733075a17bec1a0efb37
 @media screen and (min-width: 750px) {
   .contact__button {
     margin-top: 4rem;
@@ -131,7 +119,6 @@
     grid-column-gap: 2rem;
   }
 }
-<<<<<<< HEAD
 @media only screen and (max-width: 989px) {
   .contact__fields .additional-fields .select label{
     margin-bottom: 0;
@@ -169,5 +156,3 @@
     margin-bottom: 2rem;
   }
 }
-=======
->>>>>>> 7133d9711f85d0c68f7a733075a17bec1a0efb37
