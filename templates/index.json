@@ -1,221 +1,87 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "1662726121a022b914": {
+      "type": "main-banner",
+      "settings": {
+        "background": "shopify:\/\/shop_images\/Intersect.png",
+        "title": "<p>The alarm that makes <strong>your pool safer<\/strong><\/p>",
+        "text": "Protect your pool with the only AI based drowning detection system",
+        "url_1": "",
+        "url_2": "",
+        "social_1": "shopify:\/\/shop_images\/Frame_753.png",
+        "social_2": "shopify:\/\/shop_images\/Frame_754.png",
+        "main_photo": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_4.png",
+        "fix_photo": "shopify:\/\/shop_images\/14_2.png",
+        "fix_photo_second": "shopify:\/\/shop_images\/Group_59.png"
+      }
+    },
+    "1663229044892e54a1": {
+      "type": "our-benefits",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "fc50f7dc-a3aa-45e1-85cb-fb5166e41ab0": {
+          "type": "block",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "image": "shopify:\/\/shop_images\/icn0.png",
+            "title": "<p>Pool entrance identification<\/p>",
+            "color": "#647bdf",
+            "text": "<p>Our technology detects all accidental and deliberate pool entry with pets and toddlers over 12lbs to adults, easing or stepping into the pool or falling or diving in. A notification is sent to your mobile phone while sounding an alarm through your garden and home.<\/p>"
           }
         },
-        "text": {
-          "type": "text",
+        "c4939ef3-704f-4a27-a95e-db99f2b21811": {
+          "type": "block",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "image": "shopify:\/\/shop_images\/icn.png",
+            "title": "<p>Drowning detection<\/p>",
+            "color": "#339999",
+            "text": "<p>The system detects the sounds of human distress signals at an early stage and warns of this in a local announcement, in the nearby building and in the pool holder's smartphone.<\/p>"
           }
         },
-        "button": {
-          "type": "buttons",
+        "1ed87046-9a51-419e-bb83-0c105ea01f7e": {
+          "type": "block",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify:\/\/shop_images\/icn2.png",
+            "title": "<p>Listens<br\/>to water 24\/7<\/p>",
+            "color": "#28ace2",
+            "text": "<p>Created by IDF Marine Seal veterans, acoustic & digital processing experts and medical and marine engineers that share more than 120 years of combined experience. This means means our underwater acoustic technology is a cut above any others on the market right now.<\/p>"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "fc50f7dc-a3aa-45e1-85cb-fb5166e41ab0",
+        "c4939ef3-704f-4a27-a95e-db99f2b21811",
+        "1ed87046-9a51-419e-bb83-0c105ea01f7e"
       ],
       "settings": {
-        "image": "{{ shop.brand.cover_image }}",
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "title": "<p>Our <strong>benefits<\/strong><\/p>",
+        "text": "<p>SOSense is a high-tech hydroponic sensor that detects all pool entry & accidents. Alert you of pool entries and drownings faster than any other device on the market. This is the AI lifeguard that every pool-owning household needs…<\/p>"
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
+    "166323988412e4b6fe": {
+      "type": "info-section",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "background": "shopify:\/\/shop_images\/background.png",
+        "title": "<p>Almost 6500 children<br\/>younger than 15 years<br\/><strong>were treated for pool<\/strong><\/p>",
+        "year_from": "2015",
+        "year_from_color": "#647bdf",
+        "year_to": "2017",
+        "year_to_color": "#f8989e",
+        "btn_text": "Description of the problem",
+        "btn_url": "\/",
+        "title_second": "Died from drowning or almost died from drowning",
+        "text_second": "<p>Some stats you may find useful:<br\/>According to the CDC, drowning is the number one cause of unintentional death for children between the ages of 1 and 4. <\/p>"
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "1663235255967312d3": {
+      "type": "background-image",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "background": "shopify:\/\/shop_images\/2022-07-21_13.52_1.png"
       }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "1662726121a022b914",
+    "1663229044892e54a1",
+    "166323988412e4b6fe",
+    "1663235255967312d3"
   ]
 }

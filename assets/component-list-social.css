@@ -4,7 +4,7 @@
   justify-content: flex-end;
 }
 footer .list-social {
-  gap: 4rem;
+  gap: 40px;
 }
 
 
@@ -18,10 +18,6 @@ footer .list-social {
   display: flex;
   color: rgb(var(--color-foreground));
 }
-.list-social__item svg{
-  width: 2.8rem;
-  height: 2.8rem;
-}
 @media only screen and (max-width: 991px) {
   .footer-block-image>img{
     max-width: 125px !important;
@@ -31,11 +27,10 @@ footer .list-social {
     justify-content: center;
   }
   .list-social__link svg{
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 24px;
+    height: 24px;
   }
 }
-
 footer .list-social__link .icon-instagram-path{
   fill: #283C92 !important;
 }

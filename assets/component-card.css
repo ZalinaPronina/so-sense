@@ -43,9 +43,9 @@
 
 .card .card__inner .card__media {
   overflow: hidden;
+  /* Fix for Safari border bug on hover */
   z-index: 0;
-  border-radius: 32px;
-  position: relative;
+  border-radius: calc(var(--card-corner-radius) - var(--card-border-width) - var(--card-image-padding));
 }
 
 .card--card .card__inner .card__media {
@@ -93,6 +93,7 @@
 .card__content {
   display: grid;
   grid-template-rows: minmax(0,1fr) max-content minmax(0,1fr);
+  padding: 1rem;
   width: 100%;
   flex-grow: 1;
 }
@@ -103,10 +104,18 @@
 
 .card__information {
   grid-row-start: 2;
+  padding: 1.3rem 1rem;
 }
 
 .card:not(.ratio) > .card__content {
   grid-template-rows: max-content minmax(0,1fr) max-content auto;
+}
+
+@media screen and (min-width: 750px) {
+  .card__information {
+    padding-bottom: 1.7rem;
+    padding-top: 1.7rem;
+  }
 }
 
 .card__badge {
@@ -158,6 +167,16 @@
   left: calc(var(--card-border-width) * -1);
   right: calc(var(--card-border-width) * -1);
   top: calc(var(--card-border-width) * -1);
+}
+
+.card__heading a::after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .card__heading a:after {

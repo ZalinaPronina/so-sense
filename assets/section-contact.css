@@ -18,6 +18,7 @@
 }
 p.body-contact_left-side-placing-email__placing,
 p.body-contact_left-side-placing-email__email {
+    margin: 0;
     display: flex;
     align-content: flex-start;
     align-items: center;
@@ -30,14 +31,25 @@ p.body-contact_left-side-placing-email__email {
     font-size: 2.4rem;
     line-height: 170%;
     color: #000000;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
 
 }
+textarea {
+    resize:none
+}
+option {
+    font-weight: 600;
+}
+p.text-description-left {
+    margin-top: 1.2rem;
+    margin-bottom: 4rem;
+}
 .body-contact_left-side-placing-email {
-    background-color: #F5F6F8;
+    background-color: #f5f6f8;
     padding: 3rem;
     border-radius: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 3.55rem;
 }
 .field {
     position: relative;
@@ -49,28 +61,34 @@ p.body-contact_left-side-placing-email__email {
     border-radius: 16px;
     background-color: #f5f6f8;
 }
-.contact-form{
-    padding: 15rem 0 19rem;
+.contact-form {
+    padding: 14.4rem 0 14.4rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    margin-bottom: -9rem;
     position: relative;
-
 }
-.contact-form label{
-    font-family: 'Poppins';
+.contact-form label {
+    font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 1.6rem;
-    line-height: 90%;
+    line-height: 150%;
     color: #525459;
-    margin: 0 0 0.5rem 1rem;
+    margin-left: 1.6rem;
+}
+.select_subject {
+    margin-left: 2.6rem !important;
 }
 span.icon-E-mail {
     position: absolute;
-    top: 4.2rem;
+    top: 4.7rem;
     left: 1.4rem;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 0;
 }
 #ContactForm-body {
     max-height: 18.6rem;
@@ -85,12 +103,34 @@ span.icon-E-mail {
     max-width: 54rem;
     width: 100%;
 }
+.select {
+    position: relative;
+}
+.select:after {
+    content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.91016 9.56519L11.6493 15.3043L17.3884 9.56519' stroke='black' stroke-width='1.91304' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+    padding: 0 8px;
+    font-size: 12px;
+    position: absolute;
+    right: 2rem;
+    top: 4.5rem;
+    z-index: 1;
+    text-align: center;
+    width: 10%;
+    height: 50%;
+
+}
+ select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 .select_in-form__contact {
     border: none;
-    border-radius: 32px;
+    border-radius: 16px;
     height: 6.4rem;
-    max-width: 54rem;
+    max-width: 51.6rem;
     width: 100%;
+    margin: auto;
     padding: 1rem 1.25rem 1rem 1.5rem;
     font-size: 1.8rem;
 }
@@ -144,6 +184,9 @@ strong {
     font-weight: 600;
     font-size: 5.6rem;
     color: #28ACE2;
+}
+.body-contact_left-side-placing-email__placing  span {
+    display: flex;
 }
 .text-description-left {
     font-family: 'Poppins';
@@ -216,6 +259,11 @@ strong {
         padding-right: 0;
     }
 }
+@media screen and (max-width: 1100px) {
+    .body-contact {
+        padding-right: 2%;
+    }
+}
 @media screen and (max-width: 989px) {
     .body-contact_left-side-text_title {
         text-align: center;
@@ -228,6 +276,14 @@ strong {
         margin-right: 2rem;
         margin-left: 2rem;
     }
+    .select:after {
+        padding: 0 8px;
+        font-size: 21px;
+        right: 2rem;
+        top: 4.5rem;
+        width: 4%;
+        height: 80%;
+    }
     .body-contact {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -236,7 +292,7 @@ strong {
         align-content: space-evenly;
         justify-content: center;
         width: 100%;
-        padding-right: 2%;
+        padding-right: 3%;
         padding-left: 0;
     }
     .body-contact_left-side-text_title h2 {
@@ -250,7 +306,7 @@ strong {
     }
 
     .body-contact_left-side {
-        margin-bottom: 5rem;
+        margin-bottom: 6.4rem;
     }
     button.button-contact {
         margin-right: auto;
@@ -266,6 +322,11 @@ strong {
         font-size: 2rem;
         max-width: 100%;
     }
+    .select_in-form__contact {
+        max-width: 54rem;
+        width: 100%;
+        margin: 0;
+    }
     .contact__fields {
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -273,6 +334,9 @@ strong {
         border-radius: 16px;
         background-color: #f5f6f8;
         width: 100%;
+    }
+    .select_subject {
+        margin-left: 1.6rem !important;
     }
     .contact {
         width: 100%;
@@ -310,6 +374,14 @@ strong {
         background-color: #f5f6f8;
         width: 100%;
     }
+    .select:after {
+        padding: 0 8px;
+        font-size: 21px;
+        right: 4rem;
+        top: 4.5rem;
+        width: 4%;
+        height: 80%;
+    }
     .contact {
         width: 100%;
         max-width: 100%;
@@ -345,12 +417,30 @@ strong {
     }
     p.body-contact_left-side-placing-email__placing,
     p.body-contact_left-side-placing-email__email {
-        font-size: 1.8rem;
+        font-size: 2.55rem;
     }
-
+    .text-description-left {
+        font-size: 3rem;
+        max-width: 100%;
+    }
+    .body-contact_left-side-text_title h2 {
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 5.3rem;
+        max-width: 31rem;
+    }
+    strong {
+        font-size: 5.3rem;
+    }
     .body-contact_left-side-placing-email {
         margin-left: auto;
         margin-right: auto;
+    }
+    .contact-form {
+        padding: 3.2rem 0 0;
+    }
+    button.button-contact {
+        margin-bottom: 43px;
     }
 
     .body-contact {
@@ -358,16 +448,48 @@ strong {
         padding-left: 0;
         margin: 0;
     }
+    .select:after {
+        padding: 0 8px;
+        font-size: 21px;
+        right: 6rem;
+        top: 5rem;
+        width: 4%;
+        height: 80%;
+    }
     span.icon-E-mail {
         position: absolute;
-        top: 3.7rem;
+        top: 5.2rem;
         left: 1.4rem;
     }
+    .contact-form label {
+        font-size: 2.4rem;
+    }
 }
-@media screen and (max-width: 325px) {
-span.icon-E-mail {
-    position: absolute;
-    top: 3.1rem;
-    left: 1.2rem;
+@media screen and (max-width: 376px) {
+    span.icon-E-mail {
+        position: absolute;
+        top: 5.7rem;
+        left: 1.2rem;
+    }
+    .text-description-left {
+        font-size: 3rem;
+        max-width: 100%;
+    }
+    .contact-form label {
+        font-size: 2.555rem;
+        margin: 0 0 0.5rem 1rem;
+    }
+    .body-contact_left-side-text_title h2 {
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 6rem;
+        max-width: 31rem;
+    }
+    strong {
+        font-size: 6rem;
+    }
+    p.body-contact_left-side-placing-email__placing,
+    p.body-contact_left-side-placing-email__email {
+        font-size: 2.89rem;
     }
 }
