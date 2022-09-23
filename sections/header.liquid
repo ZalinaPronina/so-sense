@@ -33,7 +33,7 @@
   }
 
   .header__heading-logo {
-    max-width: 112px;
+    max-width: 11.2rem;
   }
 
   @media screen and (min-width: 990px) {
@@ -58,7 +58,7 @@
   .list-menu--inline {
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 4rem;
   }
 
   summary.list-menu__item {
@@ -218,6 +218,23 @@
                   {%- endif -%}
                   </ul>
                 </nav>
+                <ul class="header-global-links">
+                  {% if settings.accessibility_link %}
+                    <li>
+                      <a href="{{settings.accessibility_link}}">Accessibility statement</a>
+                    </li>
+                  {% endif %}
+                  {% if settings.privacy_link %}
+                    <li>
+                      <a href="{{settings.privacy_link}}">Privacy policy</a>
+                    </li>
+                  {% endif %}
+                  {% if settings.terms_link %}
+                    <li>
+                      <a href="{{settings.terms_link}}">Terms of Service</a>
+                    </li>
+                  {% endif %}
+                </ul>
                 <div class="menu-drawer__utility-links">
                   {% include 'social-icons' %}
                 </div>

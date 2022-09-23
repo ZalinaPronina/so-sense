@@ -1,19 +1,46 @@
 .contact-form{
-  padding: 150px 0 190px;
+  padding: 15rem 0 17rem; 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  margin-bottom: -75px;
   position: relative;
+  background-color: #339999;
 }
 .contact-form label{
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.5rem;
   line-height: 150%;
   color: #D2E8E8;
-  margin: 0 0 4px 16px;
+  margin: 0 0 .4rem 1.6rem;
 }
-.checkbox-contact input{
+.contact-form .checkbox-contact label:before{
+  content: '';
+  padding: 7px;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-flex;
+  margin-right: 1rem;
+}
+.checkbox-contact{
+  display: flex;
+}
+.contact-form input[type=checkbox]:checked + label:after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: .6rem;
+  left: .8rem;
+  width: .7rem;
+  height: 1.1rem;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(44deg);
+}
+.contact-form .checkbox-contact input{
   display: none;
 }
 .checkbox-contact label{
@@ -21,11 +48,12 @@
   position: relative;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .contact-form input, .contact-form textarea, .contact-form select{
   padding: 1.6rem 2rem 1.6rem 5.6rem;
   background: #FAFAFA;
-  border-radius: 16px;
+  border-radius: 1.6rem;
   height: 6.4rem;
   width: 100%;
   font-weight: 600;
@@ -35,12 +63,9 @@
 .contact-form select{
   padding: 2rem;
 }
-.title{
-  font-weight: 600;
-  font-size: 56px;
-  line-height: 130%;
+.contact .h2{
   color: #fff;
-  margin: 0 0 40px;
+  margin: 0 0 4rem;
 }
 .contact img {
   max-width: 100%;
@@ -114,15 +139,11 @@
 
 @media screen and (min-width: 750px) {
   .contact__fields {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
+    display: flex;
+    column-gap: 4rem;
   }
 }
 @media only screen and (max-width: 989px) {
-  .contact__fields .additional-fields .select label{
-    margin-bottom: 0;
-  }
   .contact-form{
     padding: 8rem 0;
   }

@@ -25,11 +25,6 @@
         "text_second": "<p>Our team is made up of those that are the best of the best in their respective fields, forming the one-of-a-kind technology that is SOSense. Created by IDF Marine Seal veterans, acoustic and digital processing experts and medical and marine engineers that share more than 120 years of combined experience. <\/p>"
       }
     },
-    "become-block": {
-      "type": "become-block",
-      "settings": {
-      }
-    },
     "16638424682bec1ffd": {
       "type": "text-with-image",
       "settings": {
@@ -190,6 +185,33 @@
         "text_second": "<p>As an early adopter, you will also gain a <a href=\"\/\" title=\"\/\">free upgrade from your BETA product<\/a> to the final product as soon as this is released.<\/p>",
         "btn_url": "",
         "btn_text": ""
+      }
+    },
+    "become-block": {
+      "type": "become-block",
+      "blocks": {
+        "190030e5-bf85-4f55-9ceb-0e0c7da7c870": {
+          "type": "block",
+          "settings": {
+            "title": "Become a dealer",
+            "btn_text": "Join",
+            "btn_url": "\/"
+          }
+        },
+        "2b6480b1-9b81-4108-9b8b-92f800183de4": {
+          "type": "block",
+          "settings": {
+            "title": "Become an affiliate",
+            "btn_text": "Join",
+            "btn_url": "\/"
+          }
+        }
+      },
+      "block_order": [
+        "190030e5-bf85-4f55-9ceb-0e0c7da7c870",
+        "2b6480b1-9b81-4108-9b8b-92f800183de4"
+      ],
+      "settings": {
       }
     }
   },
