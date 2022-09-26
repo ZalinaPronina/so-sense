@@ -132,6 +132,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/footer-logo.png",
               "image_width": 190,
+              "image_width_1": 5,
               "alignment": ""
             }
           },
@@ -180,6 +181,7 @@
           "81680c04-9fbd-47cd-814f-8233d6d16c56"
         ],
         "settings": {
+          "background": "shopify:\/\/shop_images\/Exclude.png",
           "color_scheme": "accent-2",
           "newsletter_enable": false,
           "newsletter_heading": "Subscribe to our emails",
@@ -210,7 +212,12 @@
         "type": "contact-form",
         "settings": {
           "background": "shopify:\/\/shop_images\/In.png",
-          "heading": "Keep in touch"
+          "heading": "Keep in touch",
+          "up_text": "",
+          "bottom_text": "",
+          "text_description": "",
+          "button": "",
+          "doun_text": ""
         }
       }
     },
