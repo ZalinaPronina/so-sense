@@ -1,5 +1,6 @@
 {
-  "name": "All blogs",
+  "name": "All Blogs",
+  "wrapper": "div#div_id.div_class[attribute-one=value]",
   "sections": {
     "main": {
       "type": "all-blogs"
