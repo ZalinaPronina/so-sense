@@ -70,7 +70,7 @@
                         <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
                         <span class="icon-E-mail">{% render 'icon-phone_in_talk' %}</span>
                     </div>
-                    <div class="field select">
+                    <div class="select_option">
                         <label for="select_in-form" class="select_subject">Subject</label>
                         <select name="select" id="select_in-form" class="select_in-form__contact">
                             <option value="">What you are reaching out for</option>
