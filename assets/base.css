@@ -36,6 +36,13 @@
 .btn-secondary .arrow:after{
   background: #fff;
 }
+.h1{
+  font-weight: 600;
+  letter-spacing: normal;
+  font-size: 7.2rem;
+  line-height: 110%;
+  color: #283C92;
+}
 .h2{
   letter-spacing: normal;
   font-weight: 600;
@@ -52,11 +59,21 @@
 .h2 br, .h5 br{
   display: none;
 }
+.h4{
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 140%;
+}
 .h5{
   font-weight: 600;
   font-size: 3.2rem;
   line-height: 140%;
   color: #283C92;
+}
+.h6{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
 }
 @media only screen and (min-width: 990px) {
   .mobile-screen{
@@ -77,12 +94,23 @@
       margin-left: auto;
       margin-right: auto;
   }
+  .h1{
+    font-size: 3.8rem;
+    text-align: center;
+  }
   .h2{
       font-size: 2.8rem;
       text-align: center;
   }
+  .h4{
+    font-size: 2.8rem;
+  }
   .h5{
     font-size: 2rem;
+    line-height: 130%;
+  }
+  .h6{
+    font-size: 20px;
     line-height: 130%;
   }
 }
@@ -535,18 +563,6 @@ body,
   }
 }
 
-h1,
-.h1 {
-  font-size: calc(var(--font-heading-scale) * 3rem);
-}
-
-@media only screen and (min-width: 750px) {
-  h1,
-  .h1 {
-    font-size: calc(var(--font-heading-scale) * 4rem);
-  }
-}
-
 h3,
 .h3 {
   font-size: calc(var(--font-heading-scale) * 1.7rem);
@@ -557,12 +573,6 @@ h3,
   .h3 {
     font-size: calc(var(--font-heading-scale) * 1.8rem);
   }
-}
-
-h4,
-.h4 {
-  font-style: var(--font-heading-style);
-  font-size: calc(var(--font-heading-scale) * 1.5rem);
 }
 
 blockquote {
