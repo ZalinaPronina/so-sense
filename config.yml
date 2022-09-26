@@ -1,6 +1,6 @@
 development:
   password: shptka_51256a3a58551f5b28a3a00f5880e09e
-  theme_id: "121557090350"
+  theme_id: "121688817710"
   store: sosenseusa.myshopify.com
   ignore_files:
     - templates/404.json
