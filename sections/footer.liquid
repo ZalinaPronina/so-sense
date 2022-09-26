@@ -13,9 +13,25 @@
 <noscript>{{ 'component-list-social.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
-
-<footer class="footer color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding" {% if section.settings.background != blank %}
-style="background-image: url('{{section.settings.background | img_url: 'master' }}')"{% endif %}>
+{% if section.settings.background != blank %}
+    <style>
+        @media only screen and (min-width: 990px){
+            .footer{
+                background-image: url('{{section.settings.background | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
+{% if section.settings.background_mobile != blank %}
+    <style>
+        @media only screen and (max-width: 989px){
+            .footer{
+                    background-image: url('{{section.settings.background_mobile | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
+<footer class="footer color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
@@ -407,7 +423,12 @@ style="background-image: url('{{section.settings.background | img_url: 'master' 
     {
       "type": "image_picker",
       "id": "background",
-      "label": "Footer Background"
+      "label": "Footer Background Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_mobile",
+      "label": "Footer Background Mobile"
     },
     {
       "type": "select",

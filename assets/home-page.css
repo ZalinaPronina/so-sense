@@ -67,6 +67,8 @@
     width: 33.8rem;
     height: 33.8rem;
     position: relative;
+    background: #D7F3FF;
+    border-radius: 50%;
 }
 .main-banner .main-photo{
     width: 33.8rem;
