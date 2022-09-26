@@ -61,6 +61,10 @@
   line-height: 140%;
 }
 .contact-form select{
+  cursor: pointer;
+  padding: 2rem;
+}
+.contact-form textarea{
   padding: 2rem;
 }
 .contact .h2{
@@ -82,7 +86,17 @@
 .contact .field {
   margin-bottom: 1.5rem;
 }
-
+.select:after {
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.91016 9.56519L11.6493 15.3043L17.3884 9.56519' stroke='black' stroke-width='1.91304' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+  font-size: 12px;
+  position: absolute;
+  right: 2rem;
+  top: 4.5rem;
+  z-index: 1;
+  text-align: center;
+  width: 22px;
+  height: 23px;
+}
 @media screen and (min-width: 750px) {
   .contact .field {
     margin-bottom: 2rem;
@@ -131,13 +145,18 @@
   height: 2.4rem;
   width: 2.4rem;
 }
-@media screen and (min-width: 750px) {
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+@media screen and (min-width: 990px) {
   .contact__button {
     margin-top: 4rem;
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .contact__fields {
     display: flex;
     column-gap: 4rem;
@@ -145,7 +164,7 @@
 }
 @media only screen and (max-width: 989px) {
   .contact-form{
-    padding: 8rem 0;
+    padding: 8rem 0 12rem;
   }
   .contact__fields .main-fields{
     width: 100%;
@@ -153,17 +172,29 @@
   .contact__fields .additional-fields{
     width: 100%;
   }
-  .contact-form input, .contact-form textarea{
+  .contact-form input{
     padding: 1.4rem 2rem 1.4rem 5.4rem;
     height: 6rem;
+    font-size: 1.6rem;
   }
   .contact-form select{
     padding: 2rem;
+    font-size: 1.6rem;
+    height: 6rem;
+  }
+  .contact-form textarea{
+    height: 17.5rem;
+    font-size: 1.6rem;
+  }
+  .contact-form input[type=checkbox]:checked+label:after{
+    top: 0.4rem;
+    left: 0.7rem;
   }
   .contact__button{
     margin-top: 2rem;
     flex-direction: column;
     gap: 3.2rem;
+    align-items: initial;
   }
   .contact-form .checkbox-contact label:before{
     width: 2rem;
