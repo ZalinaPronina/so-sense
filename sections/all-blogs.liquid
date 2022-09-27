@@ -1,0 +1,83 @@
+{{ 'all-blogs.css' | asset_url | stylesheet_tag }}
+ {% assign blog_handles = "news,business" | split: "," %}
+ 
+
+ <div class="all-blogs">
+  <div class="all-blogs-title">
+    <div class="all-blogs-title__subtitile">Latest articles</div>
+    <h1 class="all-blogs-title__title">Blog</h1>
+  </div>
+  <div class="allblogs-sections page-width-desktop">
+    <div class="allblogs-sections-left">
+      {% for handle in blog_handles %}
+      {% for article in blogs[handle].articles %}
+        {%- render 'article-allblogs', article:article, blog: blogs[handle] -%}
+      {% endfor %}
+    {% endfor %}
+    </div>
+    <div class="allblogs-sections-right">
+      <form class="search-article" method="get" action="/search">
+        <input type="hidden" name="type" value="article" />
+        <input
+          placeholder="Type search" 
+          class="search-article__input article-icon" 
+          type="text" 
+          name="q" 
+        />
+<!--         <input  type="submit" value="Search" /> -->
+      </form>
+      <div class="recent-post">
+        <div class="recent-post__title">Recent Posts</div>
+        <div class="recent-post-box">
+          {% for handle in blog_handles %}
+            {% for article in blogs[handle].articles %}
+              {% for tags in article.tags %}
+                {% if article.tags contains 'recent-post' %}
+                <a style="text-decoration: none;" href="{{ article.url }}" class="recent-post-item">
+                  <div class="recent-post-item__title">{{ article.title }}</div>
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1812_7851)">
+                      <path d="M5 12.5H19" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12 5.5L19 12.5L12 19.5" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_1812_7851">
+                      <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                  </a>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="article-category recent-post">
+        <div class="recent-post__title">Categories</div>
+        <div class="recent-post-box">
+          {% for handle in blog_handles %}
+          {% assign blogss = blogs[handle] %}
+          <script>console.log({{ blogss | json }})</script>
+            <a style="text-decoration: none;" href="{{ blogss.url }}" class="recent-post-item">
+              <div class="recent-post-item__title">{{ blogss.title }}</div>
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1812_7851)">
+                  <path d="M5 12.5H19" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 5.5L19 12.5L12 19.5" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_1812_7851">
+                  <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </a>  
+           {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+
