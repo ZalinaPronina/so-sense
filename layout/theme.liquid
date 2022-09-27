@@ -222,9 +222,9 @@
     </main>
 
     {% assign acontct = page_title  %}
-    {% unless acontct == 'Contact' or acontct == 'login' %}
+    {% if acontct != 'Contact'%}
     {% section 'contact-form' %}
-    {% endunless %}
+    {% endif %}
     {% section 'footer' %}
 
     <ul hidden>
