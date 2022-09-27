@@ -14,5 +14,6 @@ development:
     - templates/page.json
     - templates/page.our-product.json
     - templates/password.json
+    - templates/product.json
     - templates/search.json
     - config/settings_data.json

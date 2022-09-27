@@ -56,6 +56,8 @@
           {%- endfor -%}
         </div>
         <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev">{% include 'icon-arrow-left' %}</div>
+        <div class="swiper-button-next">{% include 'icon-arrow-right' %}</div>
       </div>
       <div class="product__info-wrapper">
         <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
@@ -491,7 +493,11 @@
       slidesPerView: 1,
       pagination: {
           el: '.swiper-pagination',
-          clickable: true,
+          clickable: true
+      },
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
       }
   });
   </script>
