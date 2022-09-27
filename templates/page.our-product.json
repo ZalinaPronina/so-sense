@@ -186,33 +186,6 @@
         "btn_url": "",
         "btn_text": ""
       }
-    },
-    "become-block": {
-      "type": "become-block",
-      "blocks": {
-        "190030e5-bf85-4f55-9ceb-0e0c7da7c870": {
-          "type": "block",
-          "settings": {
-            "title": "Become a dealer",
-            "btn_text": "Join",
-            "btn_url": "\/"
-          }
-        },
-        "2b6480b1-9b81-4108-9b8b-92f800183de4": {
-          "type": "block",
-          "settings": {
-            "title": "Become an affiliate",
-            "btn_text": "Join",
-            "btn_url": "\/"
-          }
-        }
-      },
-      "block_order": [
-        "190030e5-bf85-4f55-9ceb-0e0c7da7c870",
-        "2b6480b1-9b81-4108-9b8b-92f800183de4"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
@@ -222,7 +195,6 @@
     "grid-installation",
     "16638367595881507b",
     "faq",
-    "166383686926e73919",
-    "become-block"
+    "166383686926e73919"
   ]
 }
