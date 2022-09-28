@@ -1,0 +1,82 @@
+<div class="technology-container page-width-desktop">
+    <div class="mobile-screen">
+        <a class="btn-primary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
+        {% if section.settings.title != blank %}
+            <h2 class="h2">{{section.settings.title}}</h5>
+        {% endif %}
+    </div>
+    {% if section.settings.image != blank %}
+        <div class="image-wrapper">
+            <img src="{{section.settings.image | img_url: 'master' }}" alt="">
+        </div>
+    {% endif %}
+    <div class="content-wrapper">
+        <div class="desktop-screen">
+            <a class="btn-primary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
+            {% if section.settings.title != blank %}
+                <h2 class="h2">{{section.settings.title}}</h5>
+            {% endif %}
+        </div>
+        <div class="block-wrapper">
+            {%- for block in section.blocks -%}
+                <div class="block-content">
+                    {% if block.settings.image != blank %}
+                        <img src="{{block.settings.image | img_url: 'master' }}" alt="">
+                    {% endif %}
+                    <p class="block-text">{{block.settings.text}}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+  "name": "Technology",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Btn Text"
+        },
+        {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Btn Url"
+        }
+    ],
+    "blocks": [
+    {
+        "type": "block",
+        "name": "Block",
+        "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+        }
+        ]
+    }
+
+    ],
+    "presets": [
+        {
+        "name": "Technology"
+        }
+    ]
+}
+{% endschema %}

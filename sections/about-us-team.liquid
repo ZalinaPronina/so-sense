@@ -1,0 +1,71 @@
+<div class="about-us-team page-width-desktop">
+    {% if section.settings.title != blank %}
+        <h2 class="h2">{{section.settings.title}}</h5>
+    {% endif %}
+    {% if section.settings.text != blank %}
+        <div class="text">{{section.settings.text}}</div>
+    {% endif %}
+    <div class="about-us-team__blocks">
+        {%- for block in section.blocks -%}
+            <div class="about-us-team__content">
+                {% if block.settings.author_image != blank %}
+                    <img src="{{block.settings.author_image | img_url: 'master' }}" alt="">
+                {% endif %}
+                {% if block.settings.title != blank %}
+                    <h6 class="h6">{{block.settings.title}}</h6>
+                {% endif %}
+                {% if block.settings.position != blank %}
+                    <p>{{block.settings.position}}</p>
+                {% endif %}
+                {% if block.settings.text != blank %}
+                    <div class="text">{{block.settings.text}}</div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% schema %}
+{
+  "name": "About Us Team",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "block",
+            "name": "Block",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Author Name"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "author_image",
+                    "label": "Author Photo"
+                },
+                {
+                    "type": "text",
+                    "id": "position",
+                    "label": "Position"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "Text"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

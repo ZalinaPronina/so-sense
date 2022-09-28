@@ -1,0 +1,186 @@
+<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-article-card.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'section-featured-blog.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-card.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-article-card.css' | asset_url | stylesheet_tag }}</noscript>
+
+{{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign posts_displayed = section.settings.blog.articles_count
+-%}
+<div class="blog-2-column color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width-desktop">
+    {%- unless section.settings.heading == blank -%}
+      <div class="title-wrapper-with-link">
+        <h2 class="h2">{{ section.settings.heading}}</h2>
+        {%- if section.settings.blog != blank -%}
+          <a href="{{ section.settings.blog.url }}"
+            class="btn-secondary"
+          >
+            {{ 'sections.featured_blog.view_all' | t }} <span class="arrow desktop-screen"></span>
+          </a>
+        {%- endif -%}
+      </div>
+    {%- endunless -%}
+    {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
+      <slider-component class="slider-mobile-gutter">
+        <ul
+          class="blog__posts"
+          role="list"
+        >
+          {%- for article in section.settings.blog.articles limit: 2 -%}
+            <li class="blog__post">
+                {%- if article and article != empty -%}
+                {%- liquid
+                  assign ratio = 1
+                  if media_aspect_ratio != nil
+                    assign ratio = media_aspect_ratio
+                  endif
+                -%}
+                <div class="card-wrapper">
+                  {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
+                  <div class="card article-card"
+                    style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+                  >
+                    <div class="card__inner {% if settings.card_style == 'standard' %} color-{{ settings.card_color_scheme }} gradient{% endif %}{% if article.image and show_image or settings.card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+                      {%- if section.settings.show_image == true and article.image -%}
+                        <div class="article-card__image-wrapper card__media">
+                          <div class="article-card__image media media--hover-effect" {% if section.settings.media_height == 'adapt' %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}>
+                            {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+                            <img
+                              srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | image_url: width: 165 }} 165w,{%- endif -%}
+                                {%- if article.image.src.width >= 360 -%}{{ article.image.src | image_url: width: 360 }} 360w,{%- endif -%}
+                                {%- if article.image.src.width >= 533 -%}{{ article.image.src | image_url: width: 533 }} 533w,{%- endif -%}
+                                {%- if article.image.src.width >= 720 -%}{{ article.image.src | image_url: width: 720 }} 720w,{%- endif -%}
+                                {%- if article.image.src.width >= 1000 -%}{{ article.image.src | image_url: width: 1000 }} 1000w,{%- endif -%}
+                                {%- if article.image.src.width >= 1500 -%}{{ article.image.src | image_url: width: 1500 }} 1500w,{%- endif -%}
+                                {{ article.image.src | image_url }} {{ article.image.src.width }}w"
+                              src="{{ article.image.src | image_url: width: 533 }}"
+                              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                              alt="{{ article.image.src.alt | escape }}"
+                              class="motion-reduce"
+                              {% unless lazy_load == false %}loading="lazy"{% endunless %}
+                              width="{{ article.image.width }}"
+                              height="{{ article.image.height }}"
+                            >
+                            {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
+                          </div>
+                        </div>
+                      {%- endif -%}
+                    </div>
+                    <div class="card__content">
+                      <div class="card__information">
+                        <h3 class="card__heading">
+                          <a href="{{ article.url }}" class="full-unstyled-link">
+                            {{ article.title | truncate: 48 | escape }}
+                          </a>
+                        </h3>
+                        <div class="caption-with-letter-spacing">
+                            <div class="blog__badge">
+                                <span class="btn-primary">{{ section.settings.blog }}</span>
+                            </div>
+                          {%- if section.settings.show_date -%}
+                            <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
+                          {%- endif -%}
+                        </div>
+                        {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+                            <p class="article-card__excerpt">
+                                {%- if article.excerpt.size > 0 -%}
+                                    {{ article.excerpt | strip_html | truncatewords: 30 }}
+                                {%- else -%}
+                                    {{ article.content | strip_html | truncatewords: 30 }}
+                                {%- endif -%}
+                            </p>
+                        {%- endif -%}
+                        <div class="article-bottom">
+                            <a href="{{ article.url }}">More {% include 'icon-arrow-right' %}</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {%- endif -%}              
+            </li>
+          {%- endfor -%}
+        </ul>
+      </slider-component>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog 2 column",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Title"
+    },
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "t:sections.featured-blog.settings.blog.label"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label",
+      "info": "t:sections.all.colors.has_cards_info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image",
+      "default": true,
+      "label": "t:sections.featured-blog.settings.show_image.label",
+      "info": "t:sections.featured-blog.settings.show_image.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "default": true,
+      "label": "t:sections.featured-blog.settings.show_date.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "default": false,
+      "label": "t:sections.featured-blog.settings.show_author.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog 2 column"
+    }
+  ]
+}
+{% endschema %}

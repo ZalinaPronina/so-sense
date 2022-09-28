@@ -1,0 +1,87 @@
+<div class="product-purchase__container page-width-desktop">
+    <div class="content-wrapper">
+        <div class="content-wrapper__text">
+            {% if section.settings.title %}
+                <h2 class="h2">{{section.settings.title}}</h5>
+            {% endif %}
+            {% if section.settings.text %}
+                <div class="text">{{section.settings.text}}</div>
+            {% endif %}
+            {% if section.settings.btn_text != blank %}
+                <a class="btn-secondary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}{% include 'icon-cart-btn' %}</a>
+            {% endif %}
+        </div>
+        <div class="swiper swiper-js">
+            <div class="image-wrapper swiper-wrapper">
+                {%- for block in section.blocks -%}
+                    {% if block.settings.image %}
+                        <img class="swiper-slide" src="{{block.settings.image | img_url: 'master' }}" alt="">
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="swiper-button-prev">{% include 'icon-arrow-left' %}</div>
+            <div class="swiper-button-next">{% include 'icon-arrow-right' %}</div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+      let swiperHome = new Swiper(".swiper-js", {
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+  });
+</script>
+{% schema %}
+{
+  "name": "Product Purchase",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Btn Text"
+        },
+        {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Btn Url"
+        }
+    ],
+    "blocks": [
+    {
+        "type": "block",
+        "name": "Block",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            }
+        ]
+    }
+
+    ],
+    "presets": [
+        {
+        "name": "Product Purchase"
+        }
+    ]
+}
+{% endschema %}
