@@ -13,7 +13,6 @@
 
 .main-catogiry {
   padding-top: 8rem;
-  padding-bottom: 29.4rem;
 }
 
 .blog-sections-left {
@@ -84,6 +83,7 @@
   height: 270px;
 }
 
+
 @media (min-width: 1900px) and (max-width: 1920px) {
   .main-catogiry.page-width {
     max-width: 66.7%;
@@ -124,6 +124,7 @@
   .pagination-wrapper {
     top: 4rem;
   }
+  
 
 
   .card.article-card {

@@ -1,0 +1,96 @@
+<section class="text-with-image home-slider-steps">
+        <div class="page-width-desktop text-with-image__wrapper">
+            <div class="home-slider-steps__swiper swiper">
+                <div class="swiper-wrapper">
+                    {%- for block in section.blocks -%}
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__content">
+                                <div class="title-description">
+                                    {% if block.settings.btn_text != blank %}
+                                        <a class="btn-primary" href="{{block.settings.btn_url}}">{{block.settings.btn_text}}</a>
+                                    {% endif %}
+                                    {% if block.settings.title != blank %}
+                                        <h2 class="h2">{{block.settings.title}}</h2>
+                                    {% endif %}
+                                    {% if block.settings.subtitle != blank %}
+                                        <h5 class="h5">{{block.settings.subtitle}}</h5>
+                                    {% endif %}
+                                    {% if block.settings.text != blank %}
+                                        <div class="text">{{block.settings.text}}</div>
+                                    {% endif %}
+                                </div>
+                                {% if block.settings.image != blank %}
+                                    <img src="{{block.settings.image | img_url: 'master' }}" alt="">
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+</section>
+<script>
+    var menu_numbers = ['1', '2', '3']
+    var menu = ['Pool unit', 'Home unit', 'Mobile app']
+    new Swiper(".home-slider-steps__swiper", {
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<div class="' + className + '"><span class="numbers">' + (menu_numbers[index]) + '</span><span class="steps_name">' + (menu[index]) + '</span></div>';
+            }
+        },
+  });
+</script>
+{% schema %}
+{
+  "name": "Slider with Steps",
+    "settings": [
+    ],
+  "blocks": [
+        {
+            "type": "block",
+            "name": "Block",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "richtext",
+                    "id": "subtitle",
+                    "label": "Subtitle"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "Text"
+                },
+                {
+                    "type": "url",
+                    "id": "btn_url",
+                    "label": "Btn Url"
+                },
+                {
+                    "type": "text",
+                    "id": "btn_text",
+                    "label": "Btn Text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+        "name": "Slider with Steps"
+        }
+    ]
+}
+{% endschema %}

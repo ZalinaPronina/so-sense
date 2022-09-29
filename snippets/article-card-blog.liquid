@@ -1,5 +1,6 @@
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }} 
 
+
 {% comment %}
     Renders an article card for a given blog with settings to either show the image or not.
 
@@ -80,8 +81,8 @@
             {%- endif -%}
             </div>
 
-            <div class="card-blog__content">{{ article.content | truncate: 230  }}</div>
 
+            <div class="card-blog__content">{{ article.content | truncate: 230  }}</div>
             <div class="article-bottom">
               {%- if show_author -%}
                 <span class="blog_author">{{ article.author }}</span>

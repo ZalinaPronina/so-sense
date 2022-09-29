@@ -1,0 +1,88 @@
+{% if section.settings.background != blank %}
+    <style>
+        @media only screen and (min-width: 990px){
+            .our-product-banner{
+                background-image: url('{{section.settings.background | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
+{% if section.settings.background_mobile != blank %}
+    <style>
+        @media only screen and (max-width: 989px){
+            .our-product-banner{
+                    background-image: url('{{section.settings.background_mobile | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
+<section class="our-product-banner background-image">
+    <div class="page-width-desktop our-product-banner__container">
+        <div class="our-product-banner__text">
+            {% if section.settings.title != blank %}
+                <h1 class="h2">{{section.settings.title}}</h1>
+            {% endif %}
+            {% if section.settings.subtitle != blank %}
+                <h4>{{section.settings.subtitle}}</h4>
+            {% endif %}
+            {% if section.settings.text != blank %}
+                <p class="description">{{section.settings.text}}</p>
+            {% endif %}
+            <a class="btn-secondary desktop-screen" href="{{section.settings.url}}">{{section.settings.btn_text}} {% include 'icon-cart-btn' %}</a>
+        </div>
+        <div class="our-product-banner__position">
+            {% if section.settings.main_photo != blank %}
+                <div class="main-banner__image">
+                    <img class="main-photo" src="{{section.settings.main_photo | img_url: 'master' }}" alt="">
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+  "name": "Our Product Banner",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "background",
+            "label": "Background Desktop"
+        },
+        {
+            "type": "image_picker",
+            "id": "background_mobile",
+            "label": "Background Mobile"
+        },
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle"
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+        },
+        {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Btn Url"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Btn Text"
+        },
+        {
+            "type": "image_picker",
+            "id": "main_photo",
+            "label": "Main Photo"
+        }
+    ]
+}
+{% endschema %}

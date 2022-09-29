@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 14.5rem 0 8rem 0;
+  padding: 14.5rem 0 8.6rem 0;
   background-color: #F0FBFF;;
 }
 
@@ -308,9 +308,6 @@
   .title-width {
     padding: 0 2rem;
   }
-
-
-
 
   .all-blogs-title {
     padding: 3.2rem 0 4rem 0;

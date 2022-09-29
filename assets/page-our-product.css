@@ -2,9 +2,6 @@
 .our-product-info{
     padding: 15rem 0 26rem;
     color: #fff;
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin-bottom: -7.5rem;
     position: relative;
 }
@@ -425,11 +422,47 @@
 #shopify-section-template--14404173529134__166383686926e73919 .instruction-section .description-block{
     max-width: 51rem;
 }
-#shopify-section-template--14404173529134__1663836676d03533fb .instruction-section {
+#shopify-section-template--14412586450990__1663836676d03533fb .instruction-section {
     padding: 15rem 0;
 }
 @media only screen and (max-width: 989px){
-    #shopify-section-template--14404173529134__1663836676d03533fb .instruction-section{
+    #shopify-section-template--14412586450990__1663836676d03533fb .instruction-section{
         padding: 8rem 0;
+    }
+}
+
+/* Banner */
+
+.our-product-banner{
+    padding: 15rem 0;
+}
+.our-product-banner .h2{
+    margin: 0 0 3.2rem;
+}
+.our-product-banner .h2 p{
+    margin: 0;
+}
+.our-product-banner .our-product-banner__container{
+    display: flex;
+    justify-content: space-between;
+}
+.our-product-banner .our-product-banner__text{
+    max-width: 48rem;
+}
+.our-product-banner .our-product-banner__position{
+    max-width: 62rem;
+}
+.our-product-banner .our-product-banner__position img{
+    max-width: 100%;
+}
+@media only screen and (max-width: 989px){
+    .our-product-banner .our-product-banner__container{
+        flex-direction: column;
+    }
+    .our-product-banner{
+        padding: 8rem 0;
+    }
+    .our-product-banner .our-product-banner__text{
+        margin-bottom: 3.2rem;
     }
 }
