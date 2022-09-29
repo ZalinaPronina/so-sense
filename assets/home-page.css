@@ -3,9 +3,6 @@
 }
 .main-banner{
     padding: 13rem 0 26rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
 }
 .main-banner h1{
     margin: 0 0 3.2rem;
@@ -137,6 +134,139 @@
         max-width: 15.7rem;
     }
 }
+/* Home Slider Steps */
+.text-with-image.home-slider-steps{
+    background: #fff;
+    padding-bottom: 0;
+}
+.home-slider-steps .text-with-image__wrapper .swiper-slide__content{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15rem;
+    align-items: center;
+}
+.home-slider-steps .text-with-image__wrapper img{
+    max-width: 51rem;
+    height: 56rem;
+    object-fit: cover;
+}
+.home-slider-steps .swiper-pagination{
+    position: relative;
+    display: flex;
+    gap: 8rem;
+    bottom: 0;
+    margin-left: 66rem;
+}
+.home-slider-steps .text-with-image .text{
+    margin: 0;
+}
+.home-slider-steps .swiper-pagination-bullet:not(:last-child) .numbers:before, .home-slider-steps .swiper-pagination-bullet:not(:last-child) .numbers:after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: block;
+    background: rgba(40, 60, 146, 0.33);
+    position: absolute;
+    top: 42%;
+    right: -6rem;
+}
+.home-slider-steps .swiper-pagination-bullet:not(:last-child) .numbers:after{
+    right: -8rem;
+}
+/* .home-slider-steps .swiper-pagination-bullet-active:before{
+    background: #283C92;
+} */
+.home-slider-steps .swiper-pagination-bullet{
+    position: relative;
+    width: auto;
+    height: max-content;
+    background: no-repeat;
+    margin: 0 !important;
+}
+.home-slider-steps .swiper-pagination-bullet .numbers{
+    width: 48px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #BCBCC0;
+    background: #F5F6F8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+.home-slider-steps .swiper-pagination-bullet .steps_name{
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 140%;
+    color: #BCBCC0;
+    white-space: nowrap;
+    margin-top: 1rem;
+    display: block;
+}
+.home-slider-steps .swiper-pagination-bullet-active .steps_name{
+    color: #000;
+}
+.home-slider-steps .swiper-pagination-bullet-active .numbers{
+    color: #FFFFFF;
+    background: #283C92;
+}
+.home-slider-steps .text-with-image__wrapper{
+    display: block;
+}
+@media only screen and (max-width: 989px) {
+    .text-with-image.home-slider-steps{
+        padding-top: 8rem;
+    }
+    .home-slider-steps .text-with-image__wrapper .swiper-slide__content{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: initial;
+    }
+    .home-slider-steps .text-with-image__wrapper img{
+        max-width: 100%;
+        height: 27rem;
+        margin: 0 auto;
+    }
+    .home-slider-steps .text{
+        text-align: center;
+    }
+    .home-slider-steps .text-with-image .h2{
+        margin: 2rem 0 1.2rem;
+    }
+    .home-slider-steps .swiper-pagination{
+        margin: 3.2rem 0 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .home-slider-steps .swiper-pagination{
+        gap: 3rem;
+        justify-content: space-between;
+    }
+    .home-slider-steps .swiper-pagination-bullet .numbers{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 140%;
+    }
+    .home-slider-steps .swiper-pagination-bullet .steps_name{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .home-slider-steps .swiper-pagination-bullet:not(:last-child) .numbers:before, .home-slider-steps .swiper-pagination-bullet:not(:last-child) .numbers:after{
+        right: -3.5rem;
+        width: 6px;
+        height: 6px;
+    }
+    .home-slider-steps .swiper-pagination-bullet:not(:last-child) .numbers:after{
+        right: -5.5rem;
+    }
+}
 /* benefits */
 .our-benefits{
     padding: 15rem 0 16rem;
@@ -234,9 +364,6 @@
 .info-section{
     padding: 15rem 0 26rem;
     color: #fff;
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin-bottom: -7.5rem;
     position: relative;
 }
