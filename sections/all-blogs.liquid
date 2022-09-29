@@ -113,11 +113,10 @@
 });
 
 const allArticle = document.querySelectorAll('.simple-article-style')
-
 var mq = window.matchMedia( "(max-width: 989px)" );
 if (!mq.matches) {
 
-  allArticle.forEach((item,index) => {
+  allArticle.forEach((item,index) => { 
     if(index == 2) {
       item.style.marginTop = "-100px";
     }
