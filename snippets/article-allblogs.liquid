@@ -2,13 +2,15 @@
  
 <div class="simple-article simple-article-style"> 
   <div class="simple-article__foto">
-    <img 
+    <img  
       class="simple-article__image" 
       src="{{ article.image.src | img_url: 'master'}}" 
       alt="article"
     >
     <span class="article_bage">{{ blog.title }}</span>
   </div>
+
+  
 
   <div class="simple-article-info">
     <a style="text-decoration: none;" href="{{ article.url}}">

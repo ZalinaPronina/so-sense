@@ -1,18 +1,19 @@
 .blog-articles {
   display: grid;
   grid-gap: 4rem;
-  grid-template-columns: 850px 1fr;
+  grid-template-columns: 840px 1fr;
 /*   column-gap: var(--grid-mobile-horizontal-spacing);
   row-gap: var(--grid-mobile-vertical-spacing); */
 }
 
 .pagination-wrapper {
-  margin-top: 8rem;
-  margin-bottom: 15rem;
+  position: relative;
+  top: 8rem;
 }
 
 .main-catogiry {
   padding-top: 8rem;
+  padding-bottom: 29.4rem;
 }
 
 .blog-sections-left {
@@ -26,8 +27,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 15.5rem;
-  height: 3.7rem;
+/*   width: 15.5rem;
+  height: 3.7rem; */
+  padding: 0.6rem 2rem;
   background: #339999;
   border-radius: 100px;
   color: #fff;
@@ -58,6 +60,10 @@
 
 .card-blog__content {
   margin: 1.2rem 0 2.9rem 0;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #525459;
 }
 
 .card-blog__content h1, 
@@ -78,6 +84,18 @@
   height: 270px;
 }
 
+@media (min-width: 1900px) and (max-width: 1920px) {
+  .main-catogiry.page-width {
+    max-width: 66.7%;
+  }
+}
+
+@media (max-width:1024px) {
+  .blog-articles {
+    grid-template-columns: 655px 1fr;
+  }
+}
+
 @media (max-width: 989px) {
   .blog-articles  {
     display: flex;
@@ -96,10 +114,15 @@
 
   .main-catogiry {
     padding-top: 4rem;
+    padding-bottom: 16.8rem;
+  }
+
+  .main-catogiry.page-width {
+    max-width: 100%;
   }
 
   .pagination-wrapper {
-    margin: 4rem 0 8rem 0;
+    top: 4rem;
   }
 
 
@@ -139,8 +162,41 @@
   }
 
   .article-tags {
-    width: 14.2rem;
+    padding: 1.1rem 2rem;
   }
+}
+
+.media-sections-left {
+  column-count: 2;
+  column-gap: 4rem;
+}
+
+.media-sections-left .article {
+  width: 400px;
+  border: 2px solid #DEDFE4;
+  border-radius: 32px;
+  display: inline-block;
+  padding: 4rem;
+  margin-bottom: 4rem;
+}
+
+.media-sections-left .article-tags {
+  display: inline-block;
+  padding: 0.95rem 2rem;
+  margin-bottom: 1.2rem;
+}
+
+
+.media-sections-left .card-blog__content {
+  font-size: 1.8rem;
+  margin: 1.6rem 0 2.4rem 0;
+  line-height: 180%;
+}
+
+.media-sections-left .article-footer__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 750px) {
