@@ -1,0 +1,74 @@
+<div class="about-us-blog">
+  <div class="page-width-desktop">
+    {%- unless section.settings.heading == blank -%}
+      <div class="title-wrapper-with-link">
+        <h2 class="h2">{{ section.settings.heading}}</h2>
+        {%- if section.settings.blog != blank -%}
+          <a href="{{ section.settings.blog.url }}"
+            class="btn-secondary"
+          >
+            {{ 'sections.featured_blog.view_all' | t }} <span class="arrow desktop-screen"></span>
+          </a>
+        {%- endif -%}
+      </div>
+{%- endunless -%}
+    {%- if section.settings.blog != blank -%}
+      <slider-component class="slider-mobile-gutter">
+        <ul
+          class="blog__posts"
+          role="list"
+        >
+          {%- for article in section.settings.blog.articles limit: 3 -%}
+            <li class="blog__post">
+                {%- if article and article != empty -%}
+                    <div class="card article-card">
+                        <div class="blog__badge">
+                            <span class="btn-primary">{{ section.settings.blog }}</span>
+                        </div>
+                        <h3 class="card__heading">
+                        <a href="{{ article.url }}" class="full-unstyled-link">
+                            {{ article.title | truncate: 48 | escape }}
+                        </a>
+                        </h3>
+                        {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+                            <p class="article-card__excerpt">
+                                {%- if article.excerpt.size > 0 -%}
+                                    {{ article.excerpt | strip_html | truncatewords: 30 }}
+                                {%- else -%}
+                                    {{ article.content | strip_html | truncatewords: 30 }}
+                                {%- endif -%}
+                            </p>
+                        {%- endif -%}
+                        <div class="article-bottom">
+                            <a class="article-more" href="{{ article.url }}">More {% include 'icon-arrow-right' %}</a>
+                            <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
+                        </div>
+                    </div>
+              {%- endif -%}              
+            </li>
+          {%- endfor -%}
+        </ul>
+      </slider-component>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Title"
+    },
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "t:sections.featured-blog.settings.blog.label"
+    }
+  ]
+}
+{% endschema %}
