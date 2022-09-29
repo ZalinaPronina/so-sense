@@ -18,9 +18,6 @@
   border-radius: 100px;
 }
 
-.pagination__item--current {
-
-}
 
 .pagination__list a {
   height: 6.4rem;
@@ -91,6 +88,14 @@ a.pagination__item:hover::after {
 .pagination__item--next .icon {
   margin-left: -0.2rem;
   transform: rotate(90deg);
+}
+
+.pagination__item--next {
+  margin-right: 2.4rem;
+}
+
+.pagination__item--prev {
+  margin-left: 2.4rem;
 }
 
 .pagination__item--next:hover .icon {
