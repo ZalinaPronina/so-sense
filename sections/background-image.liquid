@@ -1,5 +1,22 @@
-<div class="image-banner" {% if section.settings.background != blank %}
-style="background-image: url('{{section.settings.background | img_url: 'master' }}')"{% endif %}></div>
+{% if section.settings.background != blank %}
+    <style>
+        @media only screen and (min-width: 990px){
+            .image-banner{
+                background-image: url('{{section.settings.background | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
+{% if section.settings.background_mobile != blank %}
+    <style>
+        @media only screen and (max-width: 989px){
+            .image-banner{
+                    background-image: url('{{section.settings.background_mobile | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
+<div class="image-banner"></div>
 {% schema %}
 {
   "name": "Image Banner",
@@ -8,6 +25,11 @@ style="background-image: url('{{section.settings.background | img_url: 'master' 
             "type": "image_picker",
             "id": "background",
             "label": "Background"
+        },
+        {
+            "type": "image_picker",
+            "id": "background_mobile",
+            "label": "Background Mobile"
         }
     ],
     "presets": [

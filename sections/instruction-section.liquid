@@ -1,5 +1,4 @@
-<div class="instruction-section {% if section.settings.background != blank %}background-margin background-image{% endif %}" {% if section.settings.background != blank %}
-style="background-image: url('{{section.settings.background | img_url: 'master' }}')"{% endif %}>
+<div class="instruction-section">
     <div class="page-width-desktop instruction-section__blocks">
         <div class="instruction-section__content">
             {% if section.settings.btn_text_top != blank %}
@@ -40,14 +39,10 @@ style="background-image: url('{{section.settings.background | img_url: 'master' 
             "label": "Btn Text Top"
         },
         {
-            "type": "image_picker",
-            "id": "background",
-            "label": "Background"
-        },
-        {
             "type": "richtext",
             "id": "title",
-            "label": "Title"
+            "label": "Title",
+            "info": "Choose Bold to change the color"
         },
         {
             "type": "richtext",
@@ -62,7 +57,8 @@ style="background-image: url('{{section.settings.background | img_url: 'master' 
         {
             "type": "richtext",
             "id": "text_second",
-            "label": "Text Second Section"
+            "label": "Text Second Section",
+            "info": "Select link and the color change"
         },
         {
             "type": "url",

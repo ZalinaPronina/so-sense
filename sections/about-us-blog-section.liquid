@@ -7,7 +7,7 @@
           <a href="{{ section.settings.blog.url }}"
             class="btn-secondary"
           >
-            {{ 'sections.featured_blog.view_all' | t }} <span class="arrow desktop-screen"></span>
+            {{ 'sections.featured_blog.view_all' | t }} <span class="desktop-screen">{% include 'icon-arrow-right' %}</span>
           </a>
         {%- endif -%}
       </div>
@@ -62,7 +62,8 @@
     {
       "type": "richtext",
       "id": "heading",
-      "label": "Title"
+      "label": "Title",
+      "info": "Choose Bold to change the color"
     },
     {
       "type": "blog",

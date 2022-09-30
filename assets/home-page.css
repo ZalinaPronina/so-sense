@@ -138,6 +138,7 @@
 .text-with-image.home-slider-steps{
     background: #fff;
     padding-bottom: 0;
+    padding-top: 21.7rem;
 }
 .home-slider-steps .text-with-image__wrapper .swiper-slide__content{
     display: flex;
@@ -147,13 +148,13 @@
 }
 .home-slider-steps .text-with-image__wrapper img{
     max-width: 51rem;
-    height: 56rem;
+    height: 56.4rem;
     object-fit: cover;
 }
 .home-slider-steps .swiper-pagination{
     position: relative;
-    display: flex;
-    gap: 8rem;
+    display: flex; 
+    gap: 7.3rem;
     bottom: 0;
     margin-left: 66rem;
 }
@@ -169,10 +170,10 @@
     background: rgba(40, 60, 146, 0.33);
     position: absolute;
     top: 42%;
-    right: -6rem;
+    right: -5.5rem;
 }
 .home-slider-steps .swiper-pagination-bullet:not(:last-child) .numbers:after{
-    right: -8rem;
+    right: -7.5rem;
 }
 /* .home-slider-steps .swiper-pagination-bullet-active:before{
     background: #283C92;
@@ -269,7 +270,7 @@
 }
 /* benefits */
 .our-benefits{
-    padding: 15rem 0 16rem;
+    padding: 15rem 0;
 }
 .our-benefits .h2 {
     margin: 0 0 2.4rem;
@@ -554,6 +555,7 @@
     .technology-container{
         padding: 8rem 0;
         flex-direction: column;
+        gap: 3.2rem;
     }
     .technology-container .image-wrapper img{
         max-width: 20rem;
@@ -567,7 +569,7 @@
     }
     .technology-container .block-wrapper{
         grid-template-columns: 1fr;
-        column-gap: 2rem;
+        row-gap: 2rem;
     }
 }
 /* Column Section */
@@ -577,6 +579,7 @@
 }
 .section-column-count .h2{
     margin: 2.4rem 0 4rem;
+    max-width: 82rem;
 }
 .section-column-count .section-column-count__blocks{
     display: flex;
@@ -595,8 +598,8 @@
     align-items: center;
     margin-bottom: 1.6rem;
 }
-.section-column-count .block-content__header p{
-    background: #F0FBFF;
+.section-column-count .block-content__header .number{
+    background: hsl(196, 100%, 97%);
     border-radius: 50%;
     font-weight: 600;
     font-size: 2.4rem;
@@ -616,6 +619,9 @@
     color: #283C92;
     margin: 0;
 }
+.section-column-count .block-content__header .heading p{
+    margin: 0;
+}
 .section-column-count .block-text{
     font-weight: 400;
     font-size: 1.8rem;
@@ -626,6 +632,9 @@
 @media only screen and (max-width: 989px) {
     .section-column-count{
         padding: 8rem 0;
+    }
+    .section-column-count .section-column-count__blocks{
+        gap: 2rem;
     }
     .section-column-count .block-content{
         width: 100%;
@@ -653,7 +662,8 @@
     padding: 15rem 0;
 }
 .testimonials__container .h2{
-    margin: 0 0 4rem;
+    margin: 0 auto 4rem;
+    text-align: center;
 }
 .testimonials__container .swiper-slide__content{
     display: flex;
@@ -703,9 +713,10 @@
 .testimonials__container .swiper-testimonials__date p{
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 150%;
     margin: 0;
+    color: #525459;
 }
 .testimonials__container .swiper-testimonials__date img{
     width: 8.2rem;
@@ -774,6 +785,7 @@
     }
     .testimonials__container .swiper-testimonials__content .text{
         font-size: 1.6rem;
+        margin: 0 0 3.2rem;
     }
     .testimonials__container .swiper-testimonials__date img{
         display: none;
@@ -830,6 +842,19 @@
     align-items: center;
     margin-top: 2.4rem;
 }
+.blog .blog_author-image{
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+.blog .blog_author-image img{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+}
+.blog .article-bottom .blog_author{
+    color: #000000;
+}
 .blog .article-bottom a{
     font-weight: 600;
     font-size: 1.8rem;
@@ -840,8 +865,11 @@
     color: #283C92;
     text-decoration: none;
 }
-.blog .article-bottom a .arrow{
-    transform: rotate(135deg);
+.blog .btn-secondary span{
+    display: flex;
+}
+.blog .btn-secondary path{
+    stroke: #fff;
 }
 .blog .blog__badge{
     z-index: 1;
@@ -946,6 +974,12 @@
 }
 .blog-2-column .card__inner{
     width: 37%;
+}
+.blog-2-column .btn-secondary span{
+    display: flex;
+}
+.blog-2-column .btn-secondary path{
+    stroke: #fff;
 }
 @media only screen and (max-width: 989px) {
     .blog-2-column .blog__post{

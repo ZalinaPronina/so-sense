@@ -70,7 +70,12 @@
             {%- endif -%}
             <div class="article-bottom">
               {%- if show_author -%}
-                <span class="blog_author">{{ article.author }}</span>
+                <div class="blog_author-image">
+                  {% if article.user.image != blank %}
+                    <img src="{{ article.user.image | img_url: 'master' }}" alt="{{ article.author }}">
+                  {% endif %}
+                  <span class="blog_author">{{ article.author }}</span>
+                </div>
               {%- endif -%}
               <a href="{{ article.url }}">More <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1812_7851)">
