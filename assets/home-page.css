@@ -491,19 +491,6 @@
         max-width: 23.3rem;
     }
 }
-/* Image Banner */
-.image-banner{
-    height: 90vh;
-    display: block !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-height: 108rem;
-}
-@media only screen and (max-width: 989px) {
-    .image-banner{
-        height: 33.7rem;
-    }
-}
 /* Technology */
 .technology-container{
     padding: 15rem 0;
