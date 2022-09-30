@@ -1,4 +1,4 @@
-.body-login {
+.body-login, .body-register {
     max-width: 1920px;
     width: 100%;
     margin-right: auto;
@@ -13,7 +13,12 @@
     padding-right: 32rem;
     padding-left: 32rem;
 }
-.email-form {
+.register p {
+    margin: 1.5rem 0;
+}
+.email-form,
+.register-form,
+.custom-recover_password{
     margin-top: 12rem;
     background-color: #f5f6f8;
     padding: 3rem;
@@ -49,6 +54,7 @@ strong {
     line-height: 140%;
     max-width: 50.5rem;
     color: #283C92;
+    margin: 0;
 }
 .page-width-desktop {
     max-width: 66.7%;
@@ -63,22 +69,22 @@ strong {
     max-width: 54rem;
     width: 100%;
 }
-label.label-for-input {
+.label-for-input {
     position: relative !important;
     margin-bottom: 2rem !important;
     text-align: start !important;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    color: #525459;
+    font-size: 1.6rem !important;
+    line-height: 150% !important;
+    color: #525459 !important;
 }
 button.button-login {
     margin-top: 2rem;
     cursor: pointer;
     border: none;
-    width: 15.1rem;
+    width: 16.5rem;
     height: 6.4rem;
     background-color: #283C92;
     border-radius: 100px;
@@ -120,11 +126,62 @@ button.button-login:after{
 }
 span.icon_email_lock {
     position: absolute;
-    top: 3.7rem;
+    top: 6.4rem;
     left: 2rem;
 }
+.icon_email_lock_recover {
+    position: absolute;
+    top: 2.4rem;
+    left: 2rem;
+}
+
 span.icon_email_eye {
     position: absolute;
-    top: 3.7rem;
+    top: 6.4rem;
     right: 2rem;
+}
+span.icon-close-password {
+    position: absolute;
+    top: 6.4rem;
+    right: 2rem;
+    display: none;
+}
+.continue-with_google {
+    background-color: #fff;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 140%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+    width: 29.3rem;
+    height: 6.4rem;
+    border: 2px solid #DEDFE4;
+    border-radius: 100px;
+    justify-content: center;
+}
+.icon-lock-red {
+    display: none;
+    position: absolute;
+    top: 6.4rem;
+    left: 2rem;
+}
+p.text-description-left {
+    margin: 0;
+}
+.error-message {
+    padding-top: 0.8rem;
+    padding-left: 1.5rem;
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: self-start;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 160%;
+    color: #525459;
 }

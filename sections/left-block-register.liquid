@@ -1,0 +1,51 @@
+<div class="body-login_left-side">
+    <div class="body-contact_left-side-text">
+        <div class="body-contact_left-side-text_title">
+            {% if section.settings.title != blank %}
+                <h2 class="h1">{{section.settings.title}}</h2>
+            {% endif %}
+        </div>
+        <p class="text-description-left">{{ section.settings.text_description_before}}&#128578;</p>
+        <p class="text-description-left">{{ section.settings.text_description_after}}</p>
+    </div>
+</div>
+<div class="body-contact_left-side-placing-email">
+    <p class="body-contact_left-side-placing-email__placing">{{ section.settings.placing }}</p>
+
+</div>
+<button class="continue-with_google">{% render'icon-google' %} Continue with Google</button>
+</div>
+{% schema %}
+     {
+    "name": "loginForm",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+    {
+        "type": "richtext",
+        "id": "title",
+        "label": "Title"
+    },
+    {
+        "type":"text",
+        "id":"text_description_before",
+        "label":"text description before smile"
+    },
+    {
+        "type":"text",
+        "id":"text_description_after",
+        "label":"text description after smile"
+    },
+    {
+        "type":"text",
+        "id": "placing",
+        "label":"placing"
+    }
+    ],
+    "presets": [
+    {
+        "name":"loginForm"
+    }
+    ]
+}
+{% endschema %}

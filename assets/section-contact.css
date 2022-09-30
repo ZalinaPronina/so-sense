@@ -62,7 +62,7 @@ p.text-description-left {
     background-color: #f5f6f8;
 }
 .contact-form {
-    padding: 14.4rem 0 14.4rem;
+    padding: 14.4rem 0 22rem 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -125,12 +125,13 @@ span.icon-E-mail {
     appearance: none;
 }
 .select_in-form__contact {
+    font-weight: 600;
     border: none;
     border-radius: 16px;
     height: 6.4rem;
     max-width: 51.6rem;
     width: 100%;
-    margin: auto;
+    margin-left: 1.3rem;
     padding: 1rem 1.25rem 1rem 1.5rem;
     font-size: 1.8rem;
 }
