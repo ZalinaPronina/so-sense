@@ -8,10 +8,6 @@
 <noscript>{{ 'component-article-card.css' | asset_url | stylesheet_tag }}</noscript>
 
 {{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}
-
-{%- liquid
-  assign posts_displayed = section.settings.blog.articles_count
--%}
 <div class="blog-2-column color-{{ section.settings.color_scheme }} gradient">
   <div class="page-width-desktop">
     {%- unless section.settings.heading == blank -%}
@@ -26,7 +22,7 @@
         {%- endif -%}
       </div>
     {%- endunless -%}
-    {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
+    {%- if section.settings.blog != blank -%}
       <slider-component class="slider-mobile-gutter">
         <ul
           class="blog__posts"

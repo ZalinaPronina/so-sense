@@ -7,9 +7,6 @@
 }
 .instruction-section.background-margin{
     padding-bottom: 24rem;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-bottom: -7.5rem;
     position: relative;
 }
@@ -212,6 +209,7 @@
 .text-with-image__wrapper img{
     max-width: 62rem;
     border-radius: 32px;
+    width: 100%;
 }
 .text-with-image__wrapper .h5{
     margin: 0;
