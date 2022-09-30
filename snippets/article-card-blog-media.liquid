@@ -1,6 +1,5 @@
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }} 
 
-
 {% comment %}
     Renders an article card for a given blog with settings to either show the image or not.
 
@@ -31,7 +30,7 @@
     <div class="card article-card"
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
-      <div class="card__inner {% if settings.card_style == 'standard' %} color-{{ settings.card_color_scheme }} gradient{% endif %}{% if article.image and show_image or settings.card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+      <div style="display:none;" class="card__inner {% if settings.card_style == 'standard' %} color-{{ settings.card_color_scheme }} gradient{% endif %}{% if article.image and show_image or settings.card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
         {%- if show_image == true and article.image -%}
           <div class="article-card__image-wrapper card__media">
             <div class="article-card__image media media--hover-effect" {% if section.settings.media_height == 'adapt' %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}>
@@ -57,32 +56,27 @@
             <div class="blog__badge">
               <span class="btn-primary">{{ section.settings.blog }}</span>
             </div>
+            
+            
+    
+
           </div>
         {%- endif -%}
       </div>
       <div class="card__content">
         <div class="card__information">
+          <div class="article-tags" >{{ blog.title }}</div>
           <h3 class="card__heading simple-article-info__title">
             <a href="{{ article.url }}" class="full-unstyled-link">
-              {{ article.title  }}
+              {{ article.title }}
             </a>
           </h3>
          
           <div class="caption-with-letter-spacing">
-            <div class="card__inlfo">
-              {% for tag in article.tags %}
-                {% if tag contains 'blog-' %}
-                <div class="article-tags" >{{ tag | remove: 'blog-' | capitalize}}</div>
-                {% endif %}
-              {% endfor %}
-       
-              {%- if show_date -%}
-              <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
-            {%- endif -%}
-            </div>
 
 
             <div class="card-blog__content">{{ article.content | truncate: 230  }}</div>
+
             <div class="article-bottom">
               {%- if show_author -%}
                 <span class="blog_author">{{ article.author }}</span>
@@ -101,10 +95,16 @@
                   </defs>
                   </svg>
                 </a>
+                
+                  <div class="card__inlfo">
+                    {%- if show_date -%}
+                    <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
+                  {%- endif -%}
+                  </div>
               </div>
 
-            </div>
 
+            </div>
           </div>
         </div>
       </div>

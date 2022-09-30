@@ -127,3 +127,13 @@ a.pagination__item:hover::after {
     bottom: -10rem;
   }
 }
+
+@media (max-width: 425px) {
+  .pagination__item--next {
+    margin-right: 0;
+  }
+  
+  .pagination__item--prev {
+    margin-left: 0;
+  }
+}
