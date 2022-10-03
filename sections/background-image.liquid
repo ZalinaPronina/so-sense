@@ -4,6 +4,9 @@
             .image-banner{
                 background-image: url('{{section.settings.background | img_url: 'master' }}')
             }
+            .white_wave{
+                background-image: url('{{section.settings.background_white | img_url: 'master' }}')
+            }
         }
     </style>
 {% endif %}
@@ -13,10 +16,16 @@
             .image-banner{
                     background-image: url('{{section.settings.background_mobile | img_url: 'master' }}')
             }
+            .white_wave{
+                background-image: url('{{section.settings.background_white_mobile | img_url: 'master' }}')
+            }
         }
     </style>
 {% endif %}
-<div class="image-banner"></div>
+<div class="background-image-container">
+    <div class="white_wave"></div>
+    <div class="image-banner"></div>
+</div>
 {% schema %}
 {
   "name": "Image Banner",
@@ -30,6 +39,16 @@
             "type": "image_picker",
             "id": "background_mobile",
             "label": "Background Mobile"
+        },
+        {
+            "type": "image_picker",
+            "id": "background_white",
+            "label": "White wave"
+        },
+        {
+            "type": "image_picker",
+            "id": "background_white_mobile",
+            "label": "White wave Mobile"
         }
     ],
     "presets": [

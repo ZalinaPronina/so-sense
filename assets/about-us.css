@@ -38,7 +38,7 @@
 .about-us-4-blocks .h5{
     color: #28ACE2;
     margin: 0 0 1.6rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 .about-us-4-blocks .text{
     font-weight: 400;
@@ -116,8 +116,8 @@
     margin-bottom: 4rem;
 }
 .about-us-team .about-us-team__content img{
-    max-width: 9.4rem;
-    max-height: 9.4rem;
+    max-width: 9.6rem;
+    max-height: 9.6rem;
     margin-bottom: 4rem;
 }
 .about-us-team .about-us-team__content .h6{
@@ -197,7 +197,7 @@
 .about-us-banner__container{
     display: flex;
     justify-content: space-between;
-    padding: 15rem 0;
+    padding: 14.4rem 0 26.5rem;
 }
 .about-us-banner .about-us-banner__position{
     max-width: 62rem;
@@ -234,6 +234,7 @@
 .about-us-banner .btn-secondary{
     margin-top: 4rem;
 }
+
 @media only screen and (max-width: 989px) {
     .about-us-banner .main-banner__image .main-photo, .about-us-banner .content-absolute-text{
         max-width: 100%;
@@ -246,7 +247,7 @@
         margin-top: 3.2rem;
     }
     .about-us-banner__container{
-        padding: 8rem 0;
+        padding: 3.2rem 0 8rem;
         flex-direction: column;
     }
     .about-us-banner__text{
@@ -263,13 +264,19 @@
         font-size: 1.6rem;
         line-height: 160%;
         padding: 2rem;
+        font-weight: 400;
     }
     .about-us-banner .content-absolute-text{
         position: relative;
         margin-top: -2rem;
     }
 }
-
+@media only screen and (max-width: 600px) {
+    .about-us-banner .main-banner__image .main-photo, .about-us-banner .content-absolute-text img{
+        height: 22rem;
+        object-fit: cover;
+    }
+}
 /* Blog */
 
 .about-us-blog{
@@ -285,6 +292,12 @@
 }
 .about-us-blog .btn-primary, .about-us-blog .btn-secondary{
     margin: 0;
+}
+.about-us-blog .btn-primary, .about-us-blog .btn-secondary span{
+    display: flex;
+}
+.about-us-blog .btn-primary, .about-us-blog .btn-secondary path{
+    stroke: #FFFFFF;
 }
 .about-us-blog .blog__post{
     width: calc(33% - 2.3rem);
@@ -305,6 +318,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 2.4rem 0 0 ;
 }
 .about-us-blog .article-bottom a{
     font-weight: 600;
@@ -329,7 +343,7 @@
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 180%;
-    margin: 0 0 2.4rem;
+    margin: 0;
 }
 .about-us-blog .h2{
     margin: 0;
@@ -338,6 +352,9 @@
     margin-bottom: 3rem;
 }
 @media only screen and (max-width: 989px) {
+    .about-us-blog .blog__posts{
+        gap: 3.2rem;
+    }
     .about-us-blog .title-wrapper-with-link{
         margin-bottom: 2rem;
     }

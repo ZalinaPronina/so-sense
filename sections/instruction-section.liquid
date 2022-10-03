@@ -22,6 +22,11 @@
                 {{section.settings.text_second}}
             </div>
         {% endif %}
+        {% if template.name == 'product' or page.handle == 'our-product'%}
+            {% if section.settings.btn_text != blank %}
+                <a class="btn-secondary mobile-screen" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}{% include 'icon-cart-btn' %}</a>
+            {% endif %}
+        {% endif %}
     </div>
 </div>
 {% schema %}
