@@ -1,22 +1,23 @@
 {{ 'section-contact.css' | asset_url | stylesheet_tag }}
-<div class="contact-form" {% if section.settings.background != blank %}
+<body class="gradient page">
+<div class="cont-form " {% if section.settings.background != blank %}
     style="background-image: url('{{section.settings.background | img_url: 'master' }}')"{% endif %}>
-<div class="body-contact page-width-desktop">
-    <div class="body-contact_left-side">
-        <div class="body-contact_left-side-text">
-            <div class="body-contact_left-side-text_title">
+<div class="body-cont page-width-desktop">
+    <div class="body-cont_left-side">
+        <div class="body-cont_left-side-text">
+            <div class="body-cont_left-side-text_title">
             {% if section.settings.title != blank %}
                 <h2>{{section.settings.title}}</h2>
             {% endif %}
             </div>
             <p class="text-description-left">{{ section.settings.text_description  }}</p>
         </div>
-        <div class="body-contact_left-side-placing-email">
-            <p class="body-contact_left-side-placing-email__placing"><span>{% render 'icon-placing' %}</span>{{ section.settings.placing }}</p>
-            <p class="body-contact_left-side-placing-email__email">{% render 'icon-E-mail' %}{{section.settings.email}} </p>
+        <div class="body-cont_left-side-placing-email">
+            <p class="body-cont_left-side-placing-email__placing"><span>{% render 'icon-placing' %}</span>{{ section.settings.placing }}</p>
+            <p class="body-cont_left-side-placing-email__email">{% render 'icon-E-mail' %}{{section.settings.email}} </p>
         </div>
     </div>
-    <div class="contact">
+    <div class="cont">
         {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
             {%- if form.posted_successfully? -%}
                 <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</h2>
@@ -32,10 +33,10 @@
                     </li>
                 </ul>
             {%- endif -%}
-            <div class="contact__fields">
+            <div class="cont__fields">
                 <div class="main-fields">
                     <div class="field">
-                        <label for="ContactForm-name">{{ 'templates.contact.form.name' | t }}<span aria-hidden="true">*</span></label>
+                        <label for="contForm-name">{{ 'templates.contact.form.name' | t }}<span aria-hidden="true">*</span></label>
                         <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
                         <span class="icon-E-mail">{% render 'icon-person' %}</span>
                     </div>
@@ -59,7 +60,7 @@
                         >
                         <span class="icon-E-mail">{% render 'icon-email' %}</span>
                         {%- if form.errors contains 'email' -%}
-                            <small class="contact__field-error" id="ContactForm-email-error">
+                            <small class="cont__field-error" id="contForm-email-error">
                                 <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
                                 <span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
                             </small>
@@ -72,7 +73,7 @@
                     </div>
                     <div class="select_option">
                         <label for="select_in-form" class="select_subject">Subject</label>
-                        <select name="select" id="select_in-form" class="select_in-form__contact">
+                        <select name="select" id="select_in-form" class="select_in-form__cont">
                             <option value="">What you are reaching out for</option>
                             {% for block in section.blocks %}
                             <option value="{{block.settings.option_select}}">{{block.settings.option_select}}</option>
@@ -96,14 +97,15 @@
                     </div>
                 </div>
             </div>
-            <div class="contact__button">
-                <button type="submit" class="button-contact">
+            <div class="cont__button">
+                <button type="submit" class="button-cont btn-secondary">
                     Send   <span>{% render 'icon-send' %}</span>
                 </button>
             </div>
         {%- endform -%}
     </div>
 </div>
+</body>
 
 {% schema %}
 {

@@ -1,21 +1,16 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 {{ 'custom_login.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'Show_password.js' | asset_url }}"></script>
-<div id="login" class="body-login page-width-desktop" >
-  <div id="login" class="left_block">
-      {% section 'left_block-login' %}
-  <div class="customer login">
-    <h1 id="recover" tabindex="-1">
-      {{ 'customer.recover_password.title' | t }}
-    </h1>
+<div class="body-login page-width-desktop" >
+    <div id="recover" tabindex="-1" class="left-block-password-recovery">
+      {% section 'left-block-password-recovery' %}
+    </div>
     <div>
       {%- form 'recover_customer_password' -%}
         {% assign recover_success = form.posted_successfully? %}
       <div class="custom-recover_password">
-        <label for="RecoverEmail" class="label-for-input">
-          {{ 'customer.login_page.email' | t }}
-        </label>
         <div class="field">
+          <label for="RecoverEmail" class="label-for-input_recover">{{ 'customer.login_page.email' | t }}</label>
           <input type="email"
                  class="login-form"
                  value=""
@@ -29,9 +24,7 @@
                     aria-describedby="RecoverEmail-email-error"
                     autofocus
                   {% endif %}
-                 placeholder="{{ 'customer.login_page.email' | t }}"
-          ><span class="icon_email_lock_recover">{% render 'icon-email' %}</span>
-
+          ><span class="icon_email_lock">{% render 'icon-email' %}</span>
         </div>
         {%- if form.errors -%}
           <small id="RecoverEmail-email-error" class="form__message">
@@ -44,23 +37,24 @@
             {{ form.errors.messages['form'] }}
           </small>
         {%- endif -%}
-        <p>
+        <p class="text-description-under-input">
           {{ 'customer.recover_password.subtext' | t }}
         </p>
       </div>
-        <button class="btn-secondary">
-          {{ 'customer.login_page.submit' | t }}
+        <div class="two_btn_password_recovery">
+        <button class="btn-secondary button-login">
+          {{ 'customer.login_page.submit' | t }}<span>{% render 'icon-send' %}</span>
         </button>
-
-        <a href="#login" class="btn-secondary">
+        <a href="#login" class="button_cancel button-login btn-secondary">
           {{ 'customer.login_page.cancel' | t }}
         </a>
+        </div>
       {%- endform -%}
     </div>
 
-    <h1 id="login" tabindex="-1">
-      {{ 'customer.login_page.title' | t }}
-    </h1>
+  <div id="login" class="left_block">
+    {% section 'left_block-login' %}
+    <div class="customer login">
       <div>
         {%- if recover_success == true -%}
           <h3 class="form__message" tabindex="-1" autofocus>
@@ -75,7 +69,8 @@
         {%- form 'customer_login', novalidate: 'novalidate' -%}
           {%- if form.errors -%}
             <style>
-              input#CustomerPassword {
+              #CustomerPassword,
+              #CustomerEmail{
                 border: 1px solid #F8989E;
                 color: #F8989E;
               }
@@ -106,7 +101,12 @@
                       {% endif %}
                       placeholder="{{ 'customer.login_page.email' | t }}"
               ><span class="icon_email_lock">{% render 'icon-email' %}</span>
-
+              {%- if form.errors -%}
+                <div class="error-message">
+                  <span>{% render 'icon-info-square' %}</span>
+                  <span>{{ 'accessibility.error' | t }} </span>
+                </div>
+              {% endif %}
             </div>
 
             {%- if form.password_needed -%}
@@ -157,7 +157,7 @@
           <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
 
           {%- form 'guest_login' -%}
-            <button btn-secondary>
+            <button btn-secondary button-login>
               {{ 'customer.login_page.guest_continue' | t }}
             </button>
           {%- endform -%}
