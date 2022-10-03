@@ -502,4 +502,7 @@
         font-size: 1.6rem;
         line-height: 160%;
     }
+    .our-product .instruction-section .instruction-section__content .btn-secondary{
+        display: none;
+    }
 }

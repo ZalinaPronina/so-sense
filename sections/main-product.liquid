@@ -73,7 +73,7 @@
               </p>
             {%- when 'title' -%}
               <div class="product__title desktop-screen" {{ block.shopify_attributes }}>
-                <h1 class="h1">{{ product.title | escape }}</h1>
+                <h1 class="h1">{{ product.title | strip_html }}</h1>
                 <a href="{{ product.url }}" class="product__title desktop-screen">
                   <h2 class="h1">
                     {{ product.title | escape }}
