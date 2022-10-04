@@ -20,8 +20,14 @@
 <section class="main-banner background-image">
     <div class="page-width-desktop main-banner__container">
         <div class="main-banner__text">
+            {% if section.settings.btn_text != blank %}
+                <a class="btn-primary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
+            {% endif %}
             {% if section.settings.title != blank %}
                 <h1 class="h1">{{section.settings.title}}</h1>
+            {% endif %}
+            {% if section.settings.subtitle != blank %}
+                <h5 class="h5">{{section.settings.subtitle}}</h1>
             {% endif %}
             {% if section.settings.text != blank %}
                 <p class="description">{{section.settings.text}}</p>
@@ -39,7 +45,9 @@
             {% if section.settings.main_photo != blank %}
                 <div class="main-banner__image">
                     <img src="{{section.settings.main_photo | img_url: 'master' }}" alt="">
-                    <img class="border-image" src="{{section.settings.border_photo | img_url: 'master' }}" alt="">
+                    {% if section.settings.border_photo != blank %}
+                        <img class="border-image" src="{{section.settings.border_photo | img_url: 'master' }}" alt="">
+                    {% endif %}
                 </div>
             {% endif %}
             {% if section.settings.fix_photo != blank %}
@@ -76,10 +84,25 @@
             "label": "Background Mobile"
         },
         {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Btn Text"
+        },
+        {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Btn Url"
+        },
+        {
             "type": "richtext",
             "id": "title",
             "label": "Title",
             "info": "Choose Bold to change the color"
+        },
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle"
         },
         {
             "type": "text",
