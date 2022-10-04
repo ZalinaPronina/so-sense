@@ -182,11 +182,11 @@
   margin-bottom: 4rem;
 }
 
-.media-sections-left .article:nth-child(3),
+/* .media-sections-left .article:nth-child(3),
 .media-sections-left .article:last-child {
   margin-bottom: 0;
 }
-
+ */
 /* .media-sections-left .article:nth-child(odd) {
   margin-right: 4rem ;
 }
@@ -195,7 +195,7 @@
 .media-sections-left .article-tags {
   display: inline-block;
   padding: 0.95rem 2rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
 }
 
 
@@ -225,9 +225,6 @@
     padding: 2rem;
   }
 
-  .media-sections-left .article-tags {
-    margin-bottom: 1.6rem;
-  }
 }
 
 

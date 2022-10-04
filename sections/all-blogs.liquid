@@ -1,6 +1,5 @@
 {{ 'all-blogs.css' | asset_url | stylesheet_tag }}
- {% assign blog_handles = "news,business" | split: "," %}
-
+<!--  {% assign blog_handles = "news,business" | split: "," %} -->
 
  <div class="all-blogs">
   <div class="all-blogs-title">
@@ -9,10 +8,12 @@
   </div>
   <div class="allblogs-sections page-width-desktop">
     <div class="allblogs-sections-left">
-      {% for handle in blog_handles %}
-        {% paginate blogs[handle].articles by 3 %}
-          {% for article in blogs[handle].articles %}
-            {%- render 'article-allblogs', article:article, blog: blogs[handle], forloop: forloop -%}
+      {% for link in linklists.blog-categories.links %}
+      {% assign blog = link.object %}
+        {% paginate blog.articles by 3 %}
+        <script>console.log({{ paginate.pages | json  }})</script>
+          {% for article in blog.articles %}
+            {%- render 'article-allblogs', article:article, blog: blog -%}
           {% endfor %}
 
       <div class="article-pagination">
@@ -121,7 +122,7 @@ if (!mq.matches) {
 
   allArticle.forEach((item,index) => { 
     if(index == 2) {
-      item.style.marginTop = "-100px";
+      item.style.marginTop = "-80px";
     }
 
     if(index == 4) {
@@ -141,19 +142,6 @@ else {
   })
 }
 
-
-
-/*   allArticle.forEach((item,index) => {
-    if(index == 2) {
-      item.style.marginTop = "-100px";
-    }
-
-    if(index == 4) {
-      item.style.marginTop = "-100px";
-    }
-  }) */
-
-  console.log(allArticle)
 
 
 </script>
