@@ -28,6 +28,12 @@
     justify-content: center;
     width: 54rem;
 }
+.register_btn {
+    width: fit-content!important;
+}
+.left-block-password-recovery {
+    margin-top: -7rem;
+}
 .body-contact_left-side-text_title h2 {
     font-family: Poppins;
     width: 24rem;
@@ -56,6 +62,14 @@ strong {
     color: #283C92;
     margin: 0;
 }
+.text-description-under-input {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 180%;
+    color: #000000;
+}
 .page-width-desktop {
     max-width: 66.7%;
     margin: 0 auto;
@@ -78,10 +92,13 @@ strong {
     font-weight: 500;
     font-size: 1.6rem !important;
     line-height: 150% !important;
-    color: #525459 !important;
+    color: #8A8C91 !important;
+
 }
-button.button-login {
-    margin-top: 2rem;
+button.button-login,
+.button-login {
+    text-align: center;
+    margin-top: 2rem!important;
     cursor: pointer;
     border: none;
     width: 16.5rem;
@@ -98,6 +115,22 @@ button.button-login {
     column-gap: 0.7rem;
     align-items: center;
     justify-content: center;
+}
+.button_cancel {
+    color: #FFFFFF!important;
+    text-decoration: none!important;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem!important;
+    line-height: 140%;
+    width: 16.5rem!important;
+    margin: 2rem 0 0 0!important;
+}
+.two_btn_password_recovery {
+    display: flex;
+    width: 54rem;
+    justify-content: space-between;
 }
 .body-contact_left-side-placing-email__placing {
     font-family: 'Poppins';
@@ -121,6 +154,16 @@ button.button-login:after{
 .contact-form {
     display: none;
 }
+label.label-for-input_recover {
+    margin-left: 2rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #8A8C91;
+    margin-bottom: 2rem;
+}
 .field {
     position: relative;
 }
@@ -129,12 +172,9 @@ span.icon_email_lock {
     top: 6.4rem;
     left: 2rem;
 }
-.icon_email_lock_recover {
-    position: absolute;
-    top: 2.4rem;
-    left: 2rem;
+.login-form {
+     border: none;
 }
-
 span.icon_email_eye {
     position: absolute;
     top: 6.4rem;
@@ -184,4 +224,175 @@ p.text-description-left {
     font-size: 1.2rem;
     line-height: 160%;
     color: #525459;
+}
+@media only screen and (max-width: 1500px) {
+    html{
+        font-size: 51%;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    html{
+        font-size: 7.1px;
+    }
+}
+@media only screen and (max-width: 989px) {
+    html{
+        font-size: 1.8vw;
+    }
+}
+@media only screen and (max-width: 700px) {
+    html{
+        font-size: 1.667vw;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .page-width {
+        max-width: 80%;
+    }
+    .page-width-desktop {
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .page-width {
+        max-width: 100%;
+        margin: 0 20px;
+    }
+    .page-width-desktop {
+        max-width: 100%;
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .body-contact_left-side-text_title {
+        text-align: -webkit-center;
+    }
+    .body-login, .body-register {
+        margin-right: auto;
+        margin-left: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding-right: 0;
+        padding-left: 0;
+}
+.button_and_create_account {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.left_block {
+    text-align: center;
+}
+    .btn-secondary {
+        margin-left: 0;
+        margin-right:0;
+    }
+.continue-with_google {
+    margin-right: auto;
+    margin-left: auto;
+}
+.customer:not(.account):not(.order) {
+    margin: 0;
+    max-width: 100%;
+    text-align: center;
+}
+.text-description-left {
+    max-width: 100%;
+}
+.body-login_left-side {
+    width: 100%;
+    margin-top: 17.2rem;
+}
+    .email-form, .register-form, .custom-recover_password {
+        margin-top: 6.5rem;
+        margin-bottom: 5rem;
+    }
+    button.button-login, .button-login {
+        margin-bottom: 3.2rem;
+    }
+    button.register_btn {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media only screen and (max-width: 376px){
+    .body-contact_left-side-text_title {
+        text-align: -webkit-center;
+    }
+
+    .body-contact_left-side-placing-email {
+        width: 53.4rem;
+    }
+    .body-contact_left-side-placing-email__placing {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.6rem;
+        line-height: 180%;
+        color: #000;
+    }
+    span.icon_email_lock,
+    .icon-lock-red {
+        position: absolute;
+        top: 7rem;
+        left: 1.2rem;
+    }
+    span.icon_email_eye {
+        top: 7rem;
+        right: 1.2rem;
+    }
+    span.icon-lock-red {
+        top: 7rem;
+        left: 1.2rem;
+    }
+    strong {
+        font-size: 6rem;
+    }
+    .body-contact_left-side-text_title h2 {
+        font-size: 6rem;
+    }
+    label.label-for-input {
+        font-size: 2.4rem!important;
+    }
+    .login a {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.8rem!important;
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #283C92;
+    }
+    button.button-login, .button-login {
+        width: 24.5rem!important;
+        height: 10.3rem;
+        font-size: 2.8rem;
+        margin-bottom: 3.2rem;
+    }
+    .continue-with_google {
+        margin-top: 5.1rem;
+        width: 49.4rem;
+        font-size: 2.9rem;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        height: 11.2rem;
+    }
+    label.label-for-input_recover {
+        font-size: 2.6rem;
+    }
+    .text-description-under-input {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    .body-contact_left-side-text_title h2 {
+        width: 30rem;
+    }
 }
