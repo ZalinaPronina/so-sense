@@ -22,6 +22,17 @@
         }
     </style>
 {% endif %}
+<div class="background-image-header">
+    {% if section.settings.btn_text != blank %}
+        <a class="btn-primary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
+    {% endif %}
+    {% if section.settings.title != blank %}
+        <h1 class="h1">{{section.settings.title}}</h1>
+    {% endif %}
+    {% if section.settings.text != blank %}
+        <div class="description">{{section.settings.text}}</p>
+    {% endif %}
+</div>
 <div class="background-image-container">
     <div class="white_wave"></div>
     <div class="image-banner"></div>
@@ -30,6 +41,27 @@
 {
   "name": "Image Banner",
     "settings": [
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Btn Text"
+        },
+        {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Btn Url"
+        },
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title",
+            "info": "Choose Bold to change the color"
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+        },
         {
             "type": "image_picker",
             "id": "background",
