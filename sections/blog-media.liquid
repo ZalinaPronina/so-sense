@@ -144,6 +144,16 @@
   })
   });
 
+  const allArticles  = document.querySelectorAll('.blog-articles__article')
+  const mediaSection = document.querySelector('.media-sections-left')
+
+if (allArticles.length <= 2) {
+  mediaSection.style.display = 'grid'
+  mediaSection.style.gridTemplateColumns = 'repeat(2, 40rem)'
+  mediaSection.style.gridColumnGap = '4rem'
+  mediaSection.style.gridRowGap = '8rem'
+}
+
 </script>
 
 {% schema %}
