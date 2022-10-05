@@ -14,7 +14,7 @@
                 <img style="display: none;" class="image-wrapper-mobile" src="{{section.settings.image | img_url: 'master' }}" alt="">
             {% endif %}
             {% if section.settings.text != blank %}
-                <div class="text">{{section.settings.text}}</div>
+                <div class="text{% if page.handle == 'investor-information' %} desktop-screen{% endif %}">{{section.settings.text}}</div>
             {% endif %}
             {% if section.settings.btn_text_product != blank %}
                 <a class="btn-secondary desktop-screen" href="{{section.settings.btn_url_product}}">{{section.settings.btn_text_product}} {% include 'icon-cart-btn' %}</a>
@@ -22,6 +22,9 @@
         </div>
         {% if section.settings.image != blank %}
             <img class="image-wrapper" src="{{section.settings.image | img_url: 'master' }}" alt="">
+        {% endif %}
+        {% if section.settings.text != blank or page.handle == 'investor-information' %}
+            <div class="text mobile-screen">{{section.settings.text}}</div>
         {% endif %}
         {% if section.settings.btn_text_product != blank %}
             <a class="btn-secondary mobile-screen" href="{{section.settings.btn_url_product}}">{{section.settings.btn_text_product}} {% include 'icon-cart-btn' %}</a>

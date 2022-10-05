@@ -22,19 +22,25 @@
         }
     </style>
 {% endif %}
-<div class="background-image-header">
-    {% if section.settings.btn_text != blank %}
-        <a class="btn-primary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
-    {% endif %}
-    {% if section.settings.title != blank %}
-        <h1 class="h1">{{section.settings.title}}</h1>
-    {% endif %}
-    {% if section.settings.text != blank %}
-        <div class="description">{{section.settings.text}}</p>
-    {% endif %}
-</div>
+ {% if section.settings.title != blank or section.settings.text != blank or  section.settings.btn_text != blank%}
+    <div class="page-width-desktop">
+        <div class="background-image-header">
+            {% if section.settings.btn_text != blank %}
+                <a class="btn-primary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
+            {% endif %}
+            {% if section.settings.title != blank %}
+                <h2 class="h2">{{section.settings.title}}</h2>
+            {% endif %}
+            {% if section.settings.text != blank %}
+                <div class="description">{{section.settings.text}}</div>
+            {% endif %}
+        </div>
+    </div>
+{% endif %}
 <div class="background-image-container">
-    <div class="white_wave"></div>
+    {% if section.settings.background_white != blank %}
+        <div class="white_wave"></div>
+    {% endif %}
     <div class="image-banner"></div>
 </div>
 {% schema %}

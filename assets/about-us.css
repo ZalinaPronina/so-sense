@@ -27,6 +27,9 @@
     padding: 4rem;
     display: inline-block;
 }
+.about-us-4-blocks .block-text:nth-child(even){
+    margin-bottom: 0;
+}
 .about-us-4-blocks .h4{
     color: #283C92;
     margin: 0 0 2rem;

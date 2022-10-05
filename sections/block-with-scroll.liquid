@@ -1,0 +1,70 @@
+<section class="block-with-scroll">
+    <div class="block-with-scroll__container">
+        {%- for block in section.blocks -%}
+            <div class="block-text">
+                <div class="heading-flex">
+                    {% if block.settings.image != blank %}
+                        <img src="{{block.settings.image | img_url: 'master' }}" alt="">
+                    {% endif %}
+                    {% if block.settings.title != blank %}
+                        <h5 {% if block.settings.color != blank %} style="color: {{block.settings.color}}" {% endif %} class="h5">{{block.settings.title}}</h5>
+                    {% endif %}
+                 </div>
+                {% if block.settings.subtitle != blank  %}
+                    <h6>{{block.settings.subtitle}}</h6>
+                {% endif %}
+                {% if block.settings.text != blank  %}
+                    <div class="text">{{block.settings.text}}</div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</section>
+<script>
+var myDiv = document.querySelector(".block-with-scroll__container");
+var scrollto = document.querySelector('.block-text').clientWidth / document.querySelectorAll('.block-text').length;
+console.log(scrollto)
+myDiv.scroll({
+        left: scrollto,
+        behavior: 'smooth'
+    });
+</script>
+
+{% schema %}
+{
+  "name": "Block with Scroll",
+    "blocks": [
+        {
+            "type": "block",
+            "name": "Block",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "color",
+                    "id": "color",
+                    "label": "Color Title"
+                },
+                {
+                    "type": "richtext",
+                    "id": "subtitle",
+                    "label": "Subtitle"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "Text"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
