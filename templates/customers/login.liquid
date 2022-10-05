@@ -110,7 +110,7 @@
             </div>
 
             {%- if form.password_needed -%}
-              <div class="field">
+              <div class="field email-form_login">
                 <label for="CustomerPassword" class="label-for-input">
                   {{ 'customer.login_page.password' | t }}
                 </label>
@@ -133,7 +133,7 @@
                   </div>
                 {% endif %}
               </div>
-              <a href="#recover">
+              <a href="#recover" class="recover_href">
                 {{ 'customer.login_page.forgot_password' | t }}
               </a>
             {%- endif -%}
@@ -144,7 +144,7 @@
               {% render 'icon-login' %}
             </button>
 
-            <a href="{{ routes.account_register_url }}">
+            <a href="{{ routes.account_register_url }}" class="register_href">
               {{ 'customer.login_page.create_account' | t }}
             </a>
           </div>
