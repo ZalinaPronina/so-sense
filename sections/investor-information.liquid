@@ -1,0 +1,52 @@
+<div class="investor-block page-width-desktop">
+    <div class="investor-block__content">
+        {% if section.settings.title != blank %}
+            <h4 class="h4">{{section.settings.title}}</h4>
+        {% endif %}
+        {% if section.settings.subtitle != blank %}
+            <h5 class="h5">{{section.settings.subtitle}}</h5>
+        {% endif %}
+        <div class="investor-block__buttons">
+            {%- for block in section.blocks -%}
+                    {% if block.settings.btn_text != blank %}
+                        <a class="btn-secondary" href="{{ block.settings.btn_url}}">{{ block.settings.btn_text}}{% render 'icon-login' %}</a>
+                    {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+  "name": "Investor Information",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "block",
+            "name": "Button",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "btn_text",
+                    "label": "Btn Text"
+                },
+                {
+                    "type": "url",
+                    "id": "btn_url",
+                    "label": "Btn Url"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

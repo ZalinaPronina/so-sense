@@ -1,0 +1,134 @@
+{% if section.settings.background != blank %}
+    <style>
+        @media only screen and (min-width: 990px){
+            .discount-banner{
+                background-image: url('{{section.settings.background | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
+{% if section.settings.background_mobile != blank %}
+    <style>
+        @media only screen and (max-width: 989px){
+            .discount-banner{
+                    background-image: url('{{section.settings.background_mobile | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
+{% if section.settings.wave != blank %}
+    <style>
+        .discount-banner_wave{
+                background-image: url('{{section.settings.wave | img_url: 'master' }}')
+        }
+    </style>
+{% endif %}
+<section class="discount-banner background-image">
+    <div class="page-width-desktop discount-banner__container">
+        <div class="discount-banner_wave">
+            <div class="discount-banner__text">
+                {% if section.settings.title != blank %}
+                    <h2 class="h2">{{section.settings.title}}</h1>
+                {% endif %}
+                {% if section.settings.subtitle != blank %}
+                    <h5 class="h5">{{section.settings.subtitle}}</h1>
+                {% endif %}
+                {% if section.settings.btn_text != blank %}
+                    <a class="btn-secondary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
+                {% endif %}
+            </div>
+            <div class="discount-banner__price">
+                {% if section.settings.price != blank %}
+                    <h6 class="price"><span>$</span>{{section.settings.price}}</h6>
+                {% endif %}
+                {% if section.settings.day != blank %}
+                    <p class="day">{{section.settings.day}}</p>
+                {% endif %}
+                {% if section.settings.price != blank %}
+                    <span class="usual-price">{{section.settings.usual_price}}</span>
+                {% endif %}
+            </div>
+            {% if section.settings.main_photo != blank or section.settings.discount_total != blank%}
+                <div class="discount-banner__image">
+                    <h6>{{section.settings.discount_total}}</h6>
+                    {% if section.settings.main_photo != blank%}
+                        <img src="{{section.settings.main_photo | img_url: 'master' }}" alt="">
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+  "name": "Discount Image Right",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "background",
+            "label": "Background Desktop"
+        },
+        {
+            "type": "image_picker",
+            "id": "background_mobile",
+            "label": "Background Mobile"
+        },
+        {
+            "type": "image_picker",
+            "id": "wave",
+            "label": "Wave Image"
+        },
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title",
+            "info": "Choose Bold to change the color"
+        },
+        {
+            "type": "richtext",
+            "id": "subtitle",
+            "label": "Subtitle"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Btn Text"
+        },
+        {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Btn Url"
+        },
+        {
+            "type": "text",
+            "id": "price",
+            "label": "Price"
+        },
+        {
+            "type": "text",
+            "id": "day",
+            "label": "Day"
+        },
+        {
+            "type": "text",
+            "id": "usual_price",
+            "label": "Usual price"
+        },
+        {
+            "type": "text",
+            "id": "discount_total",
+            "label": "Discount total price"
+        },
+        {
+            "type": "image_picker",
+            "id": "main_photo",
+            "label": "Main Photo"
+        }
+    ],
+    "presets": [
+        {
+        "name": "Discount Banner Image Right"
+        }
+    ]
+}
+{% endschema %}

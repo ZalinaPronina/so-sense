@@ -1,6 +1,6 @@
 {{ 'about-us.css' | asset_url | stylesheet_tag }}
-<section class="page-width-desktop about-us-4-blocks">
-    <div class="about-us-4-blocks__flex">
+<section class="about-us-4-blocks">
+    <div class="about-us-4-blocks__flex page-width-desktop ">
         {%- for block in section.blocks -%}
             <div class="block-text masonry-entry">
                 {% if block.settings.title != blank %}
