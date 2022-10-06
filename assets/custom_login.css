@@ -81,6 +81,7 @@ a.recover_href {
     font-size: 1.8rem;
     line-height: 140%;
     color: #283C92;
+    text-decoration: none;
 }
 a.register_href{
     font-family: 'Poppins';
@@ -89,6 +90,7 @@ a.register_href{
     font-size: 1.8rem;
     line-height: 140%;
     color: #283C92;
+    text-decoration: none;
 }
 .page-width-desktop {
     max-width: 66.7%;
@@ -105,23 +107,24 @@ a.register_href{
 }
 .label-for-input {
     position: relative !important;
-    margin-bottom: 2rem !important;
+    margin-bottom: 1rem !important;
     text-align: start !important;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 1.6rem !important;
     line-height: 150% !important;
-    color: #8A8C91 !important;
+    color: #525459 !important;
 
 }
 button.button-login,
 .button-login {
+    padding: 0;
     text-align: center;
     margin-top: 2rem!important;
     cursor: pointer;
     border: none;
-    width: 16.5rem;
+    width: 15rem!important;
     height: 6.4rem;
     background-color: #283C92;
     border-radius: 100px;
@@ -135,6 +138,11 @@ button.button-login,
     column-gap: 0.7rem;
     align-items: center;
     justify-content: center;
+}
+.login .field+a {
+    margin-top: 0;
+    height: 6.4rem;
+    text-decoration: none;
 }
 .button_cancel {
     color: #FFFFFF!important;
@@ -197,7 +205,7 @@ label.label-for-input_recover {
 }
 span.icon_email_lock {
     position: absolute;
-    top: 6.4rem;
+    top: 5.4rem;
     left: 2rem;
 }
 .login-form {
@@ -205,12 +213,12 @@ span.icon_email_lock {
 }
 span.icon_email_eye {
     position: absolute;
-    top: 6.4rem;
+    top: 5.4rem;
     right: 2rem;
 }
 span.icon-close-password {
     position: absolute;
-    top: 6.4rem;
+    top: 5.4rem;
     right: 2rem;
     display: none;
 }
@@ -296,6 +304,9 @@ p.text-description-left {
     .body-contact_left-side-text_title {
         text-align: -webkit-center;
     }
+    .body-contact_left-side-text_title h2 {
+        width: 100%;
+    }
     .body-login, .body-register {
         margin-right: auto;
         margin-left: auto;
@@ -306,11 +317,13 @@ p.text-description-left {
         align-content: center;
         padding-right: 0;
         padding-left: 0;
+        padding-bottom: 80px;
 }
 .button_and_create_account {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 .left_block {
     text-align: center;
@@ -333,11 +346,11 @@ p.text-description-left {
 }
 .body-login_left-side {
     width: 100%;
-    margin-top: 17.2rem;
+    margin-top: 3.2rem;
 }
     .email-form, .register-form, .custom-recover_password {
-        margin-top: 6.5rem;
-        margin-bottom: 5rem;
+        margin-top: 6.4rem;
+        margin-bottom: 3.2rem;
     }
     button.button-login, .button-login {
         margin-bottom: 3.2rem;
@@ -362,20 +375,21 @@ p.text-description-left {
         font-size: 2.6rem;
         line-height: 180%;
         color: #000;
+        width: 53.3rem;
     }
     span.icon_email_lock,
     .icon-lock-red {
         position: absolute;
-        top: 7rem;
-        left: 1.2rem;
+        top: 8rem;
+        left: 1.6rem;
     }
     span.icon_email_eye {
-        top: 7rem;
-        right: 1.2rem;
+        top: 8rem;
+        right: 1.6rem;
     }
     span.icon-lock-red {
-        top: 7rem;
-        left: 1.2rem;
+        top: 8rem;
+        left: 1.6rem;
     }
     strong {
         font-size: 6rem;
@@ -420,7 +434,33 @@ p.text-description-left {
         font-size: 2.8rem;
         text-align: center;
     }
-    .body-contact_left-side-text_title h2 {
-        width: 30rem;
+    .login p, .register p {
+        margin: 2.0rem 0;
+    }
+    .top {
+        margin-bottom:0!important;
+    }
+    .bottom {
+        margin-top:0!important;
+    }
+    .email-form {
+        width: 53.6rem;
+    }
+    .email-form,
+    .register-form,
+    .custom-recover_password {
+        padding: 3.2rem;
+        row-gap: 2.56rem;
+    }
+    .field input {
+        height: 10.2rem;
+    }
+    .login .field+a {
+        margin-top: 0;
+        height: 10rem;
+        text-decoration: none;
+    }
+    .field__input, .customer .field input {
+        font-weight: 400;
     }
 }
