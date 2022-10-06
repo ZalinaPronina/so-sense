@@ -30,6 +30,9 @@
     justify-content: center;
     width: 54rem;
 }
+.custom-recover_password {
+    row-gap: 4rem;
+}
 .register_btn {
     width: fit-content!important;
 }
@@ -64,13 +67,14 @@ strong {
     color: #283C92;
     margin: 0;
 }
-.text-description-under-input {
+.text-description-under-input  {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 180%;
     color: #000000;
+    margin: 0!important;
 }
 a.recover_href {
     display: grid;
@@ -82,6 +86,9 @@ a.recover_href {
     line-height: 140%;
     color: #283C92;
     text-decoration: none;
+}
+.add_margin {
+    margin-top: 2.4rem!important;
 }
 a.register_href{
     font-family: 'Poppins';
@@ -104,17 +111,28 @@ a.register_href{
     height: 6.4rem;
     max-width: 54rem;
     width: 100%;
-}
-.label-for-input {
-    position: relative !important;
-    margin-bottom: 1rem !important;
-    text-align: start !important;
     font-family: 'Poppins';
     font-style: normal;
+    font-weight: 400!important;
+    font-size: 1.8rem;
+    line-height: 180%;
+    color: #000000;
+}
+span.icon-attention {
+    width: 16px;
+    margin-right: 10px;
+}
+.label-for-input {
+    top: 0!important;
+    position: relative!important;
+    margin-bottom: 0.2rem!important;
+    text-align: start!important;
+    font-family: Poppins;
+    font-style: normal;
     font-weight: 500;
-    font-size: 1.6rem !important;
-    line-height: 150% !important;
-    color: #525459 !important;
+    font-size: 1.6rem!important;
+    line-height: 150%!important;
+    color: #525459!important;
 
 }
 button.button-login,
@@ -144,21 +162,11 @@ button.button-login,
     height: 6.4rem;
     text-decoration: none;
 }
-.button_cancel {
-    color: #FFFFFF!important;
-    text-decoration: none!important;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.8rem!important;
-    line-height: 140%;
-    width: 16.5rem!important;
-    margin: 2rem 0 0 0!important;
-}
 .two_btn_password_recovery {
     display: flex;
     width: 54rem;
-    justify-content: space-between;
+    align-items: baseline;
+    column-gap: 4rem;
 }
 .body-contact_left-side-placing-email__placing {
     font-family: 'Poppins';
@@ -170,6 +178,9 @@ button.button-login,
     width: 47.9rem;
     margin-bottom: 2.4rem!important;
     margin-top: 1.6rem!important;
+}
+.add_margin {
+    margin-top: 2.4rem!important;
 }
 .body-login_left-side {
     width: 48rem;
@@ -195,7 +206,8 @@ label.label-for-input_recover {
     font-size: 1.6rem;
     line-height: 150%;
     color: #8A8C91;
-    margin-bottom: 2rem;
+    margin-bottom: 0.4rem;
+
 }
 .email-form_login {
     margin-top: 0!important;
@@ -205,7 +217,7 @@ label.label-for-input_recover {
 }
 span.icon_email_lock {
     position: absolute;
-    top: 5.4rem;
+    top: 5rem;
     left: 2rem;
 }
 .login-form {
@@ -213,12 +225,12 @@ span.icon_email_lock {
 }
 span.icon_email_eye {
     position: absolute;
-    top: 5.4rem;
+    top: 5rem;
     right: 2rem;
 }
 span.icon-close-password {
     position: absolute;
-    top: 5.4rem;
+    top: 5rem;
     right: 2rem;
     display: none;
 }
@@ -242,7 +254,7 @@ span.icon-close-password {
 .icon-lock-red {
     display: none;
     position: absolute;
-    top: 6.4rem;
+    top: 5rem;
     left: 2rem;
 }
 p.text-description-left {
@@ -260,6 +272,57 @@ p.text-description-left {
     font-size: 1.2rem;
     line-height: 160%;
     color: #525459;
+}
+.body-pop_up_password_tittle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #339999;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+p.pop_up_password_send_description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 180%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+a.back_login {
+    text-decoration: none;
+    width: 18.1rem;
+    height: 6.4rem;
+    background-color: #283C92;
+    border-radius: 100px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 140%;
+    color: #fff;
+    display: flex;
+    column-gap: 0.7rem;
+    align-items: center;
+    justify-content: center;
+}
+.pop_up_password_send {
+    width: 62rem;
+    display: flex;
+    justify-content: space-around;
+}
+.body-pop_up_password_send {
+    width: 54rem;
 }
 @media only screen and (max-width: 1500px) {
     html{
@@ -301,11 +364,21 @@ p.text-description-left {
 }
 
 @media only screen and (max-width: 990px) {
-    .body-contact_left-side-text_title {
+    .body-contact_left-side-text_title,
+    .body-contact_left-side-placing-email__placing{
         text-align: -webkit-center;
+    }
+    .two_btn_password_recovery {
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: column;
     }
     .body-contact_left-side-text_title h2 {
         width: 100%;
+    }
+    .left_block {
+        text-align: center;
+        margin-top: 3.2rem;
     }
     .body-login, .body-register {
         margin-right: auto;
@@ -324,9 +397,6 @@ p.text-description-left {
     align-items: center;
     flex-direction: column;
     width: 100%;
-}
-.left_block {
-    text-align: center;
 }
     .btn-secondary {
         margin-left: 0;
@@ -349,13 +419,19 @@ p.text-description-left {
     margin-top: 3.2rem;
 }
     .email-form, .register-form, .custom-recover_password {
-        margin-top: 6.4rem;
-        margin-bottom: 3.2rem;
+        margin-top: 2.8rem;
+        margin-bottom: 2.8rem;
     }
     button.button-login, .button-login {
         margin-bottom: 3.2rem;
     }
     button.register_btn {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .body-contact_left-side-text_title.bottom_title {
+        margin-top: 10rem;
+        width: 47rem;
         margin-right: auto;
         margin-left: auto;
     }
@@ -380,16 +456,20 @@ p.text-description-left {
     span.icon_email_lock,
     .icon-lock-red {
         position: absolute;
-        top: 8rem;
+        top: 7.5rem;
         left: 1.6rem;
     }
     span.icon_email_eye {
-        top: 8rem;
+        top: 7.5rem;
         right: 1.6rem;
     }
     span.icon-lock-red {
-        top: 8rem;
+        top: 7.5rem;
         left: 1.6rem;
+    }
+    span.icon-close-password {
+        top: 7.5rem;
+        right: 1.6rem;
     }
     strong {
         font-size: 6rem;
@@ -457,10 +537,14 @@ p.text-description-left {
     }
     .login .field+a {
         margin-top: 0;
-        height: 10rem;
+        height: 10.3rem;
         text-decoration: none;
     }
     .field__input, .customer .field input {
         font-weight: 400;
+    }
+    .add_margin {
+        margin-top: 2rem!important;
+        margin-bottom: 2rem!important;
     }
 }
