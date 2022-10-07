@@ -71,7 +71,8 @@
     "1663962924953a2e68": {
       "type": "background-image",
       "settings": {
-        "background": "shopify:\/\/shop_images\/Rectangle_80.png"
+        "background": "shopify:\/\/shop_images\/Rectangle_80.png",
+        "background_mobile": "shopify:\/\/shop_images\/Rectangle_80_0ecafdf1-fed0-49ff-a02e-84891c3f6dc1.png"
       }
     },
     "about-us-team": {
@@ -202,6 +203,8 @@
     "about-us-blog-section": {
       "type": "about-us-blog-section",
       "settings": {
+        "heading": "<p>Press<\/p>",
+        "blog": "business"
       }
     }
   },

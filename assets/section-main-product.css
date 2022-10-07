@@ -488,6 +488,9 @@ a.product__text {
 .product-form__buttons button{
   border: none;
 }
+.product-form__buttons button circle{
+stroke: #fff;
+}
 .product-form__buttons span{
   display: flex;
   gap: 1.1rem;

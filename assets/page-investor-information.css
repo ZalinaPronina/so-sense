@@ -32,6 +32,7 @@
     font-weight: 600;
     font-size: 5.6rem;
     line-height: 130%;
+    margin: 0 0 1.2rem;
 }
 .investor-information .main-banner .main-banner__container{
     gap: 6rem;
@@ -49,10 +50,17 @@
 .investor-information .text-with-image__wrapper{
     gap: 15rem;
 }
+.investor-information .text-with-image__wrapper .title-description{
+    width: 62rem;
+}
 .investor-information .text-with-image__wrapper img{
     max-width: 51rem;
 }
 @media only screen and (max-width: 989px) {
+    .investor-information .main-banner .btn-primary{
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+    }
     .investor-information .text-with-image .h2{
         margin: 2.4rem auto 1.2rem;
     }
@@ -75,8 +83,9 @@
         width: 100%;
         height: 24rem;
     }
-    .investor-information .title-description{
+    .investor-information .text-with-image__wrapper .title-description{
         text-align: center;
+        width: 100%;
     }
     .investor-information .main-banner .main-banner__image img{
         max-height: 100%;
@@ -100,10 +109,13 @@
         line-height: 160%;
     }
     .investor-information .about-us-4-blocks .block-text{
-        margin-bottom: 2rem;
+        margin-bottom: 2rem !important;
     }
     .investor-information .main-banner{
         padding: 1rem 0 8rem;
+    }
+    .investor-information .image-banner{
+        height: 24rem;
     }
 }
 
@@ -131,6 +143,7 @@
     display: flex;
     gap: 4rem;
     margin-top: 8rem;
+    justify-content: center;
 }
 .investor-block__content .btn-secondary{
     border: 2px solid #283C92;
@@ -166,6 +179,9 @@
     .investor-block{
         padding: 8rem 0;
     }
+    .investor-information .text-with-image{
+        padding: 8rem 0;
+    }
 }
 
 /* Block with Scroll */
@@ -176,6 +192,7 @@
     display: flex;
     gap: 4rem;
     overflow-x: scroll;
+    align-items: center;
 }
 .block-with-scroll .block-text{
     border: 2px solid #DEDFE4;
@@ -219,9 +236,6 @@
     margin: 0;
 }
 @media only screen and (max-width: 989px) {
-    .block-with-scroll{
-        margin-top: 8rem;
-    }
     .block-with-scroll .block-text{
        min-width: 100%; 
        padding: 2rem;
@@ -231,7 +245,7 @@
         gap: 3.2rem;
     }
     .block-with-scroll{
-        margin: 0 20px;
+        margin: 8rem 20px 0;
     }
     .block-with-scroll h6{
         font-weight: 500;
