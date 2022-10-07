@@ -14,7 +14,6 @@ customElements.define('cart-remove-button', CartRemoveButton);
 class CartItems extends HTMLElement {
   constructor() {
     super();
-
     this.lineItemStatusElement = document.getElementById('shopping-cart-line-item-status') || document.getElementById('CartDrawer-LineItemStatus');
 
     this.currentItemCount = Array.from(this.querySelectorAll('[name="updates[]"]'))
@@ -85,7 +84,10 @@ class CartItems extends HTMLElement {
           elementToReplace.innerHTML =
             this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
         }));
-
+        var items;
+        parsedState.item_count == 1 ? items = 'item' : items = 'items';
+        parsedState.item_count == 0 ? document.querySelector('.cart__warnings').classList.remove('hidden') : '';
+        document.querySelector('.cart-title-header .count').innerHTML = '('+ parsedState.item_count + ') ' + items;
         this.updateLiveRegions(line, parsedState.item_count);
         const lineItem =  document.getElementById(`CartItem-${line}`) || document.getElementById(`CartDrawer-Item-${line}`);
         if (lineItem && lineItem.querySelector(`[name="${name}"]`)) {
@@ -108,6 +110,7 @@ class CartItems extends HTMLElement {
     if (this.currentItemCount === itemCount) {
       const lineItemError = document.getElementById(`Line-item-error-${line}`) || document.getElementById(`CartDrawer-LineItemError-${line}`);
       const quantityElement = document.getElementById(`Quantity-${line}`) || document.getElementById(`Drawer-quantity-${line}`);
+      console.log(this.currentItemCount)
 
       lineItemError
         .querySelector('.cart-item__error-text')

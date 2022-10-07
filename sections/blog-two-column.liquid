@@ -70,7 +70,7 @@
                     </div>
                     <div class="card__content">
                       <div class="card__information">
-                        <h3 class="card__heading">
+                        <h3 class="h6 card__heading">
                           <a href="{{ article.url }}" class="full-unstyled-link">
                             {{ article.title | truncate: 48 | escape }}
                           </a>
@@ -86,9 +86,9 @@
                         {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
                             <p class="article-card__excerpt">
                                 {%- if article.excerpt.size > 0 -%}
-                                    {{ article.excerpt | strip_html | truncatewords: 30 }}
+                                    {{ article.excerpt | strip_html | truncatewords: 12 }}
                                 {%- else -%}
-                                    {{ article.content | strip_html | truncatewords: 30 }}
+                                    {{ article.content | strip_html | truncatewords: 12 }}
                                 {%- endif -%}
                             </p>
                         {%- endif -%}

@@ -12,12 +12,7 @@
       "type": "contact-form",
       "disabled": true,
       "settings": {
-        "heading": "",
-        "up_text": "",
-        "bottom_text": "",
-        "text_description": "",
-        "button": "",
-        "doun_text": ""
+        "heading": ""
       }
     },
     "16635622753905bf94": {

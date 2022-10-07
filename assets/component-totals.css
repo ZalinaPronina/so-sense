@@ -1,36 +1,38 @@
-.totals {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+.subtotal-table{
+  border: 2px solid #DEDFE4;
+  border-radius: 32px;
+  max-width: 51rem;
+  width: 100%;
+  margin-left: auto;
 }
-
-.totals > * {
-  font-size: 1.6rem;
+.subtotals, .totals{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subtotals{
+  padding: 2rem 4rem;
+  border-bottom: 2px solid #DEDFE4;
+}
+.totals{
+  padding: 2rem 4rem;
+}
+.subtotals h2, .subtotals p{
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 180%;
+  color: #000000;
   margin: 0;
 }
-
-.totals > h2 {
-  font-size: calc(var(--font-heading-scale) * 1.6rem);
+.totals h2, .totals p{
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #283C92;
+  margin: 0;
 }
-
-.totals * {
-  line-height: 1;
-}
-
-.totals > * + * {
-  margin-left: 2rem;
-}
-
-.totals__subtotal-value {
-  font-size: 1.8rem;
-}
-
-.cart__ctas + .totals {
-  margin-top: 2rem;
-}
-
-@media all and (min-width: 750px) {
-  .totals {
-    justify-content: flex-end;
+@media screen and (max-width: 989px) {
+  .subtotal-table{
+    max-width: 100%;
   }
 }

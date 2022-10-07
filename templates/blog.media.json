@@ -1,12 +1,13 @@
 {
-  "name": "Media Blogs",
   "wrapper": "div#div_id.div_class[attribute-one=value]",
   "sections": {
     "main": {
-      "type": "blog-media"
+      "type": "blog-media",
+      "settings": {
+      }
     }
   },
   "order": [
     "main"
   ]
-} 
+}

@@ -228,18 +228,6 @@ cart-drawer-items {
 .cart-drawer .cart-items thead {
   margin-bottom: 0.5rem;
 }
-
-.cart-drawer .cart-items thead th:first-child,
-.cart-drawer .cart-items thead th:last-child {
-  width: 0;
-  padding: 0;
-}
-
-.cart-drawer .cart-items thead th:nth-child(2) {
-  width: 50%;
-  padding-left: 0;
-}
-
 .cart-drawer .cart-items thead tr {
   display: table-row;
   margin-bottom: 0;
@@ -328,9 +316,6 @@ cart-drawer-items {
   transform: rotate(180deg);
 }
 
-.cart-drawer .cart__checkout-button {
-  max-width: none;
-}
 
 .drawer__footer .cart__dynamic-checkout-buttons {
   max-width: 100%;
