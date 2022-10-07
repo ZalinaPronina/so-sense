@@ -142,7 +142,7 @@
           <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
 
           {%- form 'guest_login' -%}
-            <button btn-secondary button-login>
+            <button class="btn-secondary button-login">
               {{ 'customer.login_page.guest_continue' | t }}
             </button>
           {%- endform -%}
@@ -150,12 +150,9 @@
       {%- endif -%}
   </div>
   </div>
-  {%- if recover_success == true -%}
-    {% section 'recovery_password_massage' %}
-    <style>
-      .left_block{
-        display: none;
-      }
-    </style>
-  {%- endif -%}
 </div>
+{%- if recover_success == true -%}
+  <div id="pop_up" class="pop_up_congratulation">
+    {% section 'recovery_password_massage' %}
+  </div>
+{%- endif -%}
