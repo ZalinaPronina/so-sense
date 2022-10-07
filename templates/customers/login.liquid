@@ -1,11 +1,6 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 {{ 'custom_login.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'Show_password.js' | asset_url }}"></script>
-{%- if recover_success == true -%}
-  {% section 'recovery_password_massage' %}
-  {% else %}
-
-
 <div class="body-login page-width-desktop" >
     <div id="recover" tabindex="-1" class="left-block-password-recovery">
       {% section 'left-block-password-recovery' %}
@@ -42,7 +37,7 @@
         </p>
       </div>
         <div class="two_btn_password_recovery">
-        <button class="btn-secondary button-login">
+        <button class="btn-secondary button-login" onclick="">
           {{ 'customer.login_page.submit' | t }}<span>{% render 'icon-send' %}</span>
         </button>
         <a href="#login" class="register_href">
@@ -147,7 +142,7 @@
           <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
 
           {%- form 'guest_login' -%}
-            <button btn-secondary button-login>
+            <button class="btn-secondary button-login">
               {{ 'customer.login_page.guest_continue' | t }}
             </button>
           {%- endform -%}
@@ -156,4 +151,8 @@
   </div>
   </div>
 </div>
+{%- if recover_success == true -%}
+  <div id="pop_up" class="pop_up_congratulation">
+    {% section 'recovery_password_massage' %}
+  </div>
 {%- endif -%}

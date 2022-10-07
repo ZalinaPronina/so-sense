@@ -39,6 +39,7 @@
     flex-wrap: wrap;
     row-gap: 1.6rem;
     justify-content: center;
+    margin-bottom: 20rem;
 }
 .custom-recover_password {
     row-gap: 4rem;
@@ -283,19 +284,6 @@ p.text-description-left {
     line-height: 160%;
     color: #525459;
 }
-.body-pop_up_password_tittle {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 140%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #339999;
-    justify-content: space-around;
-    margin-bottom: 2rem;
-}
 p.pop_up_password_send_description {
     font-family: 'Poppins';
     font-style: normal;
@@ -325,6 +313,7 @@ a.back_login {
     column-gap: 0.7rem;
     align-items: center;
     justify-content: center;
+    margin: 4rem;
 }
 a.back_login:hover{
     text-decoration: none;
@@ -343,14 +332,66 @@ a.back_login:hover{
     align-items: center;
     justify-content: center;
 }
+.tittle_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.account_tattle {
+    font-family: Poppins;
+    width: 24rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5.6rem;
+    line-height: 130%;
+    color: #283c92;
+    margin: 4rem;
+}
+.this_button {
+    padding: 4rem;
+    width: auto!important;
+}
 .pop_up_password_send {
-    width: 62rem;
     display: flex;
     justify-content: space-around;
+    background-color: #fff;
+    border-radius: 32px;
 }
 .body-pop_up_password_send {
     width: 54rem;
+    z-index: 10;
+    background-color: white;
+    border-radius: 32px;
+    padding: 8rem 4rem;
 }
+a.style_back_login {
+    margin: 4rem auto 0 auto;
+}
+.body-pop_up_password_tittle {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #399;
+    justify-content: space-around;
+    margin-bottom: 0rem;
+    margin-top: 0.7rem;
+}
+.pop_up_congratulation {
+    width: 100vw;
+    height: 127vh;
+    background-color: #e5e5e5;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 1500px) {
     html{
         font-size: 51%;
@@ -389,11 +430,33 @@ a.back_login:hover{
         margin: 0 20px;
     }
 }
-
+@media only screen and (max-width: 1025px) {
+    span.icon_email_lock,
+    .icon-lock-red {
+        position: absolute;
+        top: 4.5rem;
+        left: 2rem;
+    }
+    span.icon_email_eye {
+        top: 4.5rem;
+        right: 2rem;
+    }
+    span.icon-lock-red {
+        top: 4.5rem;
+        left: 2rem;
+    }
+    span.icon-close-password {
+        top: 4.5rem;
+        right: 2rem;
+    }
+}
 @media only screen and (max-width: 990px) {
     .body-contact_left-side-text_title,
     .body-contact_left-side-placing-email__placing{
         text-align: -webkit-center;
+    }
+    .pop_up_congratulation {
+        height: 200vh;
     }
     .two_btn_password_recovery {
         flex-wrap: nowrap;
@@ -461,6 +524,32 @@ a.back_login:hover{
         width: 47rem;
         margin-right: auto;
         margin-left: auto;
+    }
+    .tittle_btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    :is(.account,.order) {
+        padding: 0;
+    }
+    .account_table {
+        margin: 5rem auto 12rem;
+        width: 54rem;
+    }
+    :is(.account,.order) p {
+        margin: 0 0 2rem;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    :is(.account,.order) h2 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    :is(.account,.order) h2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
 @media only screen and (max-width: 376px){
@@ -573,5 +662,14 @@ a.back_login:hover{
     .add_margin {
         margin-top: 2rem!important;
         margin-bottom: 2rem!important;
+    }
+    a.style_back_login {
+        width: 29rem;
+        height: 10.4rem;
+        color: white;
+        font-size: 30rem;
+    }
+    p.pop_up_password_send_description {
+        font-size: 3rem;
     }
 }

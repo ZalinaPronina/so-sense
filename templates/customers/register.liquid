@@ -1,7 +1,7 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 {{ 'custom_login.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'Show_password.js' | asset_url }}"></script>
-<div class="body-register page-width-desktop" >
+<div class="body-register" >
   <div class="left_block">
   {% section 'left-block-register' %}
 <div class="customer register" >
@@ -105,7 +105,7 @@
           aria-describedby="RegisterForm-password-error"
         {% endif %}
         placeholder="{{ 'customer.register.password' | t }}"
-      ><span class="icon-lock-red">{% render 'icon-lock-red' %}</span><span class="icon_email_lock">{% render 'icon-lock' %}</span><span id="hide-password" class="icon_email_eye" onclick="ShowPassword()">{% render 'remove_red_eye' %}</span><span onclick="HidePassword()" id="close-password" class="icon-close-password">{% render 'icon-close-password' %}</span>
+      ><span class="icon-lock-red">{% render 'icon-lock-red' %}</span><span class="icon_email_lock">{% render 'icon-lock' %}</span><span id="hide-password" class="icon_email_eye" onclick="ShowPasswordRegister()">{% render 'remove_red_eye' %}</span><span onclick="HidePasswordRegister()" id="close-password" class="icon-close-password">{% render 'icon-close-password' %}</span>
     </div>
     {%- if form.errors contains 'password' -%}
       <span id="RegisterForm-password-error" class="form__message">
