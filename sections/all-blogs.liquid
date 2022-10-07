@@ -1,5 +1,4 @@
 {{ 'all-blogs.css' | asset_url | stylesheet_tag }}
-<!--  {% assign blog_handles = "news,business" | split: "," %} -->
 
  <div class="all-blogs">
   <div class="all-blogs-title">
@@ -7,11 +6,12 @@
     <h1 class="all-blogs-title__title">Blog</h1>
   </div>
   <div class="allblogs-sections page-width-desktop">
+    
     <div class="allblogs-sections-left">
       {% for link in linklists.blog-categories.links %}
       {% assign blog = link.object %}
+      
         {% paginate blog.articles by 3 %}
-        <script>console.log({{ paginate.pages | json  }})</script>
           {% for article in blog.articles %}
             {%- render 'article-allblogs', article:article, blog: blog -%}
           {% endfor %}
@@ -26,6 +26,7 @@
       {% endfor %}
     
     </div>
+    
     <div class="allblogs-sections-right">
       <form class="search-article" method="get" action="/search">
         <input type="hidden" name="type" value="article" />
@@ -40,8 +41,9 @@
       <div class="recent-post">
         <div class="recent-post__title">Recent Posts</div>
         <div class="recent-post-box">
-          {% for handle in blog_handles %}
-            {% for article in blogs[handle].articles %}
+          {% for link in linklists.blog-categories.links  %}
+            {% for article in blogs[link.handle].articles %}
+            <script>console.log({{ article.title | json }})</script>
                 {% if article.tags contains 'recent-post' %}
                   <a style="text-decoration: none;" href="{{ article.url }}" class="recent-post-item">
                     <div class="recent-post-item__title">{{ article.title }}</div>

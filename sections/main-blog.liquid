@@ -19,6 +19,15 @@
 {%- endstyle -%} 
 {%- endcomment -%}
 
+  
+<!--  {% if current_tags contains 'News' %}
+   <div class="qwerty" >News</div>
+   {% elsif current_tags contains 'bussiness' %}
+   <div class="qwerty">Recent</div>
+
+   {% else%}
+   <div class="qwerty">{{ blog.title}}</div>
+{% endif %} -->
 
 <div class="all-blogs-title">
   <div class="all-blogs-title__subtitile">Latest articles</div>
@@ -81,8 +90,6 @@
     </div>
 
     </div>
-
-
 
     {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
