@@ -7,7 +7,7 @@
     grid-template-columns: repeat(2,1fr);
     column-gap: 18.1rem;
     justify-items: center;
-    align-items: start;
+    align-items:baseline;
     align-content: space-evenly;
     justify-content: center;
     padding-right: 32rem;
@@ -20,7 +20,6 @@
 .email-form,
 .register-form,
 .custom-recover_password{
-    margin-top: 12rem;
     background-color: #f5f6f8;
     padding: 4rem;
     border-radius: 32px;
@@ -388,7 +387,7 @@ a.style_back_login {
     position: absolute;
     top: 0;
     display: flex;
-    align-items: center;
+    padding-top: 30rem;
     justify-content: center;
 }
 
@@ -480,7 +479,7 @@ a.style_back_login {
         align-content: center;
         padding-right: 0;
         padding-left: 0;
-        padding-bottom: 80px;
+        padding-bottom: 15rem;
 }
 .button_and_create_account {
     display: flex;
@@ -492,10 +491,6 @@ a.style_back_login {
         margin-left: 0;
         margin-right:0;
     }
-.continue-with_google {
-    margin-right: auto;
-    margin-left: auto;
-}
 .customer:not(.account):not(.order) {
     margin: 0;
     max-width: 100%;
@@ -551,15 +546,26 @@ a.style_back_login {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+    section#shopify-section-left_block-login {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
 }
-@media only screen and (max-width: 376px){
+@media only screen and (max-width: 376px) {
     .body-contact_left-side-text_title {
         text-align: -webkit-center;
+    }
+
+    .customer form {
+        margin-top: 6.4rem;
     }
 
     .body-contact_left-side-placing-email {
         width: 53.4rem;
     }
+
     .body-contact_left-side-placing-email__placing {
         font-family: Poppins;
         font-style: normal;
@@ -569,50 +575,61 @@ a.style_back_login {
         color: #000;
         width: 53.3rem;
     }
+
     span.icon_email_lock,
     .icon-lock-red {
         position: absolute;
         top: 7.5rem;
         left: 1.6rem;
     }
+
     span.icon_email_eye {
         top: 7.5rem;
         right: 1.6rem;
     }
+
     span.icon-lock-red {
         top: 7.5rem;
         left: 1.6rem;
     }
+
     span.icon-close-password {
         top: 7.5rem;
         right: 1.6rem;
     }
+
     strong {
         font-size: 6rem;
     }
+
     .body-contact_left-side-text_title h2 {
         font-size: 6rem;
     }
+
     label.label-for-input {
-        font-size: 2.4rem!important;
+        font-size: 2.4rem !important;
     }
+
     .login a {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 600;
-        font-size: 2.8rem!important;
+        font-size: 2.8rem !important;
         line-height: 140%;
         display: flex;
         align-items: center;
         text-align: center;
         color: #283C92;
     }
+
     button.button-login, .button-login {
-        width: 24.5rem!important;
+        width: 24.5rem !important;
         height: 10.3rem;
         font-size: 2.8rem;
         margin-bottom: 3.2rem;
+        margin-top: 0 !important;
     }
+
     .continue-with_google {
         margin-top: 5.1rem;
         width: 49.4rem;
@@ -623,53 +640,77 @@ a.style_back_login {
         line-height: 140%;
         height: 11.2rem;
     }
+
     label.label-for-input_recover {
         font-size: 2.6rem;
     }
+
     .text-description-under-input {
         font-size: 2.8rem;
         text-align: center;
     }
+
     .login p, .register p {
         margin: 2.0rem 0;
     }
+
     .top {
-        margin-bottom:0!important;
+        margin-bottom: 0 !important;
     }
+
     .bottom {
-        margin-top:0!important;
+        margin-top: 0 !important;
     }
+
     .email-form {
         width: 53.6rem;
     }
+
     .email-form,
     .register-form,
     .custom-recover_password {
         padding: 3.2rem;
         row-gap: 2.56rem;
+        margin-bottom: 5.12rem;
+        margin-top: 0;
+
     }
+
     .field input {
         height: 10.2rem;
     }
-    .login .field+a {
+
+    .login .field + a {
         margin-top: 0;
         height: 10.3rem;
         text-decoration: none;
     }
+
     .field__input, .customer .field input {
         font-weight: 400;
     }
+
     .add_margin {
-        margin-top: 2rem!important;
-        margin-bottom: 2rem!important;
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
     }
+
     a.style_back_login {
         width: 29rem;
         height: 10.4rem;
         color: white;
         font-size: 30rem;
     }
+
     p.pop_up_password_send_description {
         font-size: 3rem;
+    }
+
+    .left_block {
+        display: flex;
+    }
+
+    .body-contact_left-side-placing-email__placing {
+        margin-bottom: 0 !important;
     }
 }
