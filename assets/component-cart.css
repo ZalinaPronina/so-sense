@@ -221,8 +221,10 @@ cart-items.is-empty .title-wrapper-with-link,
     margin-top: 3.2rem;
   }
   .cart-items{
-    padding: 2rem;
     width: 100%;
+  }
+  .cart__items{
+    padding: 2rem;
   }
   .cart__empty-text{
     font-size: 2.8rem;
@@ -236,7 +238,6 @@ cart-items.is-empty .title-wrapper-with-link,
     margin-top: 4rem;
   }
   .subtotal-price{
-    margin-top: 3.6rem;
     text-align: center;
   }
 }
