@@ -19,6 +19,7 @@
 
   <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
     <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
+      <span class="mobile-label mobile-screen title">{{ 'sections.cart.headings.product' | t }}</span>
       <div class="js-contents">
         {%- if cart != empty -%}
           <table class="cart-items">
@@ -33,11 +34,9 @@
               </tr>
             </thead>
             <tbody>
-              
               {%- for item in cart.items -%}
                 <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
                   <td class="cart-item__media">
-                    <span class="mobile-label mobile-screen">{{ 'sections.cart.headings.product' | t }}</span>
                     {% if item.image %}
                       {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
                       <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
@@ -49,11 +48,10 @@
                             width="150"
                             height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
                           >
-                          <a href="{{ item.url }}" class="cart-item__name mobile-screen">{{ item.product.title | escape }}</a>
                         </div>
                     {% endif %}
                   </td>
-                  <td class="cart-item__details desktop-screen">
+                  <td class="cart-item__details">
                     {%- if settings.show_vendor -%}
                       <p class="caption-with-letter-spacing">{{ item.product.vendor }}</p>
                     {%- endif -%}

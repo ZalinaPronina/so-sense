@@ -330,8 +330,8 @@ cart-remove-button .icon-remove {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
     row-gap: 2rem;
+    column-gap: 1.2rem;
   }
   .flex-header-cart{
     display: flex;
@@ -365,7 +365,7 @@ cart-remove-button .icon-remove {
     font-size: 1.6rem;
     line-height: 160%;
   }
-  .cart-item__media .mobile-label{
+  .mobile-label.title{
     font-weight: 500;
     margin-bottom: 1.6rem;
   }
@@ -403,5 +403,8 @@ cart-remove-button .icon-remove {
   .cart-title-header .count{
     font-size: 1.8rem;
     line-height: 130%;
+  }
+  .subtotal-price{
+    margin-left: auto;
   }
 }

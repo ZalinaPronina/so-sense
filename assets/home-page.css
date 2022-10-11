@@ -995,12 +995,13 @@
 
 .discount-banner{
     padding: 15rem 0 22.3rem;
+    margin-top: -15rem;
 }
 .discount-banner .discount-banner_wave{
-    border-radius: 32px;
     display: flex;
     gap: 4.3rem;
-    padding: 6rem 13rem 5rem 8rem;
+    padding: 5.5rem 13rem 5rem 8rem;
+    border-radius: 0 0 32px 32px;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -1008,9 +1009,11 @@
 }
 .discount-banner .discount-banner__container{
     background: #FFFFFF;
+    border-radius: 32px;
 }
 .discount-banner .discount-banner__text .h2{
     margin: 0 0 1rem;
+    font-weight: 700;
 }
 .discount-banner .discount-banner__text .h5{
     margin: 0;
@@ -1019,7 +1022,7 @@
     margin: 2.6rem 0 0;
 }
 .discount-banner .discount-banner__price .price{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 8rem;
     line-height: 70%;
     color: #339999;
@@ -1069,9 +1072,23 @@
     }
 }
 @media only screen and (max-width: 989px) {
+    .discount-banner .discount-banner__text .h2{
+        font-size: 3.2rem;
+    }
+    .discount-banner .discount-banner__text .h5{
+        font-size: 1.6rem;
+    }
+    .discount-banner{
+        padding: 8rem 0 8.3rem;
+        margin-top: -8rem;
+    }
     .discount-banner .discount-banner_wave{
         flex-direction: column;
-        padding: 4rem;
+        padding: 3.2rem;
+        gap: 2.5rem;
+    }
+    .discount-banner .discount-banner__text .h5{
+        text-align: center;
     }
     .discount-banner .discount-banner__image{
         flex-direction: column-reverse;
@@ -1081,19 +1098,44 @@
     .discount-banner .discount-banner__image img{
         width: 75%;
         height: 75%;
+        margin: 2rem auto;
+        max-width: 350px;
     }
     .discount-banner .discount-banner__image h6{
         font-size: 2rem;
         color: #fff;
         margin: 0;
     }
+    .discount-banner .discount-banner__price{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .discount-banner .discount-banner__price .price{
+        font-size: 4rem;
+        margin: 0;
+    }
+    .discount-banner .discount-banner__price .day{
+        font-size: 2.1rem;
+        margin: 0;
+    }
+    .discount-banner .discount-banner__price .usual-price{
+        margin: 0 0 0 auto;
+        font-weight: 400;
+        font-size: 1.5rem;
+        width: 8.5rem;
+    }
+    .discount-banner .discount-banner__text a{
+        margin: 3.2rem auto 0;
+    }
 }
 /* Discount Image Left */
 .discount-left-image{
+    margin-top: -15rem;
     padding: 15rem 0 22.3rem;
 }
 .discount-left-image .discount-left-image_wave{
-    border-radius: 32px;
+    border-radius: 0 0 32px 32px;
     display: flex;
     gap: 2rem;
     padding: 6rem 7rem 6rem 7.5rem;
@@ -1104,6 +1146,7 @@
 }
 .discount-left-image .discount-left-image__container{
     background: #FFFFFF;
+    border-radius: 32px;
 }
 .discount-left-image .discount-left-image__text{
     max-width: 46rem;
@@ -1120,7 +1163,7 @@
     text-align: center;
 }
 .discount-left-image .discount-left-image__price .price{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 8rem;
     line-height: 93%;
     color: #339999;
@@ -1158,5 +1201,54 @@
     }
     .discount-left-image .discount-left-image__price .price{
         font-size: 7rem;
+    }
+}
+@media only screen and (max-width: 989px) {
+    .discount-left-image{
+        padding: 8rem 0 8.3rem;
+        margin-top: -8rem;
+    }
+    .discount-left-image .discount-left-image_wave{
+        padding: 3.2rem 4rem;
+        flex-direction: column;
+    }
+    .discount-left-image .discount-left-image__text{
+        order: 1;
+    }
+    .discount-left-image .discount-left-image__price{
+        order: 2;
+    }
+    .discount-left-image .discount-left-image__image{
+        order: 3;
+    }
+    .discount-left-image .discount-left-image__image img{
+        width: 75%;
+        height: 75%;
+        margin: 3rem auto;
+        max-width: 350px;
+    }
+    .discount-left-image .discount-left-image__text .h2{
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 130%;
+        margin: 0;
+    }
+    .discount-left-image .discount-left-image__image h6{
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 130%;
+    }
+    .discount-left-image .discount-left-image__price .price{
+        font-size: 4.8rem;
+        line-height: 140%;
+        margin: 0;
+    }
+    .discount-left-image .discount-left-image__price .usual-price{
+        font-weight: 400;
+        font-size: 2.1rem;
+        line-height: 140%;
+    }
+    .discount-left-image .btn-secondary{
+        margin-top: 3.2rem;
     }
 }

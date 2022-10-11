@@ -18,8 +18,19 @@
 {% endif %}
 {% if section.settings.wave != blank %}
     <style>
-        .discount-banner_wave{
-                background-image: url('{{section.settings.wave | img_url: 'master' }}')
+        @media only screen and (min-width: 990px){
+            .discount-banner_wave{
+                    background-image: url('{{section.settings.wave | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
+{% if section.settings.wave != blank %}
+    <style>
+        @media only screen and (max-width: 989px){
+            .discount-banner_wave{
+                    background-image: url('{{section.settings.wave_mobile | img_url: 'master' }}')
+            }
         }
     </style>
 {% endif %}
@@ -34,7 +45,7 @@
                     <h5 class="h5">{{section.settings.subtitle}}</h1>
                 {% endif %}
                 {% if section.settings.btn_text != blank %}
-                    <a class="btn-secondary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
+                    <a class="btn-secondary desktop-screen" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
                 {% endif %}
             </div>
             <div class="discount-banner__price">
@@ -48,6 +59,9 @@
                     <span class="usual-price">{{section.settings.usual_price}}</span>
                 {% endif %}
             </div>
+            {% if section.settings.btn_text != blank %}
+                <a class="btn-secondary mobile-screen" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
+            {% endif %}
             {% if section.settings.main_photo != blank or section.settings.discount_total != blank%}
                 <div class="discount-banner__image">
                     <h6>{{section.settings.discount_total}}</h6>
@@ -76,7 +90,12 @@
         {
             "type": "image_picker",
             "id": "wave",
-            "label": "Wave Image"
+            "label": "Wave Image Desktop"
+        },
+        {
+            "type": "image_picker",
+            "id": "wave_mobile",
+            "label": "Wave Image Mobile"
         },
         {
             "type": "richtext",
