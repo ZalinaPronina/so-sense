@@ -211,13 +211,39 @@
       "contact-form": {
         "type": "contact-form",
         "settings": {
-          "background": "shopify:\/\/shop_images\/In.png",
-          "heading": "Keep in touch",
-          "up_text": "",
-          "bottom_text": "",
-          "text_description": "",
-          "button": "",
-          "doun_text": ""
+          "heading": "Keep in touch"
+        }
+      },
+      "left_block-login": {
+        "type": "left_block-login",
+        "settings": {
+          "title": "<p>Log In <strong>As User<\/strong><\/p>",
+          "text_description_before": "Hi, Welcome back!",
+          "text_description_after": "Please, enter your details.",
+          "placing": "Eget pulvinar facilisis in pellentesque nisl auctor amet. Vel mauris duis cras et."
+        }
+      },
+      "left-block-register": {
+        "type": "left-block-register",
+        "settings": {
+          "title": "<p>Sign Up <strong>As User<\/strong><\/p>",
+          "text_description_before": "Hi, Welcome!",
+          "text_description_after": "Please enter your details.",
+          "placing": "Eget pulvinar facilisis in pellentesque nisl auctor amet. Vel mauris duis cras et."
+        }
+      },
+      "left-block-password-recovery": {
+        "type": "left-block-password-recovery",
+        "settings": {
+          "title": "<p>Password<strong> Recovery<\/strong><\/p>",
+          "placing": "Eget pulvinar facilisis in pellentesque nisl auctor amet. Vel mauris duis cras et."
+        }
+      },
+      "recovery_password_massage": {
+        "type": "recovery_password_massage",
+        "settings": {
+          "title": "Congratulations!",
+          "description": "The link was already sent."
         }
       }
     },

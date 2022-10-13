@@ -8,12 +8,7 @@
     background-position: bottom;
 }
 .main-banner h1{
-    font-weight: 600;
-    letter-spacing: normal;
-    font-size: 7.2rem;
-    line-height: 110%;
     margin: 0 0 3.2rem;
-    color: #283C92;
 }
 .main-banner h1 p{
     margin: 0;
@@ -72,6 +67,8 @@
     width: 33.8rem;
     height: 33.8rem;
     position: relative;
+    background: #D7F3FF;
+    border-radius: 50%;
 }
 .main-banner .main-photo{
     width: 33.8rem;
@@ -97,12 +94,8 @@
     }
     .main-banner{
         padding: 3rem 0 7.2rem;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
     }
     .main-banner h1{
-        font-size: 3.8rem;
         margin: 0 0 1.2rem;
         text-align: center;
     }

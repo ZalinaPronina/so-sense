@@ -1,0 +1,107 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "about-us-4-blocks": {
+      "type": "about-us-4-blocks",
+      "blocks": {
+        "e8ed182f-560d-4516-9280-af88feee2a86": {
+          "type": "block",
+          "settings": {
+            "title": "<p>The reason behind this<\/p>",
+            "subtitle": "<p>With more than 350 children under the age of five dying<\/p>",
+            "text": "<p>By drowning in pools each year nationwide, pool safety alarms should be mandatory.<\/p>"
+          }
+        },
+        "23d3e689-46e8-4e59-b145-dd40f40bab37": {
+          "type": "block",
+          "settings": {
+            "title": "Who will benefit from this",
+            "subtitle": "If you’re always worried about what might happen in your own home, it’s time to make a change.",
+            "text": "<p>Our SOSense swimming pool entry detection alarm has a detection range of up to 20 x 40 foot.<\/p>"
+          }
+        },
+        "9766be0d-45aa-4172-861b-f2ec0c79a637": {
+          "type": "block",
+          "settings": {
+            "title": "When it’s to come out",
+            "subtitle": "The BETA product is now available for early bird backers.",
+            "text": "<p>This enables us to further develop our life-saving pool alarm system and you will gain the final product free of charge as soon as it is released.<\/p>"
+          }
+        },
+        "9f2efc20-050a-4e7d-a9cd-d28b9310adc9": {
+          "type": "block",
+          "settings": {
+            "title": "How to purchase, become involved",
+            "subtitle": "Purchasing: The BETA product is now available for early bird backers.",
+            "text": "<p>This enables us to further develop our life-saving pool alarm system and you will gain the final product free of charge as soon as it is released.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e8ed182f-560d-4516-9280-af88feee2a86",
+        "23d3e689-46e8-4e59-b145-dd40f40bab37",
+        "9766be0d-45aa-4172-861b-f2ec0c79a637",
+        "9f2efc20-050a-4e7d-a9cd-d28b9310adc9"
+      ],
+      "settings": {}
+    },
+    "1663962924953a2e68": {
+      "type": "background-image",
+      "settings": {
+        "background": "shopify:\/\/shop_images\/Rectangle_80.png"
+      }
+    },
+    "166396300679a312e0": {
+      "type": "product-purchase",
+      "blocks": {
+        "c75229b1-7e71-4934-9273-54ae7be4f235": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_4.png"
+          }
+        },
+        "765b9014-350e-416f-8127-6be90006434b": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_33332.png"
+          }
+        },
+        "b412987d-56dc-4f8f-9703-dce0e376b129": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/video_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "c75229b1-7e71-4934-9273-54ae7be4f235",
+        "765b9014-350e-416f-8127-6be90006434b",
+        "b412987d-56dc-4f8f-9703-dce0e376b129"
+      ],
+      "settings": {
+        "title": "<p>Availability to <strong>purchase<\/strong><\/p>",
+        "text": "<p>Pellentesque faucibus molestie amet enim. Augue fames felis enim et enim lacinia suscipit at. Tellus lectus in tellus elementum imperdiet. <\/p>",
+        "btn_text": "Order Now",
+        "btn_url": ""
+      }
+    },
+    "about-us-team": {
+      "type": "about-us-team",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "about-us-4-blocks",
+    "1663962924953a2e68",
+    "166396300679a312e0",
+    "about-us-team"
+  ]
+}
