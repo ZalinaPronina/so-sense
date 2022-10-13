@@ -1,25 +1,43 @@
-<div class="info-section" {% if section.settings.background != blank %}
-style="background-image: url('{{section.settings.background | img_url: 'master' }}')"{% endif %}>
+{% if section.settings.background != blank %}
+    <style>
+        @media only screen and (min-width: 990px){
+            .info-section{
+                background-image: url('{{section.settings.background | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
+{% if section.settings.background_mobile != blank %}
+    <style>
+        @media only screen and (max-width: 989px){
+            .info-section{
+                    background-image: url('{{section.settings.background_mobile | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
+<div class="info-section">
     <div class="page-width-desktop info-section__blocks">
         <div class="first_block">
-            {% if section.settings.title %}
+            {% if section.settings.title != blank %}
                 <h6>{{section.settings.title}}</h6>
             {% endif %}
             <div class="years_block">
                 <div class="content-way">
-                    <small {% if section.settings.year_from_color %} style="color: {{section.settings.year_from_color}}" {% endif %}></small>
-                    <small {% if section.settings.year_to_color %} style="color: {{section.settings.year_to_color}}" {% endif %}></small>
+                    <small {% if section.settings.year_from_color != blank %} style="color: {{section.settings.year_from_color}}" {% endif %}></small>
+                    <span {% if section.settings.year_from_color != blank %} style="color: {{section.settings.year_from_color}}" {% endif %}></span>
+                    <small {% if section.settings.year_to_color != blank %} style="color: {{section.settings.year_to_color}}" {% endif %}></small>
                 </div>
                 <div class="content-date">
-                    <p {% if section.settings.year_from_color %} style="color: {{section.settings.year_from_color}}" {% endif %}>{{section.settings.year_from}}</p>
-                    <p {% if section.settings.year_to_color %} style="color: {{section.settings.year_to_color}}" {% endif %}>{{section.settings.year_to}}</p>
+                    <p {% if section.settings.year_from_color != blank %} style="color: {{section.settings.year_from_color}}" {% endif %}>{{section.settings.year_from}}</p>
+                    <p {% if section.settings.year_to_color != blank %} style="color: {{section.settings.year_to_color}}" {% endif %}>{{section.settings.year_to}}</p>
                 </div>
             </div>
         </div>
         <div class="second_block">
-            <a class="btn-green" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
-            <h3>{{section.settings.title_second}}</h3>
-            <p>{{section.settings.text_second}}</p>
+            <a class="btn-primary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
+            <h2 class="h2">{{section.settings.title_second}}</h2>
+            <div class="text">{{section.settings.text_second}}</div>
         </div>
     </div>
 </div>
@@ -30,7 +48,12 @@ style="background-image: url('{{section.settings.background | img_url: 'master' 
         {
             "type": "image_picker",
             "id": "background",
-            "label": "Background"
+            "label": "Background Desktop"
+        },
+        {
+            "type": "image_picker",
+            "id": "background_mobile",
+            "label": "Background Mobile"
         },
         {
             "type": "richtext",
