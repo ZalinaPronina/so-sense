@@ -209,6 +209,7 @@
         "name": "Full name",
         "email": "E-mail",
         "phone": "Phone number",
+        "subject": "Subject",
         "comment": "How can we help?",
         "agree": "I agree to send updates to my inbox",
         "send": "Please get in contact with me",
@@ -344,15 +345,15 @@
     "log_out": "Log out",
     "login_page": {
       "cancel": "Cancel",
-      "create_account": "Create account",
+      "create_account": "Don't have an account? Sign Up",
       "email": "Email",
-      "forgot_password": "Forgot your password?",
+      "forgot_password": "Forgot password?",
       "guest_continue": "Continue",
       "guest_title": "Continue as a guest",
       "password": "Password",
       "title": "Login",
-      "sign_in": "Sign in",
-      "submit": "Submit"
+      "sign_in": "Log in",
+      "submit": "Send"
     },
     "order": {
       "title": "Order {{ name }}",
@@ -400,7 +401,7 @@
       "last_name": "Last name",
       "email": "Email",
       "password": "Password",
-      "submit": "Create"
+      "submit": "Sign up"
     },
     "reset_password": {
       "title": "Reset account password",

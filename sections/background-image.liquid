@@ -23,7 +23,7 @@
     </style>
 {% endif %}
  {% if section.settings.title != blank or section.settings.text != blank or  section.settings.btn_text != blank%}
-    <div class="page-width-desktop">
+    <div class="page-width-desktop" data-aos="fade-up">
         <div class="background-image-header">
             {% if section.settings.btn_text != blank %}
                 <a class="btn-primary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
@@ -37,7 +37,7 @@
         </div>
     </div>
 {% endif %}
-<div class="background-image-container">
+<div class="background-image-container" data-aos="fade-up">
     {% if section.settings.background_white != blank %}
         <div class="white_wave"></div>
     {% endif %}
