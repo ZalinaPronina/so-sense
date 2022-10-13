@@ -209,7 +209,6 @@
         "name": "Full name",
         "email": "E-mail",
         "phone": "Phone number",
-        "subject": "Subject",
         "comment": "How can we help?",
         "agree": "I agree to send updates to my inbox",
         "send": "Please get in contact with me",
@@ -232,14 +231,14 @@
       }
     },
     "cart": {
-      "title": "Cart",
+      "title": "Your cart",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
       "subtotal": "Subtotal",
       "new_subtotal": "New subtotal",
       "note": "Order special instructions",
-      "checkout": "Proceed to checkout",
-      "empty": "Your cart is currently empty...",
+      "checkout": "Check out",
+      "empty": "Your cart is empty",
       "cart_error": "There was an error while updating your cart. Please try again.",
       "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your cart.",
       "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
@@ -249,7 +248,7 @@
       "headings": {
         "product": "Product",
         "price": "Price",
-        "subtotal": "Subtotal",
+        "total": "Total",
         "quantity": "Quantity",
         "image": "Product image"
       },
@@ -401,7 +400,7 @@
       "last_name": "Last name",
       "email": "Email",
       "password": "Password",
-      "submit": "Sign up"
+      "submit": "Create"
     },
     "reset_password": {
       "title": "Reset account password",

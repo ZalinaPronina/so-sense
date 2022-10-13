@@ -6,11 +6,11 @@
     <h1 class="all-blogs-title__title">Blog</h1>
   </div>
   <div class="allblogs-sections page-width-desktop">
-    
+
     <div class="allblogs-sections-left">
       {% for link in linklists.blog-categories.links %}
       {% assign blog = link.object %}
-      
+
         {% paginate blog.articles by 3 %}
           {% for article in blog.articles %}
             {%- render 'article-allblogs', article:article, blog: blog -%}
@@ -24,9 +24,9 @@
       </div>
 
       {% endfor %}
-    
+
     </div>
-    
+
     <div class="allblogs-sections-right">
       <form class="search-article" method="get" action="/search">
         <input type="hidden" name="type" value="article" />
@@ -34,7 +34,7 @@
           placeholder="Type search" 
           class="search-article__input article-icon" 
           type="text" 
-          name="q"  
+          name="q"
         />
 <!--         <input  type="submit" value="Search" /> -->
       </form>

@@ -167,7 +167,7 @@
 }
 .home-slider-steps .swiper-pagination{
     position: relative;
-    display: flex; 
+    display: flex;
     gap: 7.3rem;
     bottom: 0;
     margin-left: 66rem;
@@ -1093,7 +1093,7 @@
     .discount-banner .discount-banner__image{
         flex-direction: column-reverse;
         display: flex;
-        align-items: center; 
+        align-items: center;
     }
     .discount-banner .discount-banner__image img{
         width: 75%;
