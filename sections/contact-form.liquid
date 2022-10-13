@@ -1,7 +1,7 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 
 <div class="contact-form">
-  <div class="contact page-width-desktop">
+  <div class="contact page-width-desktop" data-aos="fade-up">
     {%- if section.settings.heading != blank -%}
       <h2 class="h2">{{ section.settings.heading | escape }}</h2>
     {%- else -%}
@@ -69,9 +69,13 @@
         </div>
         <div class="additional-fields">
           <div class="field select">
-              <label for="select_in-form" class="icon-E-mail">Subject</label>
+              <label for="select_in-form" class="icon-E-mail">{{ 'templates.contact.form.subject' | t }}</label>
               <select  name="select" id="select_in-form" class="select_in-form__contact field__input">
-                  <option value="">What you are reaching out for</option>
+                {%- for block in section.blocks -%}
+                  {% if block.settings.title != blank %}
+                    <option value="{{block.settings.title}}">{{block.settings.title}}</option>
+                  {% endif %}
+                {% endfor %}
               </select>
           </div>
           <div class="field">
@@ -112,6 +116,19 @@
       "id": "heading",
       "default": "Contact form",
       "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+        "type": "block",
+        "name": "Subject value",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Subject Value"
+            }
+        ]
     }
   ]
 }

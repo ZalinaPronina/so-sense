@@ -9,7 +9,7 @@
 
 {{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}
 <div class="blog-2-column color-{{ section.settings.color_scheme }} gradient">
-  <div class="page-width-desktop">
+  <div class="page-width-desktop" data-aos="fade-up">
     {%- unless section.settings.heading == blank -%}
       <div class="title-wrapper-with-link">
         <h2 class="h2">{{ section.settings.heading}}</h2>

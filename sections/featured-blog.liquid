@@ -13,7 +13,7 @@
   assign posts_displayed = section.settings.blog.articles_count
 -%}
 <div class="blog color-{{ section.settings.color_scheme }} gradient">
-  <div class="page-width-desktop">
+  <div class="page-width-desktop" data-aos="fade-up">
     {%- unless section.settings.heading == blank -%}
       <div class="title-wrapper-with-link">
         <h2 class="h2">{{ section.settings.heading | escape }}</h2>

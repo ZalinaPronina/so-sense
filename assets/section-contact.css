@@ -1,20 +1,10 @@
 .body-cont {
-    max-width: 1920px;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 10.9rem;
-    justify-items: center;
-    align-items: start;
-    align-content: space-evenly;
-    justify-content: center;
-    padding-right: 32rem;
-    padding-left: 32rem;
 }
 .body-cont_left-side {
-    width: 55.1rem;
+    max-width: 55.1rem;
 }
 p.body-cont_left-side-placing-email__placing,
 p.body-cont_left-side-placing-email__email {
@@ -25,7 +15,6 @@ p.body-cont_left-side-placing-email__email {
     flex-wrap: nowrap;
     justify-content: flex-start;
     column-gap: 1.6rem;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 2.4rem;
@@ -55,8 +44,6 @@ p.text-description-left {
     position: relative;
 }
 .cont__fields {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
     padding: 4rem;
     border-radius: 16px;
     background-color: #f5f6f8;
@@ -69,23 +56,27 @@ p.text-description-left {
     position: relative;
 }
 .cont-form label {
-    font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 150%;
     color: #525459;
     margin-left: 1.6rem;
+    max-width: 100%;
+    display: block;
 }
 .select_subject {
     margin-left: 2.6rem !important;
 }
 span.icon-E-mail {
     position: absolute;
-    top: 4.7rem;
-    left: 1.4rem;
+    top: 2rem;
+    left: 2rem;
 }
-
+span.icon-E-mail svg{
+    width: 2.4rem;
+    height: 2.4rem;
+}
 .form__label {
     display: block;
     margin-bottom: 0;
@@ -96,27 +87,27 @@ span.icon-E-mail {
     max-width: 54rem;
 }
 .cont-form input, .cont-form textarea{
-    padding: 1rem 1.25rem 1rem 5.5rem;
+    padding: 1.6rem 2rem 1.6rem 5.6rem;
     background: #FFFFFF;
     border-radius: 16px;
     height: 6.4rem;
     max-width: 54rem;
     width: 100%;
+    font-size: 1.8rem;
 }
 .select_option {
     position: relative;
 }
 .select_option:after {
     content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.91016 9.56519L11.6493 15.3043L17.3884 9.56519' stroke='black' stroke-width='1.91304' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
-    padding: 0 8px;
     font-size: 12px;
     position: absolute;
     right: 2rem;
-    top: 4.5rem;
+    top: 2rem;
     z-index: 1;
     text-align: center;
-    width: 10%;
-    height: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
     border: none;
 }
  select {
@@ -149,126 +140,36 @@ span.icon-E-mail {
 .select_option {
     margin-bottom: 1.5rem;
 }
-button.button-cont {
-    margin-top: 2rem;
-    cursor: pointer;
-    border: none;
-    width: 14.3rem;
-    height: 6.4rem;
-    background-color: #283C92;
-    border-radius: 100px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.8rem;
-    line-height: 140%;
-    color: white;
-    display: flex;
-    column-gap: 0.7rem;
-    align-items: center;
-    justify-content: center;
-}
 .body-cont_left-side-text_title h2 {
-    font-family: Poppins;
-    width: 33rem;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 5.6rem;
-    line-height: 130%;
-    color: #283c92;
+    max-width: 33rem;
     margin-bottom: 0;
     margin-top: 0;
 }
 .body-cont_left-side-text_title h2 p{
     margin: 0;
 }
-strong {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 5.6rem;
-    color: #28ACE2;
-}
 .body-cont_left-side-placing-email__placing  span {
     display: flex;
 }
 .text-description-left {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 3.2rem;
-    line-height: 140%;
     max-width: 50.5rem;
-    color: #283C92;
 }
 .cont {
    width: 62rem;
 }
-.page-width {
-    max-width: 79.2%;
-    margin: 0 auto;
-}
-.page-width-desktop {
-    padding: 0;
-    max-width: 66.7%;
-    margin: 0 auto;
-}
-@media only screen and (max-width: 1500px) {
-    html{
-        font-size: 51%;
-    }
-}
-@media only screen and (max-width: 1050px) {
-    html{
-        font-size: 7.1px;
-    }
-}
-@media only screen and (max-width: 989px) {
-    html{
-        font-size: 1.8vw;
-    }
-}
-@media only screen and (max-width: 700px) {
-    html{
-        font-size: 1.667vw;
-    }
-}
-@media screen and (max-width: 1400px) {
-    .page-width {
-        max-width: 80%;
-    }
-    .page-width-desktop {
-        max-width: 80%;
-    }
-}
-@media screen and (max-width: 1100px) {
-    .page-width {
-        max-width: 100%;
-        margin: 0 20px;
-    }
-    .page-width-desktop {
-        max-width: 100%;
-        margin: 0 20px;
-    }
-}
-@media screen and (max-width: 1500px) {
-    .body-cont{
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-        justify-items: center;
-        align-items: start;
-        align-content: space-evenly;
-        justify-content: center;
-        width: 100%;
-        padding-right: 0;
-    }
-}
-@media screen and (max-width: 1100px) {
-    .body-cont {
-        padding-right: 2%;
-    }
+.cont .btn-secondary {
+    margin-top: 2rem;
+    border: none;
+    width: 100%;
+    max-width: 32rem;
+    height: 6.4rem;
+    justify-content: center;
 }
 @media screen and (max-width: 989px) {
+    .cont-form input, .cont-form textarea, select{
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
     .body-cont_left-side-text_title {
         text-align: center;
     }
@@ -291,13 +192,9 @@ strong {
     .body-cont {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
-        align-items: start;
-        align-content: space-evenly;
-        justify-content: center;
-        width: 100%;
-        padding-right: 3%;
+        padding-right: 0;
         padding-left: 0;
+        margin: 0;
     }
     .body-cont_left-side-text_title h2 {
         margin-right: auto;
@@ -305,78 +202,35 @@ strong {
         font-size: 3.8rem;
         max-width: 20rem;
     }
-    strong {
-        font-size: 3.8rem;
-    }
 
     .body-cont_left-side {
         margin-bottom: 6.4rem;
-    }
-    button.button-cont {
-        margin-right: auto;
-        margin-left: auto;
     }
     .text-description-left {
         text-align: center;
     }
     .cont-form {
-        padding: 3.2rem 0 19rem;
+        padding: 3.2rem 0 0rem;
     }
     .text-description-left {
-        font-size: 2rem;
         max-width: 100%;
+        font-weight: 500;
     }
     .select_in-form__cont {
         max-width: 54rem;
         width: 100%;
         margin: 0;
     }
-    .cont__fields {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        padding: 2rem;
-        border-radius: 16px;
-        background-color: #f5f6f8;
-        width: 100%;
-    }
     .select_subject {
         margin-left: 1.6rem !important;
     }
     .cont {
         width: 100%;
-        max-width: 100%;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .cont__button {
-        margin-top: 1rem;
-    }
-    .body-cont_left-side-placing-email {
-        max-width: 100%;
+        background: #F5F6F8;
+        padding: 4rem 2rem 15rem;
     }
     .cont__fields {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
         padding: 2rem;
-        border-radius: 16px;
-        background-color: #f5f6f8;
-        width: 100%;
-    }
-    .cont {
-        width: 100%;
-        max-width: 100%;
-        background-color: #f5f6f8;
-    }
-}
-@media screen and (max-width: 600px) {
-    .cont__fields {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        padding: 2rem;
-        border-radius: 16px;
-        background-color: #f5f6f8;
-        width: 100%;
     }
     .select:after {
         padding: 0 8px;
@@ -386,117 +240,26 @@ strong {
         width: 4%;
         height: 80%;
     }
-    .cont {
-        width: 100%;
-        max-width: 100%;
+    .cont .btn-secondary {
+        margin-top: 1.7rem;
+        max-width: max-content;
     }
-    p.body-cont_left-side-placing-email__placing,
-    p.body-cont_left-side-placing-email__email {
-        font-size: 1.8rem;
-    }
-
     .body-cont_left-side-placing-email {
-        margin-left: auto;
-        margin-right: auto;
+        row-gap: 2rem;
     }
-
-    .body-cont {
-        padding-right: 0;
-        padding-left: 0;
-        margin: 0;
-    }
-}
-@media screen and (max-width: 425px) {
     .cont__fields {
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        padding: 2rem;
+        padding: 0;
         border-radius: 16px;
         background-color: #f5f6f8;
         width: 100%;
     }
-    .cont {
-        width: 100%;
-        max-width: 100%;
+    .cont-form label {
+        font-size: 1.6rem;
     }
     p.body-cont_left-side-placing-email__placing,
     p.body-cont_left-side-placing-email__email {
-        font-size: 2.55rem;
-    }
-    .text-description-left {
-        font-size: 3rem;
-        max-width: 100%;
-    }
-    .body-cont_left-side-text_title h2 {
-        margin-right: auto;
-        margin-left: auto;
-        font-size: 5.3rem;
-        max-width: 31rem;
-    }
-    strong {
-        font-size: 5.3rem;
-    }
-    .body-cont_left-side-placing-email {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .cont-form {
-        padding: 3.2rem 0 4.3rem;
-    }
-    button.button-cont {
-        margin-bottom: 43px;
-    }
-
-    .body-cont {
-        padding-right: 0;
-        padding-left: 0;
-        margin: 0;
-    }
-    .select:after {
-        padding: 0 8px;
-        font-size: 21px;
-        right: 6rem;
-        top: 5rem;
-        width: 4%;
-        height: 80%;
-    }
-    button.button-contact {
-        margin-bottom: 86px;
-    }
-    span.icon-E-mail {
-        position: absolute;
-        top: 5.2rem;
-        left: 1.4rem;
-    }
-    .cont-form label {
-        font-size: 2.4rem;
-    }
-}
-@media screen and (max-width: 376px) {
-    span.icon-E-mail {
-        position: absolute;
-        top: 5.7rem;
-        left: 1.2rem;
-    }
-    .text-description-left {
-        font-size: 3rem;
-        max-width: 100%;
-    }
-    .cont-form label {
-        font-size: 2.555rem;
-        margin: 0 0 0.5rem 1rem;
-    }
-    .body-cont_left-side-text_title h2 {
-        margin-right: auto;
-        margin-left: auto;
-        font-size: 6rem;
-        max-width: 31rem;
-    }
-    strong {
-        font-size: 6rem;
-    }
-    p.body-cont_left-side-placing-email__placing,
-    p.body-cont_left-side-placing-email__email {
-        font-size: 2.89rem;
+        font-size: 1.8rem;
     }
 }
