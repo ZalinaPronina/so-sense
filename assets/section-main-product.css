@@ -1,8 +1,5 @@
 .product-container{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  padding: 15rem 0 20rem;
+  padding: 14.4rem 0 27.3rem;
 }
 .product .product-page {
   margin: 0 auto;
@@ -29,6 +26,9 @@
   gap: 2rem;
   color: #fff;
   max-width: 51rem;
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 140%;
 }
 .product .instruction-section__blocks{
   align-items: end;
@@ -45,7 +45,24 @@
 .product.grid {
   gap: 0;
 }
-
+@media screen and (max-width: 989px) {
+  .instruction-section .instruction-section__content .text{
+    text-align: left;
+  }
+  .product .instruction-section .description-block{
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .product .instruction-section__blocks{
+    gap: 1.6rem;
+  }
+  .product .instruction-section .instruction-section__content .btn-secondary{
+    display: none;
+  }
+  .btn-secondary{
+    margin-top: 1.6rem;
+  }
+}
 .product--no-media {
   max-width: 57rem;
   margin: 0 auto;
@@ -353,6 +370,9 @@ a.product__text {
   margin-bottom: 0.5rem;
 }
 
+.product .price__container {
+  margin-bottom: 0.5rem;
+}
 
 .product .price dl {
   margin-top: 0.5rem;
@@ -470,6 +490,9 @@ a.product__text {
 
 .product-form__buttons button{
   border: none;
+}
+.product-form__buttons button circle{
+stroke: #fff;
 }
 .product-form__buttons span{
   display: flex;
@@ -1249,7 +1272,16 @@ a.product__text {
   background: transparent;
   margin: 0 auto;
 }
+.product .instruction-section .instruction-section__content{
+  max-width: 63rem;
+}
+.product .instruction-section .h2, .product .instruction-section__content .h5{
+  max-width: 57rem;
+}
 @media only screen and (max-width: 989px) {
+  .product .instruction-section .h2, .product .instruction-section__content .h5{
+    max-width: 100%;
+  }
   .product .product-page{
     flex-direction: column;
     padding: 0 20px;
@@ -1259,7 +1291,7 @@ a.product__text {
     max-width: 100%;
   }
   .product-container{
-    padding: 3rem 0 10rem;
+    padding: 3rem 0 8rem;
   }
   .product__info-wrapper .price{
     text-align: center;
@@ -1299,6 +1331,8 @@ a.product__text {
   }
   .product-show-map__content h4{
     font-size: 2.8rem;
+    max-width: 15rem;
+    margin: 0 auto 1.6rem;
   }
   .product-show-map__content .text{
     font-weight: 400;
@@ -1310,6 +1344,14 @@ a.product__text {
   .product-show-map__content .btn-primary{
     border: 2px solid #283C92;
     color: #fff;
+  }
+}
+@media only screen and (max-width: 989px) {
+  .product .product__media-item{
+    height: 35rem;
+  }
+  .product__media-item img{
+    object-fit: contain;
   }
 }
 @media only screen and (max-width: 600px) {

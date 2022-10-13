@@ -1,6 +1,4 @@
 {{ 'all-blogs.css' | asset_url | stylesheet_tag }}
- {% assign blog_handles = "news,business" | split: "," %}
- 
 
  <div class="all-blogs">
   <div class="all-blogs-title">
@@ -8,13 +6,27 @@
     <h1 class="all-blogs-title__title">Blog</h1>
   </div>
   <div class="allblogs-sections page-width-desktop">
+
     <div class="allblogs-sections-left">
-      {% for handle in blog_handles %}
-      {% for article in blogs[handle].articles %}
-        {%- render 'article-allblogs', article:article, blog: blogs[handle] -%}
+      {% for link in linklists.blog-categories.links %}
+      {% assign blog = link.object %}
+
+        {% paginate blog.articles by 3 %}
+          {% for article in blog.articles %}
+            {%- render 'article-allblogs', article:article, blog: blog -%}
+          {% endfor %}
+
+      <div class="article-pagination">
+        {%- if paginate.pages > 1 -%}
+        {%- render 'pagination', paginate: paginate -%}
+      {%- endif -%}
+      {% endpaginate %}
+      </div>
+
       {% endfor %}
-    {% endfor %}
+
     </div>
+
     <div class="allblogs-sections-right">
       <form class="search-article" method="get" action="/search">
         <input type="hidden" name="type" value="article" />
@@ -22,33 +34,32 @@
           placeholder="Type search" 
           class="search-article__input article-icon" 
           type="text" 
-          name="q" 
+          name="q"
         />
 <!--         <input  type="submit" value="Search" /> -->
       </form>
       <div class="recent-post">
         <div class="recent-post__title">Recent Posts</div>
         <div class="recent-post-box">
-          {% for handle in blog_handles %}
-            {% for article in blogs[handle].articles %}
-              {% for tags in article.tags %}
+          {% for link in linklists.blog-categories.links  %}
+            {% for article in blogs[link.handle].articles %}
+            <script>console.log({{ article.title | json }})</script>
                 {% if article.tags contains 'recent-post' %}
-                <a style="text-decoration: none;" href="{{ article.url }}" class="recent-post-item">
-                  <div class="recent-post-item__title">{{ article.title }}</div>
-                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_1812_7851)">
-                      <path d="M5 12.5H19" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M12 5.5L19 12.5L12 19.5" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </g>
-                      <defs>
-                      <clipPath id="clip0_1812_7851">
-                      <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
+                  <a style="text-decoration: none;" href="{{ article.url }}" class="recent-post-item">
+                    <div class="recent-post-item__title">{{ article.title }}</div>
+                      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1812_7851)">
+                        <path d="M5 12.5H19" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 5.5L19 12.5L12 19.5" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1812_7851">
+                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
                   </a>
                 {% endif %}
-              {% endfor %}
             {% endfor %}
           {% endfor %}
         </div>
@@ -56,28 +67,83 @@
       <div class="article-category recent-post">
         <div class="recent-post__title">Categories</div>
         <div class="recent-post-box">
-          {% for handle in blog_handles %}
-          {% assign blogss = blogs[handle] %}
-          <script>console.log({{ blogss | json }})</script>
-            <a style="text-decoration: none;" href="{{ blogss.url }}" class="recent-post-item">
-              <div class="recent-post-item__title">{{ blogss.title }}</div>
-                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1812_7851)">
-                  <path d="M5 12.5H19" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M12 5.5L19 12.5L12 19.5" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_1812_7851">
-                  <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
-                  </clipPath>
-                  </defs>
-                </svg>
-              </a>  
-           {% endfor %}
+          {% for link in linklists.blog-categories.links %}
+            <a
+              href="{{ link.url }}" 
+              style="text-decoration: none;" 
+              class="recent-post-item category-post-item">
+              <div class="recent-post-item__title">{{ link.title }}</div>
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1812_7851)">
+                <path d="M5 12.5H19" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 5.5L19 12.5L12 19.5" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1812_7851">
+                <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </a>
+          {% endfor %}
         </div>
+
+      </div>
+
+      <div class="show-more-catagories">Show more categories
+        <img src="https://cdn.shopify.com/s/files/1/0552/8682/5006/files/arrow_drop_down.png?v=1664283846" alt="">
       </div>
     </div>
   </div>
  </div>
 
+ <style>
+  .category-post-item {
+    display: none;
+  }
+ </style>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
 
+    $(document).ready(function(){
+  $(".category-post-item").slice(0,1).css('display', 'flex');
+  $(".show-more-catagories").on("click", function(e){
+    e.preventDefault();
+    $(".category-post-item:hidden").slice(0, 5).css('display', 'flex');
+    if($(".content:hidden").length == 0) {
+      $(".show-more-catagories").hide();
+    }
+  });
+  
+})
+});
+
+const allArticle = document.querySelectorAll('.simple-article-style')
+var mq = window.matchMedia( "(max-width: 989px)" );
+if (!mq.matches) {
+
+  allArticle.forEach((item,index) => { 
+    if(index == 2) {
+      item.style.marginTop = "-80px";
+    }
+
+    if(index == 4) {
+      item.style.marginTop = "-100px";
+    }
+  })
+}
+else {
+  allArticle.forEach((item,index) => {
+    if(index == 2) {
+      item.style.marginTop = "0";
+    }
+
+    if(index == 4) {
+      item.style.marginTop = "0";
+    }
+  })
+}
+
+
+
+</script>

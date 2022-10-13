@@ -33,8 +33,8 @@
     <link id="ModelViewerStyle" rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
     <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
   {%- endif -%}
-  <div class="product-container">
-    <div class="product product-page page-width-desktop">
+  <div class="product-container background-image">
+    <div class="product product-page page-width-desktop" data-aos="fade-up">
       <div class="product__title mobile-screen">
         <h2 class="h1">{{ product.title | escape }}</h1>
       </div>
@@ -73,7 +73,8 @@
               </p>
             {%- when 'title' -%}
               <div class="product__title desktop-screen" {{ block.shopify_attributes }}>
-                <h1 class="h1">{{ product.title | escape }}</h1>
+                {% assign product_title = product.title | split: ' ' %}
+                <h1 class="h1">{{product.title}}</h1>
                 <a href="{{ product.url }}" class="product__title desktop-screen">
                   <h2 class="h1">
                     {{ product.title | escape }}

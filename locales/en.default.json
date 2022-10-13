@@ -65,7 +65,7 @@
     "close": "Close",
     "unit_price_separator": "per",
     "vendor": "Vendor:",
-    "error": "Incorrect password",
+    "error": "Error",
     "refresh_page": "Choosing a selection results in a full page refresh.",
     "link_messages": {
       "new_window": "Opens in a new window.",
@@ -340,17 +340,17 @@
       "delete": "Delete",
       "delete_confirm": "Are you sure you wish to delete this address?"
     },
-    "log_in": "Log in ",
+    "log_in": "Log in",
     "log_out": "Log out",
     "login_page": {
       "cancel": "Cancel",
       "create_account": "Don't have an account? Sign Up",
-      "email": "E-mail",
+      "email": "Email",
       "forgot_password": "Forgot password?",
       "guest_continue": "Continue",
       "guest_title": "Continue as a guest",
       "password": "Password",
-      "title": "",
+      "title": "Login",
       "sign_in": "Log in",
       "submit": "Send"
     },
@@ -400,7 +400,7 @@
       "last_name": "Last name",
       "email": "Email",
       "password": "Password",
-      "submit": "Sign up"
+      "submit": "Create"
     },
     "reset_password": {
       "title": "Reset account password",

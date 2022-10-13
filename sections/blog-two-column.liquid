@@ -8,12 +8,8 @@
 <noscript>{{ 'component-article-card.css' | asset_url | stylesheet_tag }}</noscript>
 
 {{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}
-
-{%- liquid
-  assign posts_displayed = section.settings.blog.articles_count
--%}
 <div class="blog-2-column color-{{ section.settings.color_scheme }} gradient">
-  <div class="page-width-desktop">
+  <div class="page-width-desktop" data-aos="fade-up">
     {%- unless section.settings.heading == blank -%}
       <div class="title-wrapper-with-link">
         <h2 class="h2">{{ section.settings.heading}}</h2>
@@ -21,12 +17,12 @@
           <a href="{{ section.settings.blog.url }}"
             class="btn-secondary"
           >
-            {{ 'sections.featured_blog.view_all' | t }} <span class="arrow desktop-screen"></span>
+            {{ 'sections.featured_blog.view_all' | t }} <span class="desktop-screen">{% include 'icon-arrow-right' %}</span>
           </a>
         {%- endif -%}
       </div>
     {%- endunless -%}
-    {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
+    {%- if section.settings.blog != blank -%}
       <slider-component class="slider-mobile-gutter">
         <ul
           class="blog__posts"
@@ -74,7 +70,7 @@
                     </div>
                     <div class="card__content">
                       <div class="card__information">
-                        <h3 class="card__heading">
+                        <h3 class="h6 card__heading">
                           <a href="{{ article.url }}" class="full-unstyled-link">
                             {{ article.title | truncate: 48 | escape }}
                           </a>
@@ -90,9 +86,9 @@
                         {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
                             <p class="article-card__excerpt">
                                 {%- if article.excerpt.size > 0 -%}
-                                    {{ article.excerpt | strip_html | truncatewords: 30 }}
+                                    {{ article.excerpt | strip_html | truncatewords: 12 }}
                                 {%- else -%}
-                                    {{ article.content | strip_html | truncatewords: 30 }}
+                                    {{ article.content | strip_html | truncatewords: 12 }}
                                 {%- endif -%}
                             </p>
                         {%- endif -%}
@@ -121,7 +117,8 @@
     {
       "type": "richtext",
       "id": "heading",
-      "label": "Title"
+      "label": "Title",
+      "info": "Choose Bold to change the color"
     },
     {
       "type": "blog",

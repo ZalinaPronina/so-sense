@@ -99,14 +99,15 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
-    "currency_code_enabled": true,
+    "currency_code_enabled": false,
     "cart_type": "notification",
     "show_vendor": false,
     "show_cart_note": false,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "settings": {}
+        "settings": {
+        }
       },
       "header": {
         "type": "header",
@@ -132,7 +133,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/footer-logo.png",
               "image_width": 190,
-              "image_width_1": 5,
+              "image_width_1": 19,
               "alignment": ""
             }
           },
@@ -182,6 +183,7 @@
         ],
         "settings": {
           "background": "shopify:\/\/shop_images\/Exclude.png",
+          "background_mobile": "shopify:\/\/shop_images\/Footer_mob.png",
           "color_scheme": "accent-2",
           "newsletter_enable": false,
           "newsletter_heading": "Subscribe to our emails",
@@ -219,7 +221,7 @@
         "settings": {
           "title": "<p>Log In <strong>As User<\/strong><\/p>",
           "text_description_before": "Hi, Welcome back!",
-          "text_description_after": "Please, enter your details.",
+          "text_description_after": "Please enter your details.",
           "placing": "Eget pulvinar facilisis in pellentesque nisl auctor amet. Vel mauris duis cras et."
         }
       },
@@ -235,19 +237,14 @@
       "left-block-password-recovery": {
         "type": "left-block-password-recovery",
         "settings": {
-          "title": "<p>Password<strong> Recovery<\/strong><\/p>",
+          "title": "<p>Password <strong>Recovery<\/strong><\/p>",
           "placing": "Eget pulvinar facilisis in pellentesque nisl auctor amet. Vel mauris duis cras et."
-        }
-      },
-      "recovery_password_massage": {
-        "type": "recovery_password_massage",
-        "settings": {
-          "title": "Congratulations!",
-          "description": "The link was already sent."
         }
       }
     },
-    "content_for_index": []
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
@@ -366,7 +363,8 @@
           "block_order": [
             "announcement-bar-0"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "header": {
           "type": "header",
@@ -420,10 +418,7 @@
             "show_social": true,
             "enable_country_selector": false,
             "enable_language_selector": false,
-            "payment_enable": true,
-            "margin_top": 48,
-            "padding_top": 36,
-            "padding_bottom": 36
+            "payment_enable": true
           }
         },
         "main-password-header": {

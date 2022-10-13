@@ -13,7 +13,7 @@
                             </div>
                         {% endif %}
                         <div class="swiper-testimonials__content">
-                            <h5>{{block.settings.title}}</h5>
+                            <h5 class="h5">{{block.settings.title}}</h5>
                             <div class="text">{{block.settings.text}}</div>
                             <div class="swiper-testimonials__flex">
                                 {% if block.settings.author_image != blank %}
@@ -63,7 +63,8 @@
         {
             "type": "richtext",
             "id": "title",
-            "label": "Title"
+            "label": "Title",
+            "info": "Choose Bold to change the color"
         }
     ],
     "blocks": [

@@ -59,18 +59,23 @@
       </div>
       <div class="card__content">
         <div class="card__information">
-          <h3 class="card__heading">
+          <h6 class="h6 card__heading">
             <a href="{{ article.url }}" class="full-unstyled-link">
               {{ article.title | truncate: 50 | escape }}
             </a>
-          </h3>
+          </h6>
           <div class="caption-with-letter-spacing">
             {%- if show_date -%}
               <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
             {%- endif -%}
             <div class="article-bottom">
               {%- if show_author -%}
-                <span class="blog_author">{{ article.author }}</span>
+                <div class="blog_author-image">
+                  {% if article.user.image != blank %}
+                    <img src="{{ article.user.image | img_url: 'master' }}" alt="{{ article.author }}">
+                  {% endif %}
+                  <span class="blog_author">{{ article.author }}</span>
+                </div>
               {%- endif -%}
               <a href="{{ article.url }}">More <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1812_7851)">

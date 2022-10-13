@@ -19,27 +19,60 @@
 {% endif %}
 <section class="main-banner">
     <div class="page-width-desktop main-banner__container">
+{{ 'page-investor-information.css' | asset_url | stylesheet_tag }}
+{% if section.settings.background != blank %}
+    <style>
+        @media only screen and (min-width: 990px){
+            .main-banner{
+                background-image: url('{{section.settings.background | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
+{% if section.settings.background_mobile != blank %}
+    <style>
+        @media only screen and (max-width: 989px){
+            .main-banner{
+                    background-image: url('{{section.settings.background_mobile | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
+<section class="main-banner background-image">
+    <div class="page-width-desktop main-banner__container" data-aos="fade-up">
         <div class="main-banner__text">
             {% if section.settings.title != blank %}
                 <h1 class="h1">{{section.settings.title}}</h1>
+            {% if section.settings.btn_text != blank %}
+                <a class="btn-primary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
+            {% endif %}
+            {% if section.settings.title != blank %}
+                <h1 class="h1">{{section.settings.title}}</h1>
+            {% endif %}
+            {% if section.settings.subtitle != blank %}
+                <h5 class="h5">{{section.settings.subtitle}}</h1>
             {% endif %}
             {% if section.settings.text != blank %}
                 <p class="description">{{section.settings.text}}</p>
             {% endif %}
-            <div class="wrapper-image desktop-screen">
-                {% if section.settings.social_1 != blank %}
-                    <a href="{{section.settings.url_1}}"><img src="{{section.settings.social_1 | img_url: 'master' }}" alt=""></a>
-                {% endif %}
-                {% if section.settings.social_2 != blank %}
-                    <a href="{{section.settings.url_2}}"><img src="{{section.settings.social_2 | img_url: 'master' }}" alt=""></a>
-                {% endif %}
-            </div>
+            {% if section.settings.social_1 != blank or section.settings.social_2 != blank %}
+                <div class="wrapper-image desktop-screen">
+                    {% if section.settings.social_1 != blank %}
+                        <a href="{{section.settings.url_1}}"><img src="{{section.settings.social_1 | img_url: 'master' }}" alt=""></a>
+                    {% endif %}
+                    {% if section.settings.social_2 != blank %}
+                        <a href="{{section.settings.url_2}}"><img src="{{section.settings.social_2 | img_url: 'master' }}" alt=""></a>
+                    {% endif %}
+                </div>
+            {% endif %}
         </div>
         <div class="main-banner__position">
             {% if section.settings.main_photo != blank %}
                 <div class="main-banner__image">
                     <img src="{{section.settings.main_photo | img_url: 'master' }}" alt="">
-                    <img class="border-image" src="{{section.settings.border_photo | img_url: 'master' }}" alt="">
+                    {% if section.settings.border_photo != blank %}
+                        <img class="border-image" src="{{section.settings.border_photo | img_url: 'master' }}" alt="">
+                    {% endif %}
                 </div>
             {% endif %}
             {% if section.settings.fix_photo != blank %}
@@ -51,14 +84,16 @@
                 </div>
             {% endif %}
         </div>
-        <div class="wrapper-image mobile-screen">
-            {% if section.settings.social_1 != blank %}
-                <a href="{{section.settings.url_1}}"><img src="{{section.settings.social_1 | img_url: 'master' }}" alt=""></a>
-            {% endif %}
-            {% if section.settings.social_2 != blank %}
-                <a href="{{section.settings.url_2}}"><img src="{{section.settings.social_2 | img_url: 'master' }}" alt=""></a>
-            {% endif %}
-        </div>
+        {% if section.settings.social_1 != blank or section.settings.social_2 != blank %}
+            <div class="wrapper-image mobile-screen">
+                {% if section.settings.social_1 != blank %}
+                    <a href="{{section.settings.url_1}}"><img src="{{section.settings.social_1 | img_url: 'master' }}" alt=""></a>
+                {% endif %}
+                {% if section.settings.social_2 != blank %}
+                    <a href="{{section.settings.url_2}}"><img src="{{section.settings.social_2 | img_url: 'master' }}" alt=""></a>
+                {% endif %}
+            </div>
+        {% endif %}
     </div>
 </section>
 {% schema %}
@@ -76,9 +111,25 @@
             "label": "Background Mobile"
         },
         {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Btn Text"
+        },
+        {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Btn Url"
+        },
+        {
             "type": "richtext",
             "id": "title",
-            "label": "Title"
+            "label": "Title",
+            "info": "Choose Bold to change the color"
+        },
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle"
         },
         {
             "type": "text",

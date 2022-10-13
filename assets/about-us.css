@@ -15,16 +15,20 @@
     padding: 15rem 0;
 }
 .about-us-4-blocks .about-us-4-blocks__flex{
-    display: flex;
-    gap: 4rem;
-    flex-wrap: wrap;
-    align-items: baseline;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 4rem;
+    column-gap: 4rem;
 }
 .about-us-4-blocks .block-text{
-    width: calc(50% - 2rem);
+    margin: 0 auto 4rem;
     background: #F5F6F8;
     border-radius: 32px;
     padding: 4rem;
+    display: inline-block;
+}
+.about-us-4-blocks .block-text:nth-child(even){
+    margin-bottom: 0;
 }
 .about-us-4-blocks .h4{
     color: #283C92;
@@ -37,6 +41,7 @@
 .about-us-4-blocks .h5{
     color: #28ACE2;
     margin: 0 0 1.6rem;
+    font-weight: 600;
 }
 .about-us-4-blocks .text{
     font-weight: 400;
@@ -47,6 +52,15 @@
     margin: 0;
 }
 @media only screen and (max-width: 989px) {
+    .about-us-4-blocks{
+        padding: 8rem 0;
+    }
+    .about-us-4-blocks .about-us-4-blocks__flex{
+        -webkit-column-count: 1;
+        column-count: 1;
+        -webkit-column-gap: 0;
+        column-gap: 0;
+    }
     .about-us-4-blocks .block-text{
         width: 100%;
         padding: 2rem;
@@ -57,33 +71,314 @@
     .about-us-4-blocks .text{
         font-size: 1.6rem;
     }
+    .about-us-4-blocks .block-text{
+        margin-bottom: 3.2rem;
+    }
+    .about-us-4-blocks .block-text:last-child{
+        margin-bottom: 0;
+    }
 }
 /* About Us Team */
 .about-us-team{
-    padding: 15rem 0;
+    padding-top: 15rem;
+}
+.about-us-team .h2{
+    margin: 0 0 1.6rem;
+    text-align: center;
+}
+.about-us-team .text{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 180%;
+    text-align: center;
+    margin: 0 auto 8rem;
+    max-width: 74.6rem;
+}
+.about-us-team .block__text{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 180%;
+    color: #525459;
+}
+.about-us-team .text p{
+    margin: 0;
 }
 .about-us-team .about-us-team__blocks{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4rem;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 4rem;
+    column-gap: 4rem;
+    margin-bottom: -4rem;
 }
 .about-us-team .about-us-team__content{
     border: 2px solid #DEDFE4;
     border-radius: 32px;
     padding: 4rem;
-    width: calc(33% - 3rem);
+    display: inline-block;
+    direction: initial;
+    margin-bottom: 4rem;
 }
 .about-us-team .about-us-team__content img{
-    max-width: 9.4rem;
-    max-height: 9.4rem;
+    max-width: 9.6rem;
+    max-height: 9.6rem;
+    margin-bottom: 4rem;
 }
 .about-us-team .about-us-team__content .h6{
     margin: 0 0 .8rem;
     color: #283C92;
+}
+.about-us-team .about-us-team__content .subtitle{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 140%;
+    color: #28ACE2;
+    margin-bottom: 1.6rem;
 }
 .about-us-team .about-us-team__content p{
     margin: 0;
 }
 .about-us-team .about-us-team__content .text p{
     margin: 0;
+}
+@media only screen and (max-width: 1781px) and (min-width: 990px) {
+    .about-us-team__blocks{
+        direction: rtl;
+    }
+}
+@media only screen and (max-width: 989px) {
+    .about-us-team{
+        padding-top: 8rem;
+    }
+    .about-us-team .about-us-team__content .h6{
+        font-size: 2rem;
+        line-height: 130%;
+    }
+    .about-us-team .text{
+        margin: 0 auto 3.2rem;
+    }
+    .about-us-team .block__text{
+        font-size: 1.6rem;
+        line-height: 160%;
+    }
+    .about-us-team .about-us-team__content{
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+    .about-us-team .about-us-team__content img{
+        margin-bottom: 2rem;
+        max-width: 6.4rem;
+        max-height: 6.4rem;
+    }
+    .about-us-team .about-us-team__blocks{
+        column-count: 1;
+        margin-bottom: -2rem;
+    }
+}
+/* Main Banner */
+.about-us-banner .h1{
+    margin: 0 0 1.2rem;
+}
+.about-us-banner .h1 p{
+    margin: 0;
+}
+.about-us-banner h4{
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 140%;
+    color: #283C92;
+    margin: 0 0 1.6rem;
+}
+.about-us-banner .description{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 180%;
+    margin: 0;
+}
+.about-us-banner .about-us-banner__text{
+    max-width: 50rem;
+}
+.about-us-banner__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 14.4rem 0 26.5rem;
+}
+.about-us-banner .about-us-banner__position{
+    max-width: 62rem;
+    position: relative;
+}
+.about-us-banner .main-banner__image{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+.about-us-banner .main-banner__image .main-photo{
+    max-width: 40rem;
+    width: 100%;
+    border-radius: 32px;
+}
+.about-us-banner .about-us-banner__fixed{
+    max-width: 18rem;
+    max-height: 18rem;
+    border-radius: 32px;
+}
+.about-us-banner .content-absolute-text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #339999;
+    border-radius: 32px;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 170%;
+    color: #FFFFFF;
+    padding: 4rem;
+    max-width: 51rem;
+}
+.about-us-banner .btn-secondary{
+    margin-top: 4rem;
+}
+
+@media only screen and (max-width: 989px) {
+    .about-us-banner .main-banner__image .main-photo, .about-us-banner .content-absolute-text{
+        max-width: 100%;
+    }
+    .about-us-banner .about-us-banner__text{
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+    .about-us-banner .btn-secondary{
+        margin-top: 3.2rem;
+    }
+    .about-us-banner__container{
+        padding: 3.2rem 0 8rem;
+        flex-direction: column;
+    }
+    .about-us-banner__text{
+        text-align: center;
+    }
+    .about-us-banner h4{
+        font-size: 2rem;
+        line-height: 140%;
+    }
+    .about-us-banner .description{
+        font-size: 1.6rem;
+    }
+    .about-us-banner .content-absolute-text{
+        font-size: 1.6rem;
+        line-height: 160%;
+        padding: 2rem;
+        font-weight: 400;
+    }
+    .about-us-banner .content-absolute-text{
+        position: relative;
+        margin-top: -2rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .about-us-banner .main-banner__image .main-photo, .about-us-banner .content-absolute-text img{
+        height: 22rem;
+        object-fit: cover;
+    }
+}
+/* Blog */
+
+.about-us-blog{
+    background: #F5F6F8;
+    padding: 15rem 0;
+}
+.about-us-blog .blog__posts{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.about-us-blog .btn-primary, .about-us-blog .btn-secondary{
+    margin: 0;
+}
+.about-us-blog .btn-primary, .about-us-blog .btn-secondary span{
+    display: flex;
+}
+.about-us-blog .btn-primary, .about-us-blog .btn-secondary path{
+    stroke: #FFFFFF;
+}
+.about-us-blog .blog__post{
+    width: calc(33% - 2.3rem);
+    padding: 4rem;
+    background: #FFFFFF;
+    border-radius: 32px;
+}
+.about-us-blog .card__heading{
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 140%;
+    margin: 0 0 1.6rem;
+}
+.about-us-blog .btn-primary{
+    text-transform: capitalize;
+}
+.about-us-blog .article-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.4rem 0 0 ;
+}
+.about-us-blog .article-bottom a{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 140%;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    color: #283c92;
+    text-decoration: none;
+}
+.about-us-blog .circle-divider{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #525459;
+}
+.about-us-blog .blog__badge{
+    margin-bottom: 1.6rem;
+}
+.about-us-blog .article-card__excerpt{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 180%;
+    margin: 0;
+}
+.about-us-blog .h2{
+    margin: 0;
+}
+.about-us-blog .title-wrapper-with-link{
+    margin-bottom: 3rem;
+}
+@media only screen and (max-width: 989px) {
+    .about-us-blog .blog__posts{
+        gap: 3.2rem;
+    }
+    .about-us-blog .title-wrapper-with-link{
+        margin-bottom: 2rem;
+    }
+    .about-us-blog .btn-secondary {
+        margin: 0;
+        color: #283c92;
+        background: none;
+        padding: 0;
+    }
+    .about-us-blog{
+        padding: 8rem 0;
+    }
+    .about-us-blog .blog__post{
+        width: 100%;
+        padding: 2rem;
+    }
+    .about-us-blog .card__heading{
+        font-size: 2rem;
+        line-height: 130%;
+    }
+    .about-us-blog .article-card__excerpt{
+        font-size: 1.6rem;
+    }
 }

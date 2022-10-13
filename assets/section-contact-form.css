@@ -1,8 +1,5 @@
 .contact-form{
-  padding: 15rem 0 17rem; 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  padding: 15rem 0 17rem;
   position: relative;
   background-color: #339999;
 }
@@ -23,7 +20,6 @@
   width: 2.4rem;
   height: 2.4rem;
   display: inline-flex;
-  margin-right: 1rem;
 }
 .checkbox-contact{
   display: flex;
@@ -47,6 +43,7 @@
   margin: 0;
   position: relative;
   display: flex;
+  gap: 1rem;
   align-items: center;
   cursor: pointer;
 }
@@ -63,6 +60,7 @@
 .contact-form select{
   cursor: pointer;
   padding: 2rem;
+  margin-bottom: 5.6rem !important;
 }
 .contact-form textarea{
   padding: 2rem;
@@ -152,7 +150,7 @@ select {
 }
 @media screen and (min-width: 990px) {
   .contact__button {
-    margin-top: 4rem;
+    margin-top: 7.6rem;
   }
 }
 
@@ -163,6 +161,9 @@ select {
   }
 }
 @media only screen and (max-width: 989px) {
+  .contact__fields .additional-fields .select label{
+    height: 1rem;
+  }
   .contact-form{
     padding: 8rem 0 12rem;
   }
@@ -181,6 +182,7 @@ select {
     padding: 2rem;
     font-size: 1.6rem;
     height: 6rem;
+    margin-bottom: 0 !important;
   }
   .contact-form textarea{
     height: 17.5rem;

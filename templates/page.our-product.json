@@ -1,5 +1,18 @@
 {
   "sections": {
+    "our-product-banner": {
+      "type": "our-product-banner",
+      "settings": {
+        "background": "shopify:\/\/shop_images\/Intersect_68eb7379-f5e9-4e02-9a4d-5d72c64bdfae.png",
+        "background_mobile": "shopify:\/\/shop_images\/background-mobile-maiin.png",
+        "title": "<p>Velit, sed <strong>mollis neque<\/strong><\/p>",
+        "subtitle": "",
+        "text": "",
+        "btn_url": "\/",
+        "btn_text": "Order Product",
+        "main_photo": "shopify:\/\/shop_images\/video_3.png"
+      }
+    },
     "1663836676d03533fb": {
       "type": "instruction-section",
       "settings": {
@@ -8,7 +21,7 @@
         "title": "<p>The <strong>Problem<\/strong><\/p>",
         "subtitle": "<p>Your home should be a happy place.<\/p>",
         "text": "<p>If you find yourself always worrying about what might go wrong in your at-home swimming pool when you’re not watching, you’re not alone and it’s definitely a warranted concern.<\/p>",
-        "text_second": "<p>With more than 3<a href=\"\/\" title=\"\/\">50 children under the age of five, dying by drowning in pools each year<\/a> nationwide, pool safety alarms should be mandatory. That is why we have created our SOSense acoustic sensor alarm that is capable of detecting pool entry earlier than any other technology currently on the market.<\/p>",
+        "text_second": "<p>With more than <a href=\"\/\" title=\"\/\">350 children under the age of five, dying by drowning in pools each year<\/a> nationwide, pool safety alarms should be mandatory. That is why we have created our SOSense acoustic sensor alarm that is capable of detecting pool entry earlier than any other technology currently on the market.<\/p>",
         "btn_url": "",
         "btn_text": ""
       }
@@ -58,6 +71,7 @@
             "title": "Pairing",
             "text": "<p>Log in with your social profile or register with your email & Press on ADD HOME UNIT. Add your Home Unit by scanning the QR code on the unit & connect it to your Wi-Fi network. Press on PAIR POOL UNIT to automatically pair the Pool Unit via Bluetooth.<\/p>",
             "image_1": "shopify:\/\/shop_images\/Re.png",
+            "image_2": "shopify:\/\/shop_images\/Rectangle_80.png",
             "btn_text": "Open the SoSense app",
             "btn_url": ""
           }
@@ -68,6 +82,7 @@
             "title": "Place",
             "text": "<p>Mount the Home Unit on a wall next to the AC outlet only after setting up the system via the SoSense app. Anchor the Pool Unit to the side of the pool.<\/p>",
             "image_1": "shopify:\/\/shop_images\/video_2.png",
+            "image_2": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_4_720476ec-f381-4432-9d1c-e267a54c7aa8.png",
             "btn_text": "Home Unit \/ Pool Unit",
             "btn_url": ""
           }
@@ -78,7 +93,8 @@
             "title": "Install",
             "text": "<p>You can manage and operate the SoSense pool alert system straight from the SoSense app DASHBOARD. The status of the system is displayed in the User Dashboard: DISARMED\/ARMED. Press on ARM or DISARM to initiate or remove the Pool alert system.<\/p>",
             "image_1": "shopify:\/\/shop_images\/video_3.png",
-            "btn_text": "",
+            "image_2": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_5.png",
+            "btn_text": "SoSense app DASHBOARD",
             "btn_url": ""
           }
         }
@@ -179,12 +195,12 @@
       "settings": {
         "btn_url_top": "",
         "btn_text_top": "",
-        "title": "<p>Availability to <strong>purchase<\/strong><\/p>",
+        "title": "<p>Availability<\/p><p>to <strong>purchase<\/strong><\/p>",
         "subtitle": "<p>Our unique disruptive underwater acoustic technology with ML & AI detects all entry & underwater disturbances. <\/p>",
         "text": "<p>Earlybird purchases will help us complete the development of this life-saving alarm system that we have put years of research into creating because we know that this is necessary for global swimming pool safety measures, in order to save hundreds of lives. <\/p>",
         "text_second": "<p>As an early adopter, you will also gain a <a href=\"\/\" title=\"\/\">free upgrade from your BETA product<\/a> to the final product as soon as this is released.<\/p>",
-        "btn_url": "",
-        "btn_text": ""
+        "btn_url": "\/",
+        "btn_text": "Order Product"
       }
     },
     "become-block": {
@@ -216,6 +232,7 @@
     }
   },
   "order": [
+    "our-product-banner",
     "1663836676d03533fb",
     "our-product-info",
     "16638424682bec1ffd",

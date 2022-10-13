@@ -9,9 +9,13 @@
     src: url('Poppins-Regular.otf');
     font-weight: 500;
 }
-
 @font-face {
     font-family: 'Poppins';
     src: url('Poppins-SemiBold.otf');
     font-weight: 600;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Bold.otf');
+    font-weight: 700;
 }

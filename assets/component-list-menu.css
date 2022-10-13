@@ -22,13 +22,15 @@
 .list-menu__item span{
   position: relative;
 }
-.list-menu__item--active span:before{
+.list-menu__item span:before{
   content: "";
   height: 1px;
   width: 100%;
-  background: rgb(var(--color-foreground));
   position: absolute;
   bottom: -3px;
+}
+.list-menu__item--active span:before{
+  background: rgb(var(--color-foreground));
 }
 .menu-drawer .list-menu__item{
   justify-content: center;

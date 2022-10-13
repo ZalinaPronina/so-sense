@@ -3,7 +3,8 @@
   "sections": {
     "main": {
       "type": "all-blogs",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [

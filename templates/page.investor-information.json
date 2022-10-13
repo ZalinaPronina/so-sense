@@ -1,0 +1,221 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1664870270e75df3ff": {
+      "type": "main-banner",
+      "settings": {
+        "background": "shopify:\/\/shop_images\/Intersect_d0a8b0a8-9fb8-40de-b300-be68d9d49ca1.png",
+        "background_mobile": "shopify:\/\/shop_images\/background-mobile-maiin.png",
+        "btn_text": "Investor Information",
+        "btn_url": "",
+        "title": "<p>Our Technology <\/p><p>& Solution - <\/p><p><strong>in more detail<\/strong><\/p>",
+        "subtitle": "SOSense is a high-tech hydroponic sensor that detects all pool entries & accidents.",
+        "text": "Alerting you of pool entries and drownings faster than any other device on the market. The alarm sounds throughout your yard, your home and on your mobile phone, so wherever you may be, you will be notified, so that you are able to take immediate action.",
+        "url_1": "",
+        "url_2": "",
+        "main_photo": "shopify:\/\/shop_images\/8214008_4.png"
+      }
+    },
+    "block-with-scroll": {
+      "type": "block-with-scroll",
+      "blocks": {
+        "28a87d3b-13b3-407b-9835-680edf86a5c2": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fram73.png",
+            "title": "<p>Team<\/p>",
+            "color": "#647bdf",
+            "subtitle": "<p>More than 120 years of combined experience in specialised fields<\/p>",
+            "text": "<p>Entirely Israeli, IDF veterans, audio and digital processing experts, medical and marine engineers.<\/p>"
+          }
+        },
+        "36a1e00d-27a7-4176-82df-cef3c61d29f0": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_873.png",
+            "title": "<p>Product<\/p>",
+            "color": "#28ace2",
+            "subtitle": "<p>Pool entry and drowning detection<\/p>",
+            "text": "<p>SOSense is the all-in-one ultimate tech-lifeguard that uses the most advanced acoustic technology available, to detect both accidental pool entry and the earliest signs of drowning, ensuring the highest possible rate of survival.<\/p>"
+          }
+        },
+        "223abdcb-9c1d-4ed0-b800-8903795d7049": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_8733.png",
+            "title": "<p>Goal<\/p>",
+            "color": "#647bdf",
+            "subtitle": "<p>Eradicate these avoidable deaths caused by drowning in swimming pools<\/p>",
+            "text": "<p>To become the global standard for pool safety, recognised as a staple, non-negotiable, life-saving addition to all swimming pools.<\/p>"
+          }
+        },
+        "512dabd4-a9ce-429d-b32e-4b7233f910db": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame73.png",
+            "title": "<p>Technology<\/p>",
+            "color": "#28ace2",
+            "subtitle": "<p>Acoustic technology, with ML & AI<\/p>",
+            "text": "<p>The only pool alarm system on the market that uses revolutionary acoustic technology to detect signals of stress, paired with machine learning and artificial intelligence so that our product is continually learning and adapting to your environment.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "28a87d3b-13b3-407b-9835-680edf86a5c2",
+        "36a1e00d-27a7-4176-82df-cef3c61d29f0",
+        "223abdcb-9c1d-4ed0-b800-8903795d7049",
+        "512dabd4-a9ce-429d-b32e-4b7233f910db"
+      ],
+      "settings": {
+      }
+    },
+    "1664869950296a413f": {
+      "type": "text-with-image",
+      "settings": {
+        "title": "<p>About The <strong>Company<\/strong><\/p>",
+        "subtitle": "<p>SOSense. We save lives.<\/p><p>It’s in our name. <\/p>",
+        "text": "<p>SOSense is the tech-lifeguard that everyone needs as a non-negotiable addition to their swimming pool.<\/p>",
+        "btn_url": "\/",
+        "btn_text": "Investor Information",
+        "btn_text_product": "Order Product",
+        "btn_url_product": "",
+        "image": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_5_b1d37ed6-ee0d-4481-923a-2bc51e733eb3.png"
+      }
+    },
+    "1664871074c5521461": {
+      "type": "about-us-4-blocks",
+      "blocks": {
+        "630fa33c-7753-4531-925e-81fc94486168": {
+          "type": "block",
+          "settings": {
+            "title": "",
+            "subtitle": "",
+            "text": "<p>Did you know that DROWNING is the 3rd leading cause of unintentional injury deaths worldwide, accounting for 7% of all injury-related deaths?<\/p>"
+          }
+        },
+        "02e77c63-62d5-476e-92e8-a9d4daabc38e": {
+          "type": "block",
+          "settings": {
+            "title": "",
+            "subtitle": "",
+            "text": "<p>It is also the third leading cause of all deaths worldwide for those aged between 5 and 14 years old.<\/p>"
+          }
+        },
+        "db66161d-03a2-4d13-9f7a-a8c115808614": {
+          "type": "block",
+          "settings": {
+            "title": "",
+            "subtitle": "",
+            "text": "<p>Drowning can happen anytime, to anyone and it happens more frequently than you’d like to imagine.<\/p>"
+          }
+        },
+        "9c1eddca-ec95-446c-b163-1ca70748dcd0": {
+          "type": "block",
+          "settings": {
+            "title": "",
+            "subtitle": "",
+            "text": "<p>1,000 children die every year from drowning, with more than half of those, aged 1 to 4, drowning in home swimming pools. The reality of pool safety is that it is your responsibility to take preventative measures, otherwise it could just be too late.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "630fa33c-7753-4531-925e-81fc94486168",
+        "02e77c63-62d5-476e-92e8-a9d4daabc38e",
+        "db66161d-03a2-4d13-9f7a-a8c115808614",
+        "9c1eddca-ec95-446c-b163-1ca70748dcd0"
+      ],
+      "settings": {
+      }
+    },
+    "1664869665086355f9": {
+      "type": "product-purchase",
+      "blocks": {
+        "5adea3cb-3709-4e19-af37-3058e6d934bf": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/14_2.png"
+          }
+        },
+        "a5bbc500-2e65-4a94-9054-12fe8b4aba6c": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_33332.png"
+          }
+        }
+      },
+      "block_order": [
+        "5adea3cb-3709-4e19-af37-3058e6d934bf",
+        "a5bbc500-2e65-4a94-9054-12fe8b4aba6c"
+      ],
+      "settings": {
+        "title": "<p>Availability to <strong>purchase<\/strong><\/p>",
+        "text": "<p>Pellentesque faucibus molestie amet enim. Augue fames felis enim et enim lacinia suscipit at. Tellus lectus in tellus elementum imperdiet. <\/p>",
+        "btn_text": "Order Now",
+        "btn_url": "\/"
+      }
+    },
+    "166487010302fd5b0e": {
+      "type": "background-image",
+      "settings": {
+        "btn_text": "Investor Information",
+        "btn_url": "\/",
+        "title": "<p>The T<strong>eam<\/strong><\/p>",
+        "text": "The SOSense team is made up of professionals that are the best of the best in their respective fields, ensuring that every aspect of the SOSense pool entry alarm unit is of supreme quality, so that the final product is  a one-of-a-kind, state-of-the-art technology unlike any other pool entry unit available on the market to date.",
+        "background": "shopify:\/\/shop_images\/Rectangle880.png",
+        "background_mobile": "shopify:\/\/shop_images\/Rectangle6680.png"
+      }
+    },
+    "investor-information": {
+      "type": "investor-information",
+      "blocks": {
+        "b8e0dbc3-c71e-410c-aa9f-9cf9dbb30829": {
+          "type": "block",
+          "settings": {
+            "btn_text": "Sign up as user",
+            "btn_url": ""
+          }
+        },
+        "34746a4d-cf10-4655-9f45-a37c3d2b154a": {
+          "type": "block",
+          "settings": {
+            "btn_text": "Sign up as investor",
+            "btn_url": ""
+          }
+        },
+        "c8ee8cf8-c1a4-48a4-85ed-48213fea1c48": {
+          "type": "block",
+          "settings": {
+            "btn_text": "Sign up as service provider",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "b8e0dbc3-c71e-410c-aa9f-9cf9dbb30829",
+        "34746a4d-cf10-4655-9f45-a37c3d2b154a",
+        "c8ee8cf8-c1a4-48a4-85ed-48213fea1c48"
+      ],
+      "settings": {
+        "title": "Our SOSense BETA product is now available for early bird backers",
+        "subtitle": "This enables us to further develop our life-saving pool alarm system and you will gain the final product free of charge as soon as it is released."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1664870270e75df3ff",
+    "block-with-scroll",
+    "1664869950296a413f",
+    "1664871074c5521461",
+    "1664869665086355f9",
+    "166487010302fd5b0e",
+    "investor-information"
+  ]
+}

@@ -16,11 +16,11 @@
         }
     </style>
 {% endif %}
-<div class="info-section">
-    <div class="page-width-desktop info-section__blocks">
+<div class="info-section background-image">
+    <div class="page-width-desktop info-section__blocks" data-aos="fade-up">
         <div class="first_block">
             {% if section.settings.title != blank %}
-                <h6>{{section.settings.title}}</h6>
+                <h5 class="h5">{{section.settings.title}}</h5>
             {% endif %}
             <div class="years_block">
                 <div class="content-way">
@@ -29,8 +29,8 @@
                     <small {% if section.settings.year_to_color != blank %} style="color: {{section.settings.year_to_color}}" {% endif %}></small>
                 </div>
                 <div class="content-date">
-                    <p {% if section.settings.year_from_color != blank %} style="color: {{section.settings.year_from_color}}" {% endif %}>{{section.settings.year_from}}</p>
-                    <p {% if section.settings.year_to_color != blank %} style="color: {{section.settings.year_to_color}}" {% endif %}>{{section.settings.year_to}}</p>
+                    <p class="h2" {% if section.settings.year_from_color != blank %} style="color: {{section.settings.year_from_color}}" {% endif %}>{{section.settings.year_from}}</p>
+                    <p class="h2" {% if section.settings.year_to_color != blank %} style="color: {{section.settings.year_to_color}}" {% endif %}>{{section.settings.year_to}}</p>
                 </div>
             </div>
         </div>
@@ -58,7 +58,8 @@
         {
             "type": "richtext",
             "id": "title",
-            "label": "Title First Section"
+            "label": "Title First Section",
+            "info": "Choose Bold to change the color"
         },
         {
             "type": "text",

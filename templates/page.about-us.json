@@ -8,6 +8,21 @@
         "padding_bottom": 28
       }
     },
+    "about-us-banner": {
+      "type": "about-us-banner",
+      "settings": {
+        "background": "shopify:\/\/shop_images\/Intersect_68eb7379-f5e9-4e02-9a4d-5d72c64bdfae.png",
+        "background_mobile": "shopify:\/\/shop_images\/background-mobile-maiin.png",
+        "title": "<p>About The <strong>Company<\/strong><\/p>",
+        "subtitle": "If you own a home swimming pool, this is the AI lifeguard that you need.",
+        "text": "Our SOSense technology is the ultimate swimming pool entry detection technology that has been made to keep your family safe.",
+        "btn_url": "",
+        "btn_text": "Order Product",
+        "main_photo": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_4_720476ec-f381-4432-9d1c-e267a54c7aa8.png",
+        "small_photo": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_5.png",
+        "text_bottom": "You can never know what the future holds, but you can take decisive action in order to prevent accidents from happening."
+      }
+    },
     "about-us-4-blocks": {
       "type": "about-us-4-blocks",
       "blocks": {
@@ -19,20 +34,20 @@
             "text": "<p>By drowning in pools each year nationwide, pool safety alarms should be mandatory.<\/p>"
           }
         },
-        "23d3e689-46e8-4e59-b145-dd40f40bab37": {
-          "type": "block",
-          "settings": {
-            "title": "Who will benefit from this",
-            "subtitle": "If you’re always worried about what might happen in your own home, it’s time to make a change.",
-            "text": "<p>Our SOSense swimming pool entry detection alarm has a detection range of up to 20 x 40 foot.<\/p>"
-          }
-        },
         "9766be0d-45aa-4172-861b-f2ec0c79a637": {
           "type": "block",
           "settings": {
             "title": "When it’s to come out",
             "subtitle": "The BETA product is now available for early bird backers.",
             "text": "<p>This enables us to further develop our life-saving pool alarm system and you will gain the final product free of charge as soon as it is released.<\/p>"
+          }
+        },
+        "23d3e689-46e8-4e59-b145-dd40f40bab37": {
+          "type": "block",
+          "settings": {
+            "title": "Who will benefit from this",
+            "subtitle": "If you’re always worried about what might happen in your own home, it’s time to make a change.",
+            "text": "<p>Our SOSense swimming pool entry detection alarm has a detection range of up to 20 x 40 foot.<\/p>"
           }
         },
         "9f2efc20-050a-4e7d-a9cd-d28b9310adc9": {
@@ -46,16 +61,109 @@
       },
       "block_order": [
         "e8ed182f-560d-4516-9280-af88feee2a86",
-        "23d3e689-46e8-4e59-b145-dd40f40bab37",
         "9766be0d-45aa-4172-861b-f2ec0c79a637",
+        "23d3e689-46e8-4e59-b145-dd40f40bab37",
         "9f2efc20-050a-4e7d-a9cd-d28b9310adc9"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "1663962924953a2e68": {
       "type": "background-image",
       "settings": {
-        "background": "shopify:\/\/shop_images\/Rectangle_80.png"
+        "background": "shopify:\/\/shop_images\/Rectangle_80.png",
+        "background_mobile": "shopify:\/\/shop_images\/Rectangle_80_0ecafdf1-fed0-49ff-a02e-84891c3f6dc1.png"
+      }
+    },
+    "about-us-team": {
+      "type": "about-us-team",
+      "blocks": {
+        "5bb53d6f-8cae-41b4-a1f1-650061ce09de": {
+          "type": "block",
+          "settings": {
+            "title": "Josef Rott",
+            "author_image": "shopify:\/\/shop_images\/Ellipse_95.png",
+            "subtitle": "Head of Acoustics R&D",
+            "text": "<p>Naval Architect\/Marine Engineer with 35 years of development in underwater acoustics systems RAFAEL\/ Israeli Navy\/Ministry of Defense.<\/p>"
+          }
+        },
+        "49e408fc-7198-419d-b1a6-9a58108e3c14": {
+          "type": "block",
+          "settings": {
+            "title": "Amir Ben-Shlomo",
+            "author_image": "shopify:\/\/shop_images\/author1.png",
+            "subtitle": "Head of Sales and Marketing",
+            "text": "<p>Seasoned professional with more than 20 years of experience in high-tech projects and marketing management. D2C channels expert.<\/p>"
+          }
+        },
+        "62c10467-169d-45b5-8b86-09202b9e743a": {
+          "type": "block",
+          "settings": {
+            "title": "Dr Asaf Frieman, M.D",
+            "author_image": "shopify:\/\/shop_images\/author2.png",
+            "subtitle": "Head of Medical Research",
+            "text": "<p>IDF Qualified in Field Diving Medicine, former Navy seal. Fourth year resident in Ophthalmology, Meir Hospital, Israel.<\/p>"
+          }
+        },
+        "afec3fd9-6fe7-4757-a015-513132515d2c": {
+          "type": "block",
+          "settings": {
+            "title": "Tal Zuri",
+            "author_image": "shopify:\/\/shop_images\/author3.png",
+            "subtitle": "CFO & BD Director",
+            "text": "<p>Entrepreneur with background in finances. Tal holds many years of experience as CFO in international companies and startups.<\/p>"
+          }
+        },
+        "bb1fe83a-c2dd-4c43-b226-4dd3554e9211": {
+          "type": "block",
+          "settings": {
+            "title": "Josef Rott",
+            "author_image": "shopify:\/\/shop_images\/Ellipse5.png",
+            "subtitle": "Head of Acoustics R&D",
+            "text": "<p>Naval Architect\/Marine Engineer with 35 years of development in underwater acoustics systems RAFAEL\/ Israeli Navy\/Ministry of Defense.<\/p>"
+          }
+        },
+        "8203254c-46a9-4389-9075-c71bf7bd4639": {
+          "type": "block",
+          "settings": {
+            "title": "Eran Schul",
+            "author_image": "shopify:\/\/shop_images\/author7.png",
+            "subtitle": "COO",
+            "text": "<p>Entrepreneur, Innovator & C-Level executive with over 25 years of experience in leading multidisciplinary global teams in the consumer electronic space.<\/p>"
+          }
+        },
+        "296fe7a8-2913-42e2-a11b-7be09b7034b4": {
+          "type": "block",
+          "settings": {
+            "title": "Aviv Farhi",
+            "author_image": "shopify:\/\/shop_images\/author9.png",
+            "subtitle": "CTO",
+            "text": "<p>Electronics Engineer & Software Developer with ~20 years of experience in the communications industry. Experienced in Audio & Digital Signal Processing.<\/p>"
+          }
+        },
+        "c4f62659-83ea-4482-a2f0-55b921dabea0": {
+          "type": "block",
+          "settings": {
+            "title": "Josef Rott",
+            "author_image": "shopify:\/\/shop_images\/Avatar_cd0e086a-ae71-464e-8bbb-33b48efe3f08.png",
+            "subtitle": "Head of Acoustics R&D",
+            "text": "<p>Naval Architect\/Marine Engineer with 35 years of development in underwater acoustics systems RAFAEL\/ Israeli Navy\/Ministry of Defense.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5bb53d6f-8cae-41b4-a1f1-650061ce09de",
+        "49e408fc-7198-419d-b1a6-9a58108e3c14",
+        "62c10467-169d-45b5-8b86-09202b9e743a",
+        "afec3fd9-6fe7-4757-a015-513132515d2c",
+        "bb1fe83a-c2dd-4c43-b226-4dd3554e9211",
+        "8203254c-46a9-4389-9075-c71bf7bd4639",
+        "296fe7a8-2913-42e2-a11b-7be09b7034b4",
+        "c4f62659-83ea-4482-a2f0-55b921dabea0"
+      ],
+      "settings": {
+        "title": "<p>The <strong>Team<\/strong><\/p>",
+        "text": "<p>Our team has been created by bringing together the best of the best in their respective fields to be able to form the one-of-a-kind technology that is SOSense. We are a unique, professional group, made up of IDF’s Marine Seal veterans, acoustic & digital processing experts and medical and marine engineers that share more than 120 years of combined experience.<\/p>"
       }
     },
     "166396300679a312e0": {
@@ -92,16 +200,21 @@
         "btn_url": ""
       }
     },
-    "about-us-team": {
-      "type": "about-us-team",
-      "settings": {}
+    "about-us-blog-section": {
+      "type": "about-us-blog-section",
+      "settings": {
+        "heading": "<p>Press<\/p>",
+        "blog": "business"
+      }
     }
   },
   "order": [
     "main",
+    "about-us-banner",
     "about-us-4-blocks",
     "1663962924953a2e68",
+    "about-us-team",
     "166396300679a312e0",
-    "about-us-team"
+    "about-us-blog-section"
   ]
 }

@@ -1,20 +1,240 @@
 .blog-articles {
   display: grid;
-  grid-gap: 1rem;
-  column-gap: var(--grid-mobile-horizontal-spacing);
-  row-gap: var(--grid-mobile-vertical-spacing);
+  grid-gap: 4rem;
+  grid-template-columns: 840px 1fr;
+/*   column-gap: var(--grid-mobile-horizontal-spacing);
+  row-gap: var(--grid-mobile-vertical-spacing); */
 }
+
+.pagination-wrapper {
+  position: relative;
+  top: 8rem;
+}
+
+.main-catogiry {
+  padding-top: 8rem;
+  padding-bottom: 29.4rem;
+}
+
+.blog-sections-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+}
+
+.article-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+/*   width: 15.5rem;
+  height: 3.7rem; */
+  padding: 0.6rem 2rem;
+  background: #339999;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 140%;
+  font-weight: 500;
+}
+
 
 .blog-articles .card-wrapper {
   width: 100%;
 }
 
-@media screen and (min-width: 750px) {
+.card.article-card {
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.card__inlfo {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.card__heading {
+  margin-bottom: 1.2rem !important;
+}
+
+.card-blog__content {
+  margin: 1.2rem 0 2.9rem 0;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #525459;
+}
+
+.card-blog__content h1, 
+.card-blog__content p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  color: #525459;
+}
+
+.article-card__image-wrapper,
+.card__inner {
+  max-width: 290px;
+  height: 270px;
+}
+
+
+@media (min-width: 1900px) and (max-width: 1920px) {
+  .main-catogiry.page-width {
+    max-width: 66.7%;
+  }
+}
+
+@media (max-width:1024px) {
   .blog-articles {
+    grid-template-columns: 655px 1fr;
+  }
+}
+
+@media (max-width: 989px) {
+  .blog-articles  {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  .blog-sections-left {
+    order: 2;
+    gap: 3.2rem;
+  }
+
+  .allblogs-sections-right {
+    order: 1;
+  }
+
+  .main-catogiry {
+    padding-top: 4rem;
+    padding-bottom: 16.8rem;
+  }
+
+  .main-catogiry.page-width {
+    max-width: 100%;
+  }
+
+  .pagination-wrapper {
+    top: 4rem;
+  }
+  
+
+
+  .card.article-card {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .article-card__image-wrapper,
+  .card__inner {
+    max-width: 100%;
+    height: 400px;
+  }
+
+  .card.article-card {
+    gap: 2rem;
+  }
+
+  .card__inlfo {
+    justify-content: space-between;
+  }
+
+  .card-blog__content {
+    margin: 1.2rem 0 1.2rem 0;
+  }
+
+  .article-footer__link {
+    justify-content: flex-end;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .article-card__image-wrapper,
+  .card__inner {
+    height: 200px;
+  }
+
+  .article-tags {
+    padding: 1.1rem 2rem;
+  }
+}
+
+.media-sections-left {
+  column-count: 2;
+  column-gap: 4rem;
+}
+
+.media-sections-left .article {
+  max-width: 400px;
+  border: 2px solid #DEDFE4;
+  border-radius: 32px;
+  display: inline-block;
+  padding: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* .media-sections-left .article:nth-child(3),
+.media-sections-left .article:last-child {
+  margin-bottom: 0;
+}
+ */
+/* .media-sections-left .article:nth-child(odd) {
+  margin-right: 4rem ;
+}
+ */
+
+.media-sections-left .article-tags {
+  display: inline-block;
+  padding: 0.95rem 2rem;
+  margin-bottom: 1.6rem;
+}
+
+
+.media-sections-left .card-blog__content {
+  font-size: 1.8rem;
+  margin: 1.6rem 0 2.4rem 0;
+  line-height: 180%;
+}
+
+.media-sections-left .article-footer__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 989px) {
+  .media-sections-left {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    order: 2;
+  }
+
+  .media-sections-left .article {
+    max-width: 100%;
+    margin: 0;
+    padding: 2rem;
+  }
+
+}
+
+
+
+@media screen and (min-width: 750px) {
+/*   .blog-articles {
     grid-template-columns: 1fr 1fr;
     column-gap: var(--grid-desktop-horizontal-spacing);
     row-gap: var(--grid-desktop-vertical-spacing); 
-  }
+  } */
 
   .blog-articles--collage > *:nth-child(3n + 1),
   .blog-articles--collage > *:nth-child(3n + 2):last-child {

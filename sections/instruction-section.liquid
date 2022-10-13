@@ -1,6 +1,5 @@
-<div class="instruction-section {% if section.settings.background != blank %}background-margin{% endif %}" {% if section.settings.background != blank %}
-style="background-image: url('{{section.settings.background | img_url: 'master' }}')"{% endif %}>
-    <div class="page-width-desktop instruction-section__blocks">
+<div class="instruction-section">
+    <div class="page-width-desktop instruction-section__blocks" data-aos="fade-up">
         <div class="instruction-section__content">
             {% if section.settings.btn_text_top != blank %}
                 <a class="btn-primary" href="{{section.settings.btn_url_top}}">{{section.settings.btn_text_top}}</a>
@@ -23,6 +22,11 @@ style="background-image: url('{{section.settings.background | img_url: 'master' 
                 {{section.settings.text_second}}
             </div>
         {% endif %}
+        {% if template.name == 'product' or page.handle == 'our-product'%}
+            {% if section.settings.btn_text != blank %}
+                <a class="btn-secondary mobile-screen" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}{% include 'icon-cart-btn' %}</a>
+            {% endif %}
+        {% endif %}
     </div>
 </div>
 {% schema %}
@@ -40,14 +44,10 @@ style="background-image: url('{{section.settings.background | img_url: 'master' 
             "label": "Btn Text Top"
         },
         {
-            "type": "image_picker",
-            "id": "background",
-            "label": "Background"
-        },
-        {
             "type": "richtext",
             "id": "title",
-            "label": "Title"
+            "label": "Title",
+            "info": "Choose Bold to change the color"
         },
         {
             "type": "richtext",
@@ -62,7 +62,8 @@ style="background-image: url('{{section.settings.background | img_url: 'master' 
         {
             "type": "richtext",
             "id": "text_second",
-            "label": "Text Second Section"
+            "label": "Text Second Section",
+            "info": "Select link and the color change"
         },
         {
             "type": "url",

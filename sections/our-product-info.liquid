@@ -17,8 +17,8 @@
         }
     </style>
 {% endif %}
-<div class="our-product-info">
-    <div class="page-width-desktop info-section__blocks">
+<div class="our-product-info background-image">
+    <div class="page-width-desktop info-section__blocks" data-aos="fade-up">
         <div class="second_block">
             {% if section.settings.btn_text != blank %}
                 <a class="btn-primary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
@@ -64,7 +64,8 @@
         {
             "type": "richtext",
             "id": "title",
-            "label": "Title"
+            "label": "Title",
+            "info": "Choose Bold to change the color"
         },
         {
             "type": "richtext",

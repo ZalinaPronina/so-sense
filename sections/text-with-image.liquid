@@ -1,5 +1,5 @@
-<section class="text-with-image">
-    <div class="page-width-desktop text-with-image__wrapper">
+<section class="text-with-image{% if page.handle == 'our-product' %} our-product{% endif %}">
+    <div class="page-width-desktop text-with-image__wrapper" data-aos="fade-up">
         <div class="title-description">
             {% if section.settings.btn_text != blank %}
                 <a class="btn-primary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
@@ -10,15 +10,21 @@
             {% if section.settings.subtitle != blank %}
                 <h5 class="h5">{{section.settings.subtitle}}</h5>
             {% endif %}
+            {% if section.settings.image != blank %}
+                <img style="display: none;" class="image-wrapper-mobile" src="{{section.settings.image | img_url: 'master' }}" alt="">
+            {% endif %}
             {% if section.settings.text != blank %}
-                <div class="text">{{section.settings.text}}</div>
+                <div class="text{% if page.handle == 'investor-information' %} desktop-screen{% endif %}">{{section.settings.text}}</div>
             {% endif %}
             {% if section.settings.btn_text_product != blank %}
                 <a class="btn-secondary desktop-screen" href="{{section.settings.btn_url_product}}">{{section.settings.btn_text_product}} {% include 'icon-cart-btn' %}</a>
             {% endif %}
         </div>
         {% if section.settings.image != blank %}
-            <img src="{{section.settings.image | img_url: 'master' }}" alt="">
+            <img class="image-wrapper" src="{{section.settings.image | img_url: 'master' }}" alt="">
+        {% endif %}
+        {% if section.settings.text != blank or page.handle == 'investor-information' %}
+            <div class="text mobile-screen">{{section.settings.text}}</div>
         {% endif %}
         {% if section.settings.btn_text_product != blank %}
             <a class="btn-secondary mobile-screen" href="{{section.settings.btn_url_product}}">{{section.settings.btn_text_product}} {% include 'icon-cart-btn' %}</a>

@@ -1,4 +1,7 @@
 /* Instruction */
+.instruction-section{
+    padding-bottom: 15rem;
+}
 .instruction-section__blocks{
     display: flex;
     gap: 4rem;
@@ -7,9 +10,6 @@
 }
 .instruction-section.background-margin{
     padding-bottom: 24rem;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-bottom: -7.5rem;
     position: relative;
 }
@@ -21,6 +21,7 @@
     font-size: 2.4rem;
     line-height: 170%;
     width: 50%;
+    max-width: 62rem;
 }
 .instruction-section .description-block br{
     display: none;
@@ -45,7 +46,7 @@
 }
 .instruction-section .instruction-section__content{
     width: 50%;
-    max-width: 56rem
+    max-width: 47rem
 }
 .instruction-section .instruction-section__content .text{
     font-weight: 400;
@@ -54,7 +55,7 @@
     margin: 1.2rem 0 0;
 }
 .instruction-section__content .btn-primary{
-    margin-bottom: 3.2rem;
+    margin-bottom: 2.4rem;
 }
 .instruction-section__content .btn-secondary{
     margin-top: 4rem;
@@ -66,6 +67,9 @@
     margin: 0;
 }
 @media only screen and (max-width: 989px) {
+    .instruction-section{
+        padding-bottom: 8rem;
+    }
     .instruction-section__content .btn-secondary{
         margin-top: 3.2rem;
     }
@@ -76,6 +80,7 @@
     }
     .instruction-section__blocks{
         flex-direction: column;
+        gap: 3.2rem;
     }
     .instruction-section .instruction-section__content{
         width: 100%;
@@ -94,6 +99,7 @@
         text-align: center;
         font-size: 1.6rem;
         line-height: 160%;
+        margin-top: 2rem;
     }
 }
 
@@ -119,6 +125,7 @@
     font-weight: 500;
     font-size: 2.4rem;
     line-height: 170%;
+    max-width: 50rem;
 }
 .product-purchase__container .text p{
     margin: 0;
@@ -171,12 +178,13 @@
     .product-purchase__container .swiper-js{
         max-width: 100%;
     }
-    .product-purchase__container .text p{
+    .product-purchase__container .text{
         text-align: center;
-        margin: 0 0 3.2rem;
+        margin: 0 auto 3.2rem;
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 160%;
+        width: 90%;
     }
     .product-purchase__container img{
         max-height: 21.6rem;
@@ -188,17 +196,20 @@
 /* Text With Image */
 .text-with-image{
     background: #F5F6F8;
-    padding: 18rem 0 15rem; 
+    padding: 15rem 0; 
 }
 .text-with-image .h2{
     margin: 2.4rem 0;
-    max-width: 620px;
+    max-width: 62rem;
 }
 .text-with-image .text{
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 180%;
-    margin: 1.6rem 0 4rem;
+    margin: 1.6rem 0 0;
+}
+.text-with-image .btn-secondary{
+    margin-top: 4rem;
 }
 .text-with-image .text p{
     max-width: 56.3rem;
@@ -208,10 +219,12 @@
     display: flex;
     gap: 4.5rem;
     align-items: center;
+    justify-content: space-between;
 }
 .text-with-image__wrapper img{
     max-width: 62rem;
     border-radius: 32px;
+    width: 100%;
 }
 .text-with-image__wrapper .h5{
     margin: 0;
@@ -219,8 +232,8 @@
 }
 @media only screen and (max-width: 989px) {
     .text-with-image .h2{
-        margin: 2.4rem 0;
-        max-width: 100%;
+        margin: 2.4rem auto;
+        max-width: 30rem;
     }
     .text-with-image .text{
         margin: 0;
@@ -238,5 +251,62 @@
     .text-with-image__wrapper img{
         width: 100%;
         object-fit: cover;
+    }
+}
+/* Image Banner */
+.background-image-header{
+    max-width: 76.7rem;
+    margin: 0 auto 8rem;
+    text-align: center;
+}
+.background-image-header .btn-primary{
+    margin: 0 auto 2.4rem;
+}
+.background-image-header .h2{
+    margin: 0 auto;
+}
+.background-image-header .description{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 180%;
+    color: #21272A;
+    margin: 1.6rem 0 0;
+}
+.background-image-header .h2{
+    margin: 0 auto;
+}
+.background-image-container{
+    position: relative;
+}
+.white_wave{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 8rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.image-banner{
+    height: 108rem;
+    display: block !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 989px) {
+    .background-image-header{
+        margin: 0 auto 3.2rem;
+    }
+    .background-image-header .description{
+        font-size: 1.6rem;
+        line-height: 160%;
+    }
+    .image-banner{
+        height: 33.7rem;
+    }
+    .white_wave{
+        height: 4.5rem;
     }
 }

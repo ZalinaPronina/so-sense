@@ -1,17 +1,13 @@
 /* Info Section */
 .our-product-info{
-    padding: 15rem 0 26rem;
+    padding: 15rem 0 22.4rem;
     color: #fff;
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin-bottom: -7.5rem;
     position: relative;
 }
 .our-product-info .info-section__blocks{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 11rem;
 }
 .our-product-info .first_block{
@@ -104,6 +100,9 @@
 .text-with-image__wrapper .h2{
     margin: 2.4rem 0 1.2rem;
 }
+.text-with-image .text p{
+    max-width: 61rem;
+}
 @media only screen and (min-width: 990px){
     .text-with-image .text-with-image__wrapper{
         flex-direction: row-reverse;
@@ -111,12 +110,16 @@
     }
     .text-with-image .text-with-image__wrapper img{
         max-width: 51rem;
+        height: 45.4rem;
     }
     .text-with-image__wrapper .h2{
         max-width: 40rem;
     }
 }
 @media only screen and (max-width: 989px){
+    .text-with-image__wrapper .h2{
+        margin: 2.4rem auto 1.2rem;
+    }
     .text-with-image__wrapper .h5{
         text-align: center;
         margin-bottom: 3.2rem;
@@ -129,7 +132,6 @@
     background: #F0FBFF;
     border-radius: 32px;
     padding: 8rem;
-    margin-top: 15rem;
     margin-bottom: 15rem;
 }
 .become-block .become-block__flex{
@@ -154,21 +156,19 @@
     color: #283C92;
     border: 2px solid #283C92;
     border-radius: 100px;
-    padding: 1.6rem 3.2rem;
+    padding: 1.7rem 4.1rem;
     gap: 8px;
     max-width: max-content;
     text-decoration: none;
     margin: 0 auto;
 }
-.become-block .arrow{
-    transform: rotate(135deg);
+.become-block .btn-secondary span{
+    display: flex;
 }
-
 @media only screen and (max-width: 989px){
     .become-block{
         background: none;
         padding: 0;
-        margin-top: 8rem;
         margin-bottom: 8rem;
     }
     .become-block .block-text{
@@ -190,7 +190,7 @@
 /* FAQ */
 .faq-section{
     margin-bottom: 19rem;
-    padding: 0 9rem;
+    padding: 0 11rem;
 }
 .faq-section .faq-block__wrapper{
     display: flex;
@@ -265,12 +265,13 @@
     overflow: hidden;
     transition: all .3s ease-in-out;
     margin: 0;
+    max-width: 98%;
 }
 .faq-section .faq-answer p{
     margin: 0;
 }
 .faq-section .faq-block.active .faq-answer{
-    margin: 1.4rem 0 0;
+    margin: 2rem 0 0;
     max-height: 900px;
 }
 .faq-section .faq-block.active small:before{
@@ -291,6 +292,7 @@
     }
     .faq-section .faq-answer{
         font-size: 1.6rem;
+        max-width: 100%;
     }
     .faq-section h3{
         font-size: 2.8rem;
@@ -300,7 +302,7 @@
 }
 /* Grid Installation */
 .grid-installation{
-    padding: 12rem 0 15rem;
+    padding: 12rem 0 0;
 }
 .grid-installation .h2{
     margin: 0 auto 1.6rem;
@@ -315,6 +317,7 @@
 }
 .grid-installation .text p{
     margin: 0;
+    color: #525459;
 }
 .grid-installation .title-description{
     margin-bottom: 8rem;
@@ -386,7 +389,7 @@
         flex-direction: column;
     }
     .grid-installation{
-        padding: 8rem 0;
+        padding: 8rem 0 0;
     }
     .grid-installation .grid-installation__blocks{
         gap: 3.2rem;
@@ -425,11 +428,81 @@
 #shopify-section-template--14404173529134__166383686926e73919 .instruction-section .description-block{
     max-width: 51rem;
 }
-#shopify-section-template--14404173529134__1663836676d03533fb .instruction-section {
+#shopify-section-template--14412586450990__1663836676d03533fb .instruction-section {
     padding: 15rem 0;
 }
 @media only screen and (max-width: 989px){
-    #shopify-section-template--14404173529134__1663836676d03533fb .instruction-section{
+    #shopify-section-template--14412586450990__1663836676d03533fb .instruction-section{
         padding: 8rem 0;
+    }
+}
+
+/* Banner */
+
+.our-product-banner{
+    padding: 15rem 0;
+}
+.our-product-banner .h2{
+    margin: 0 0 3.2rem;
+}
+.our-product-banner .h2 p{
+    margin: 0;
+}
+.our-product-banner .our-product-banner__container{
+    display: flex;
+    justify-content: space-between;
+}
+.our-product-banner .our-product-banner__text{
+    max-width: 48rem;
+}
+.our-product-banner .our-product-banner__position{
+    max-width: 62rem;
+}
+.our-product-banner .our-product-banner__position img{
+    max-width: 100%;
+}
+@media only screen and (max-width: 989px){
+    .our-product-banner .our-product-banner__container{
+        flex-direction: column;
+    }
+    .our-product-banner{
+        padding: 8rem 0;
+    }
+    .our-product-banner .our-product-banner__text{
+        margin-bottom: 3.2rem;
+    }
+}
+
+#shopify-section-template--14412586450990__166383686926e73919 .instruction-section .instruction-section__content .text{
+    text-align: initial;
+}
+#shopify-section-template--14412586450990__166383686926e73919 .instruction-section .instruction-section__content{
+    width: 52%;
+    max-width: 70rem;
+}
+#shopify-section-template--14412586450990__166383686926e73919 .instruction-section .description-block{
+    width: 48%;
+    max-width: 51rem;
+}
+@media only screen and (max-width: 989px) {
+    #shopify-section-template--14412586450990__166383686926e73919 .instruction-section .instruction-section__content,  #shopify-section-template--14412586450990__166383686926e73919 .instruction-section .description-block{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 989px) {
+    .our-product .image-wrapper-mobile{
+        display: block !important;
+    }
+    .our-product .image-wrapper{
+        display: none;
+    }
+    .our-product .text{
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        line-height: 160%;
+    }
+    .our-product .instruction-section .instruction-section__content .btn-secondary{
+        display: none;
     }
 }
