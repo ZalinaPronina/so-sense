@@ -10,6 +10,11 @@
   text-decoration: none;
   display: block;
   width: max-content;
+  transition: background 0.5s ease-out;
+  cursor: pointer;
+}
+.btn-primary:hover{
+  background: rgb(51 153 153 / 70%);
 }
 .btn-secondary{
   background: #283C92;
@@ -26,6 +31,11 @@
   gap: 0.8rem;
   width: max-content;
   position: relative;
+  transition: background 0.5s ease-out;
+  cursor: pointer;
+}
+.btn-secondary:hover{
+  background: rgb(40 60 146 / 70%);
 }
 .btn-secondary .arrow{
   margin-left: 6px;
@@ -35,6 +45,13 @@
 }
 .btn-secondary .arrow:after{
   background: #fff;
+}
+.h1{
+  font-weight: 600;
+  letter-spacing: normal;
+  font-size: 7.2rem;
+  line-height: 110%;
+  color: #283C92;
 }
 .h2{
   letter-spacing: normal;
@@ -46,7 +63,7 @@
 .h2 p, .h5 p{
   margin: 0;
 }
-.h2 strong, .h5 strong{
+.h1 strong, .h2 strong, .h5 strong{
   color: #28ACE2;
 }
 .h2 br, .h5 br{
@@ -92,12 +109,23 @@
       margin-left: auto;
       margin-right: auto;
   }
+  .h1{
+    font-size: 3.8rem;
+    text-align: center;
+  }
   .h2{
       font-size: 2.8rem;
       text-align: center;
   }
+  .h4{
+    font-size: 2.8rem;
+  }
   .h5{
     font-size: 2rem;
+    line-height: 130%;
+  }
+  .h6{
+    font-size: 20px;
     line-height: 130%;
   }
 }
@@ -550,18 +578,6 @@ body,
   }
 }
 
-h1,
-.h1 {
-  font-size: calc(var(--font-heading-scale) * 3rem);
-}
-
-@media only screen and (min-width: 750px) {
-  h1,
-  .h1 {
-    font-size: calc(var(--font-heading-scale) * 4rem);
-  }
-}
-
 h3,
 .h3 {
   font-size: calc(var(--font-heading-scale) * 1.7rem);
@@ -572,12 +588,6 @@ h3,
   .h3 {
     font-size: calc(var(--font-heading-scale) * 1.8rem);
   }
-}
-
-h4,
-.h4 {
-  font-style: var(--font-heading-style);
-  font-size: calc(var(--font-heading-scale) * 1.5rem);
 }
 
 blockquote {
@@ -680,7 +690,7 @@ table:not([class]) th {
 }
 
 .light {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 a:empty,
@@ -1704,8 +1714,6 @@ details[open] > .share-button__fallback {
   color: rgba(var(--color-foreground), 0.75);
 }
 
-.field:hover.field:after,
-.select:hover.select:after,
 .select__select:hover.select__select:after,
 .customer .field:hover.field:after,
 .customer select:hover.select:after,
@@ -1989,17 +1997,18 @@ input[type='checkbox'] {
 
 .quantity__input {
   color: currentColor;
-  font-size: 1.4rem;
+  font-size: 2.1rem;
   font-weight: 500;
-  opacity: 0.85;
+  line-height: 160%;
   text-align: center;
   background-color: transparent;
   border: 0;
-  padding: 0 0.5rem;
+  padding: 0 1.2rem;
   width: 100%;
   flex-grow: 1;
   -webkit-appearance: none;
   appearance: none;
+  color: #000000;
 }
 
 .quantity__button {
@@ -2148,7 +2157,7 @@ input[type='checkbox'] {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 12px;
   bottom: 1rem;
   right: 0.8rem;
 }
@@ -2873,7 +2882,6 @@ body.overflow-hidden-tablet .header-wrapper{
   content: none;
 }
 
-.global-media-settings img,
 .global-media-settings iframe,
 .global-media-settings model-viewer,
 .global-media-settings video {
