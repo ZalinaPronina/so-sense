@@ -74,9 +74,8 @@
                     <label for="select_in-form" class="select_subject">{{ 'templates.contact.form.subject' | t }}</label>
                     <div class="select_option">
                         <select name="select" id="select_in-form" class="select_in-form__cont">
-                            <option value="">What you are reaching out for</option>
                             {% for block in section.blocks %}
-                            <option value="{{block.settings.option_select}}">{{block.settings.option_select}}</option>
+                                <option value="{{block.settings.option_select}}">{{block.settings.option_select}}</option>
                             {% endfor %}
                         </select>
                     </div>
@@ -140,16 +139,15 @@
                 {
                     "type": "text",
                     "id": "option_select",
-                    "label": "option select"
+                    "label": "Value"
                 }
             ]
         }
     ],
-
     "presets": [
-    {
-        "name":"Custom Contact Form"
-    }
+        {
+            "name":"Custom Contact Form"
+        }
     ]
     }
 {% endschema %}

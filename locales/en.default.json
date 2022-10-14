@@ -233,9 +233,13 @@
     },
     "cart": {
       "title": "Cart",
+      "item": "item",
+      "items": "items",
+      "oops": "Oops",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
       "subtotal": "Subtotal",
+      "total": "Total",
       "new_subtotal": "New subtotal",
       "note": "Order special instructions",
       "checkout": "Proceed to checkout",
