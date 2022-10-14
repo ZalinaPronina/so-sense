@@ -10,10 +10,16 @@
   <div class="cart-title-header">
     <a href="{{ routes.all_products_collection_url }}" class="link-continue">{% include 'icon-arrow-left' %}</a>
     <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
-    <span class="count">({{ cart.item_count }}) {% if cart.item_count > 1 %}items {% else %}item{% endif %}</span>
+    <div class="cart-counter">
+        <span class="count">
+          ({{ cart.item_count }})
+        </span>
+        <small class="items" {% if cart.item_count == 1 %} style="display: none;" {% endif %}>{{ 'sections.cart.items' | t }}</small>
+        <small class="item" {% if cart.item_count > 1 %} style="display: none;"{% endif %}>{{ 'sections.cart.item' | t }}</small>
+    </div>
   </div>
   <div class="cart__warnings{% if cart.item_count > 0 %} hidden{% endif %}">
-    <h1 class="cart__empty-text">Oops {% include 'crying-face' %}</h1>
+    <h1 class="cart__empty-text">{{ 'sections.cart.oops' | t }} {% include 'crying-face' %}</h1>
     <h6>{{ 'sections.cart.empty' | t }}</h6>
   </div>
 
@@ -28,7 +34,7 @@
               <tr>
                 <th colspan="1" scope="col"></th>
                 <th class="cart-item__details" colspan="1" scope="col">{{ 'sections.cart.headings.product' | t }}</th>
-                <th colspan="1" scope="col">Price</th>
+                <th colspan="1" scope="col">{{ 'sections.cart.headings.price' | t }}</th>
                 <th colspan="1" scope="col">{{ 'sections.cart.headings.quantity' | t }}</th>
                 <th class="right cart-item__totals" colspan="1" scope="col">{{ 'sections.cart.headings.subtotal' | t }}</th>
               </tr>
@@ -101,7 +107,7 @@
                     </ul>
                   </td>
                   <td class="subtotal-price">
-                    <span class="mobile-label mobile-screen">Price</span>
+                    <span class="mobile-label mobile-screen">{{ 'sections.cart.headings.price' | t }}</span>
                     <div class="cart-item__price-wrapper">
                       {%- if item.original_line_price != item.final_line_price -%}
                         <dl class="cart-item__discounted-prices">

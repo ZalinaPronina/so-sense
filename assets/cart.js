@@ -84,10 +84,15 @@ class CartItems extends HTMLElement {
           elementToReplace.innerHTML =
             this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
         }));
-        var items;
-        parsedState.item_count == 1 ? items = 'item' : items = 'items';
+        if(parsedState.item_count == 1){
+          document.querySelector('.cart-title-header .cart-counter .item').style.display = 'inline-block';
+          document.querySelector('.cart-title-header .cart-counter .items').style.display = 'none';
+        }else{
+          document.querySelector('.cart-title-header .cart-counter .items').style.display = 'inline-block';
+          document.querySelector('.cart-title-header .cart-counter .item').style.display = 'none';
+        }
         parsedState.item_count == 0 ? document.querySelector('.cart__warnings').classList.remove('hidden') : '';
-        document.querySelector('.cart-title-header .count').innerHTML = '('+ parsedState.item_count + ') ' + items;
+        document.querySelector('.cart-title-header .count').innerHTML = '('+ parsedState.item_count + ')';
         this.updateLiveRegions(line, parsedState.item_count);
         const lineItem =  document.getElementById(`CartItem-${line}`) || document.getElementById(`CartDrawer-Item-${line}`);
         if (lineItem && lineItem.querySelector(`[name="${name}"]`)) {
