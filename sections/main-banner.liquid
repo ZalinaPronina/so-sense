@@ -1,4 +1,24 @@
 {{ 'home-page.css' | asset_url | stylesheet_tag }}
+{% if section.settings.background != blank %}
+    <style>
+        @media only screen and (min-width: 990px){
+            .main-banner{
+                background-image: url('{{section.settings.background | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
+{% if section.settings.background_mobile != blank %}
+    <style>
+        @media only screen and (max-width: 989px){
+            .main-banner{
+                    background-image: url('{{section.settings.background_mobile | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
+<section class="main-banner">
+    <div class="page-width-desktop main-banner__container">
 {{ 'page-investor-information.css' | asset_url | stylesheet_tag }}
 {% if section.settings.background != blank %}
     <style>
@@ -21,6 +41,8 @@
 <section class="main-banner background-image">
     <div class="page-width-desktop main-banner__container" data-aos="fade-up">
         <div class="main-banner__text">
+            {% if section.settings.title != blank %}
+                <h1 class="h1">{{section.settings.title}}</h1>
             {% if section.settings.btn_text != blank %}
                 <a class="btn-primary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
             {% endif %}

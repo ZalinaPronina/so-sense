@@ -680,13 +680,6 @@ label[for='AddressProvinceNew'] {
   width: 100%;
   text-align: left;
 }
-
-.addresses ul {
-  list-style: none;
-  padding-left: 0;
-  text-align: center;
-}
-
 li[data-address] {
   margin-top: 5rem;
 }
