@@ -22,8 +22,8 @@
 
 
 <div class="all-blogs-title">
-  <div class="all-blogs-title__subtitile">Latest articles</div>
-  <h1 class="all-blogs-title__title">{{ blog.title }}</h1>
+  <div class="all-blogs-title__subtitile btn-primary">Latest articles</div>
+  <h1 class="all-blogs-title__title h2">{{ blog.title }}</h1>
 </div>
 {%- paginate blog.articles by 6 -%}
   <div class="main-blog main-catogiry page-width section-{{ section.id }}-padding">
@@ -58,7 +58,7 @@
       </form>
 
       <div class="recent-post">
-        <div class="recent-post__title">Recent Posts</div>
+        <div class="recent-post__title">{{ 'sections.blog.recent_post' | t }}</div>
         <div class="recent-post-box">
             {% for article in blog.articles %}
                 {% if article.tags contains 'recent-post' %}
@@ -83,7 +83,7 @@
 
       </div>
       <div class="article-category recent-post">
-        <div class="recent-post__title">Categories</div>
+        <div class="recent-post__title">{{ 'sections.blog.categories' | t }}</div>
         <div class="recent-post-box">
           {% for link in linklists.blog-categories.links %}
             <a
@@ -108,7 +108,7 @@
 
       </div>
 
-      <div class="show-more-catagories">Show more categories
+      <div class="show-more-catagories">{{ 'sections.blog.show_more' | t }}
         <img src="https://cdn.shopify.com/s/files/1/0552/8682/5006/files/arrow_drop_down.png?v=1664283846" alt="">
       </div>
     </div>

@@ -40,7 +40,7 @@
                             </p>
                         {%- endif -%}
                         <div class="article-bottom">
-                            <a class="article-more" href="{{ article.url }}">More {% include 'icon-arrow-right' %}</a>
+                            <a class="article-more" href="{{ article.url }}">{{ 'general.continue_shopping' | t }} {% include 'icon-arrow-right' %}</a>
                             <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
                         </div>
                     </div>

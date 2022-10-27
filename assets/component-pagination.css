@@ -121,11 +121,6 @@ a.pagination__item:hover::after {
     width: 4.8rem;
     height: 4.8rem;
   }
-
-  .article-pagination {
-    left: 35%;
-    bottom: -10rem;
-  }
 }
 
 @media (max-width: 425px) {

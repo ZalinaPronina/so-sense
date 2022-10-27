@@ -1,21 +1,17 @@
 .body-login, .body-register {
-    max-width: 1920px;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 18.1rem;
-    justify-items: center;
+    justify-items: baseline;
     align-items:baseline;
-    align-content: space-evenly;
-    justify-content: center;
-    padding-right: 32rem;
-    padding-left: 32rem;
+    margin-bottom: 20rem;
 }
 .login p,
 .register p {
     margin: 1.2rem 0;
+}
+.register-form, .custom-recover_password{
+    margin-bottom: 2rem;
 }
 .email-form,
 .register-form,
@@ -27,16 +23,15 @@
     flex-wrap: wrap;
     row-gap: 1.6rem;
     justify-content: center;
-    width: 54rem;
+    max-width: 54rem;
+    width: 100%;
 }
 .select_in-form__cont {
     font-weight: 600;
     border: none;
     border-radius: 16px;
     height: 6.4rem;
-    max-width: 51.6rem;
     width: 100%;
-    margin-left: 1.3rem;
     padding: 1rem 1.25rem 1rem 1.5rem;
     font-size: 1.8rem;
 }
@@ -57,39 +52,19 @@
 .register_btn {
     width: fit-content!important;
 }
-.left-block-password-recovery {
-    margin-top: -7rem;
+#shopify-section-left-block-password-recovery .body-contact_left-side-placing-email{
+    margin-bottom: 2rem;
 }
 .body-contact_left-side-text_title h2 {
-    font-family: Poppins;
-    width: 24rem;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 5.6rem;
-    line-height: 130%;
-    color: #283c92;
+    max-width: 24rem;
     margin-bottom: 0;
     margin-top: 0;
 }
-strong {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 5.6rem;
-    color: #28ACE2;
-}
 .text-description-left {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 3.2rem;
-    line-height: 140%;
     max-width: 50.5rem;
-    color: #283C92;
     margin: 0;
 }
 .text-description-under-input  {
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 1.8rem;
@@ -100,7 +75,6 @@ strong {
 a.recover_href {
     display: grid;
     align-items: center;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 1.8rem;
@@ -111,7 +85,6 @@ a.recover_href {
 button.button-cancel {
     display: grid;
     align-items: center;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 1.8rem;
@@ -122,7 +95,6 @@ button.button-cancel {
 a.return_account {
     display: grid;
     align-items: center;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 1.8rem;
@@ -134,18 +106,13 @@ a.return_account {
     margin-top: 2.4rem!important;
 }
 a.register_href{
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 140%;
     color: #283C92;
     text-decoration: none;
-}
-.page-width-desktop {
-    max-width: 66.7%;
-    margin: 0 auto;
-    padding-bottom: 36rem;
+    margin: 0;
 }
 .field input {
     padding: 1rem 1.25rem 1rem 5.5rem;
@@ -154,7 +121,6 @@ a.register_href{
     height: 6.4rem;
     max-width: 54rem;
     width: 100%;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400!important;
     font-size: 1.8rem;
@@ -170,7 +136,6 @@ span.icon-attention {
     position: relative!important;
     margin-bottom: 0.2rem!important;
     text-align: start!important;
-    font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 1.6rem!important;
@@ -180,52 +145,10 @@ span.icon-attention {
 }
 button.button-login,
 .button-login {
-    padding: 0;
-    text-align: center;
-    margin-top: 2rem!important;
-    cursor: pointer;
     border: none;
-    width: 15rem!important;
-    height: 6.4rem;
-    background-color: #283C92;
-    border-radius: 100px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.8rem;
-    line-height: 140%;
-    color: white;
-    display: flex;
-    column-gap: 0.7rem;
-    align-items: center;
-    justify-content: center;
 }
 button.button-add-new-addresses {
-    padding: 2rem;
-    text-align: center;
     margin-top: 2rem!important;
-    cursor: pointer;
-    border: none;
-    width: auto!important;
-    height: 6.4rem;
-    background-color: #283C92;
-    border-radius: 100px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.8rem;
-    line-height: 140%;
-    color: white;
-    display: flex;
-    column-gap: 0.7rem;
-    align-items: center;
-    justify-content: center;
-}
-button.button-add-new-addresses:after {
-    border: none;
-}
-button.button-add-new-addresses:before {
-    border: none;
 }
 .two_btn_add_address {
     display: flex;
@@ -236,25 +159,24 @@ button.button-add-new-addresses:before {
 }
 .login .field+a {
     margin-top: 0;
-    height: 6.4rem;
     text-decoration: none;
+    padding: 2rem;
 }
 .two_btn_password_recovery {
     display: flex;
-    width: 54rem;
+    max-width: 54rem;
     align-items: baseline;
     column-gap: 4rem;
 }
 .body-contact_left-side-placing-email__placing {
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 180%;
     color: #000000;
-    width: 47.9rem;
     margin-bottom: 2.4rem!important;
     margin-top: 1.6rem!important;
+    max-width: 47rem;
 }
 .add_margin {
     margin-top: 2.4rem!important;
@@ -270,14 +192,13 @@ button.button-login:after{
     display: flex;
     align-items: center;
     column-gap: 4rem;
-    width: 49.6rem;
+    margin-top: 2rem;
 }
 .contact-form {
     display: none;
 }
 label.label-for-input_recover {
     margin-left: 2rem;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 1.6rem;
@@ -313,7 +234,6 @@ span.icon-close-password {
 }
 .continue-with_google {
     background-color: #fff;
-    font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 1.8rem;
@@ -343,7 +263,6 @@ p.text-description-left {
     display: flex;
     column-gap: 0.5rem;
     align-items: self-start;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 1.2rem;
@@ -351,7 +270,6 @@ p.text-description-left {
     color: #525459;
 }
 p.pop_up_password_send_description {
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 1.8rem;
@@ -363,55 +281,10 @@ p.pop_up_password_send_description {
     justify-content: space-around;
     margin-bottom: 4rem;
 }
-a.back_login {
-    text-decoration: none;
-    width: 18.1rem;
-    height: 6.4rem;
-    background-color: #283C92;
-    border-radius: 100px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.8rem;
-    line-height: 140%;
-    color: #fff;
-    display: flex;
-    column-gap: 0.7rem;
-    align-items: center;
-    justify-content: center;
-    margin: 4rem;
-}
-a.back_login:hover{
-    text-decoration: none;
-    width: 18.1rem;
-    height: 6.4rem;
-    background-color: #283C92;
-    border-radius: 100px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.8rem;
-    line-height: 140%;
-    color: #fff;
-    display: flex;
-    column-gap: 0.7rem;
-    align-items: center;
-    justify-content: center;
-}
 .tittle_btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.account_tattle {
-    font-family: Poppins;
-    width: 24rem;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 5.6rem;
-    line-height: 130%;
-    color: #283c92;
-    margin: 4rem;
 }
 .this_button {
     padding: 4rem;
@@ -426,8 +299,9 @@ a.back_login:hover{
 button:after {
     display: none;
 }
-.select:after {
-    top: 2.5rem!important;
+.addresses_page .select:after {
+    top: 50%;
+    transform: translateY(-50%);
 }
 .body-pop_up_password_send {
     width: 54rem;
@@ -440,7 +314,6 @@ a.style_back_login {
     margin: 4rem auto 0 auto;
 }
 .body-pop_up_password_tittle {
-    font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -464,8 +337,26 @@ a.style_back_login {
     justify-content: center;
 }
 .addresses_page {
-    max-width: 56.8rem!important;
+    margin-top: 14.4rem;
     margin-bottom: 25rem!important;
+    text-align: center;
+}
+.addresses_page .h2{
+    margin-bottom: 3.2rem;
+}
+.addresses_page .custom-recover_password{
+    margin: 3.2rem auto 0;
+}
+.addresses_page .field, .addresses_page .select{
+    margin-bottom: 1.6rem;
+}
+.addresses_page .field input, .addresses_page select{
+    padding: 1rem 2rem;
+    height: auto;
+    margin: 0;
+}
+.customer.addresses_page form{
+    margin-top: 0;
 }
  ul.under_button_add_address {
     list-style: none;
@@ -473,25 +364,7 @@ a.style_back_login {
     text-align: center;
 }
 .button-add_address {
-    padding: 2rem;
-    text-align: center;
-    margin-top: 2rem!important;
-    cursor: pointer;
-    border: none;
-    width: auto;
-    height: 6.4rem;
-    background-color: #283C92;
-    border-radius: 100px!important;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.8rem;
-    line-height: 140%;
-    color: white;
-    display: flex;
-    column-gap: 0.7rem;
-    align-items: center;
-    justify-content: center;
+    margin-top: 2rem;
 }
 .button-address-cancel {
     padding: 0;
@@ -500,7 +373,6 @@ a.style_back_login {
     cursor: pointer;
     border: none;
     background-color: #F5F6F8!important;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 1.8rem;
@@ -512,7 +384,6 @@ a.style_back_login {
     justify-content: center;
 }
 .h3 {
-    ont-family: 'Poppins' !important;
     font-style: normal;
     font-weight: 600;
     font-size: 3.2rem!important;
@@ -520,7 +391,6 @@ a.style_back_login {
     color: #283C92;
 }
 .account_href {
-    font-family: 'Poppins' !important;
     font-style: normal!important;
     font-weight: 600!important;
     font-size: 1.8rem!important;
@@ -530,7 +400,6 @@ a.style_back_login {
 }
 .addresses ul p {
     margin-bottom: 0;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 1.8rem;
@@ -540,66 +409,7 @@ a.style_back_login {
 .select_label {
     left: 2rem;
 }
-
-@media only screen and (max-width: 1500px) {
-    html{
-        font-size: 51%;
-    }
-}
-@media only screen and (max-width: 1050px) {
-    html{
-        font-size: 7.1px;
-    }
-}
 @media only screen and (max-width: 989px) {
-    html{
-        font-size: 1.8vw;
-    }
-}
-@media only screen and (max-width: 700px) {
-    html{
-        font-size: 1.667vw;
-    }
-}
-@media screen and (max-width: 1400px) {
-    .page-width {
-        max-width: 80%;
-    }
-    .page-width-desktop {
-        max-width: 80%;
-    }
-}
-@media screen and (max-width: 1100px) {
-    .page-width {
-        max-width: 100%;
-        margin: 0 20px;
-    }
-    .page-width-desktop {
-        max-width: 100%;
-        margin: 0 20px;
-    }
-}
-@media only screen and (max-width: 1025px) {
-    span.icon_email_lock,
-    .icon-lock-red {
-        position: absolute;
-        top: 4.5rem;
-        left: 2rem;
-    }
-    span.icon_email_eye {
-        top: 4.5rem;
-        right: 2rem;
-    }
-    span.icon-lock-red {
-        top: 4.5rem;
-        left: 2rem;
-    }
-    span.icon-close-password {
-        top: 4.5rem;
-        right: 2rem;
-    }
-}
-@media only screen and (max-width: 990px) {
     .body-contact_left-side-text_title,
     .body-contact_left-side-placing-email__placing{
         text-align: -webkit-center;
@@ -617,19 +427,11 @@ a.style_back_login {
     }
     .left_block {
         text-align: center;
-        margin-top: 3.2rem;
+        margin: 3.2rem auto 0;
     }
     .body-login, .body-register {
-        margin-right: auto;
-        margin-left: auto;
-        display: grid;
         grid-template-columns: repeat(1,1fr);
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        padding-right: 0;
-        padding-left: 0;
-        padding-bottom: 15rem;
+        margin-bottom: 15rem;
 }
 .button_and_create_account {
     display: flex;
@@ -637,14 +439,9 @@ a.style_back_login {
     flex-direction: column;
     width: 100%;
 }
-    .btn-secondary {
-        margin-left: 0;
-        margin-right:0;
-    }
-.customer:not(.account):not(.order) {
-    margin: 0;
-    max-width: 100%;
-    text-align: center;
+.btn-secondary {
+    margin-left: 0;
+    margin-right:0;
 }
 .text-description-left {
     max-width: 100%;
@@ -653,9 +450,14 @@ a.style_back_login {
     width: 100%;
     margin-top: 3.2rem;
 }
+.custom-recover_password .text-description-under-input{
+    font-size: 1.6rem;
+    text-align: center;
+}
     .email-form, .register-form, .custom-recover_password {
         margin-top: 2.8rem;
         margin-bottom: 2.8rem;
+        padding: 2rem;
     }
     button.button-login, .button-login {
         margin-bottom: 3.2rem;
@@ -666,7 +468,6 @@ a.style_back_login {
     }
     .body-contact_left-side-text_title.bottom_title {
         margin-top: 10rem;
-        width: 47rem;
         margin-right: auto;
         margin-left: auto;
     }
@@ -676,12 +477,9 @@ a.style_back_login {
         align-items: center;
         flex-direction: column;
     }
-    :is(.account,.order) {
-        padding: 0;
-    }
     .account_table {
         margin: 5rem auto 12rem;
-        width: 54rem;
+        max-width: 54rem;
     }
     :is(.account,.order) p {
         margin: 0 0 2rem;
@@ -703,7 +501,7 @@ a.style_back_login {
         align-items: center;
     }
     .addresses_page {
-        margin: auto!important;
+        margin: 3.2rem auto 20rem !important;
         padding: 0!important;
         max-width: 54rem!important;
         text-align: center;
@@ -715,10 +513,6 @@ a.style_back_login {
     }
 }
 @media only screen and (max-width: 376px) {
-    .h1 {
-        font-size: 7.2rem;
-        text-align: center;
-    }
     .body-contact_left-side-text_title {
         text-align: -webkit-center;
     }
@@ -730,87 +524,24 @@ a.style_back_login {
         margin-top: 6.4rem;
     }
 
-    .body-contact_left-side-placing-email {
-        width: 53.4rem;
-    }
-
-    .body-contact_left-side-placing-email__placing {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 2.6rem;
-        line-height: 180%;
-        color: #000;
-        width: 53.3rem;
-    }
-
-    span.icon_email_lock,
-    .icon-lock-red {
-        position: absolute;
-        top: 7.5rem;
-        left: 1.6rem;
-    }
-
-    span.icon_email_eye {
-        top: 7.5rem;
-        right: 1.6rem;
-    }
-
-    span.icon-lock-red {
-        top: 7.5rem;
-        left: 1.6rem;
-    }
-
-    span.icon-close-password {
-        top: 7.5rem;
-        right: 1.6rem;
-    }
-
-    strong {
-        font-size: 6rem;
-    }
-
-    .body-contact_left-side-text_title h2 {
-        font-size: 6rem;
-    }
-
-    label.label-for-input {
-        font-size: 2.4rem !important;
-    }
-
-    .login a {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 2.8rem !important;
-        line-height: 140%;
-        display: flex;
-        align-items: center;
+    .button_and_create_account a {
         text-align: center;
         color: #283C92;
     }
 
     button.button-login, .button-login {
-        width: 24.5rem !important;
-        height: 10.3rem;
-        font-size: 2.8rem;
         margin-bottom: 3.2rem;
         margin-top: 0 !important;
     }
 
     .continue-with_google {
         margin-top: 5.1rem;
-        width: 46.9rem;
+        max-width: 46.9rem;
         font-size: 2.9rem;
-        font-family: Poppins;
         font-style: normal;
         font-weight: 600;
         line-height: 140%;
         height: 10.25rem;
-    }
-
-    label.label-for-input_recover {
-        font-size: 2.6rem;
     }
 
     .text-description-under-input {
@@ -830,10 +561,6 @@ a.style_back_login {
         margin-top: 0 !important;
     }
 
-    .email-form {
-        width: 53.6rem;
-    }
-
     .email-form,
     .register-form,
     .custom-recover_password {
@@ -842,16 +569,6 @@ a.style_back_login {
         margin-bottom: 5.12rem;
         margin-top: 0;
 
-    }
-
-    .field input {
-        height: 10.2rem;
-    }
-
-    .login .field + a {
-        margin-top: 0;
-        height: 10.3rem;
-        text-decoration: none;
     }
 
     .field__input, .customer .field input {
@@ -880,11 +597,9 @@ a.style_back_login {
 
     .body-contact_left-side-placing-email__placing {
         margin-bottom: 0 !important;
+        font-size: 1.6rem;
     }
     .select_in-form__cont {
         height: 10.2rem;
-    }
-    .select:after {
-        top: 3.5rem!important;
     }
 }

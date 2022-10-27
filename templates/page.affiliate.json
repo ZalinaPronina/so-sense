@@ -1,0 +1,15 @@
+{
+  "sections": {
+    "page-form-app": {
+      "type": "page-form-app",
+      "settings": {
+        "title": "<p>Become <\/p><p>an<strong> E-commerce Affiliate<\/strong><\/p>",
+        "subtitle": "For cooperation, please fill in the information",
+        "text": "Eget pulvinar facilisis in pellentesque nisl auctor amet. Vel mauris duis cras et."
+      }
+    }
+  },
+  "order": [
+    "page-form-app"
+  ]
+}

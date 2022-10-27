@@ -2,8 +2,10 @@
 
  <div class="all-blogs">
   <div class="all-blogs-title">
-    <div class="all-blogs-title__subtitile">Latest articles</div>
-    <h1 class="all-blogs-title__title">Blog</h1>
+    <a class="all-blogs-title__subtitile btn-primary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
+    {% if section.settings.title != blank %}
+      <h1 class="all-blogs-title__title h2">{{section.settings.title}}</h1>
+    {% endif %}
   </div>
   <div class="allblogs-sections page-width-desktop">
     
@@ -39,7 +41,7 @@
 <!--         <input  type="submit" value="Search" /> -->
       </form>
       <div class="recent-post">
-        <div class="recent-post__title">Recent Posts</div>
+        <div class="recent-post__title">{{ 'sections.blog.recent_post' | t }}</div>
         <div class="recent-post-box">
           {% for link in linklists.blog-categories.links  %}
             {% for article in blogs[link.handle].articles %}
@@ -65,7 +67,7 @@
         </div>
       </div>
       <div class="article-category recent-post">
-        <div class="recent-post__title">Categories</div>
+        <div class="recent-post__title">{{ 'sections.blog.categories' | t }}</div>
         <div class="recent-post-box">
           {% for link in linklists.blog-categories.links %}
             <a
@@ -87,10 +89,8 @@
             </a>
           {% endfor %}
         </div>
-
       </div>
-
-      <div class="show-more-catagories">Show more categories
+      <div class="show-more-catagories">{{ 'sections.blog.show_more' | t }}
         <img src="https://cdn.shopify.com/s/files/1/0552/8682/5006/files/arrow_drop_down.png?v=1664283846" alt="">
       </div>
     </div>
@@ -102,48 +102,29 @@
     display: none;
   }
  </style>
-<script>
-  window.addEventListener('DOMContentLoaded', (event) => {
 
-    $(document).ready(function(){
-  $(".category-post-item").slice(0,1).css('display', 'flex');
-  $(".show-more-catagories").on("click", function(e){
-    e.preventDefault();
-    $(".category-post-item:hidden").slice(0, 5).css('display', 'flex');
-    if($(".content:hidden").length == 0) {
-      $(".show-more-catagories").hide();
-    }
-  });
-  
-})
-});
-
-const allArticle = document.querySelectorAll('.simple-article-style')
-var mq = window.matchMedia( "(max-width: 989px)" );
-if (!mq.matches) {
-
-  allArticle.forEach((item,index) => { 
-    if(index == 2) {
-      item.style.marginTop = "-80px";
-    }
-
-    if(index == 4) {
-      item.style.marginTop = "-100px";
-    }
-  })
+{% schema %}
+{
+  "name": "About Banner",
+    "settings": [
+        {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Btn Url"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Btn Text",
+            "default": "Latest articles"
+        },
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title",
+            "default": "<p>Blog</p>",
+            "info": "Choose Bold to change the color"
+        }
+    ]
 }
-else {
-  allArticle.forEach((item,index) => {
-    if(index == 2) {
-      item.style.marginTop = "0";
-    }
-
-    if(index == 4) {
-      item.style.marginTop = "0";
-    }
-  })
-}
-
-
-
-</script>
+{% endschema %}
