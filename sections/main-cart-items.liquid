@@ -8,14 +8,14 @@
 
 <cart-items class="page-width-desktop{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}" data-aos="fade-up">
   <div class="cart-title-header">
-    <a href="{{ routes.all_products_collection_url }}" class="link-continue">{% include 'icon-arrow-left' %}</a>
+    <a href="/" class="link-continue">{% include 'icon-arrow-left' %}</a>
     <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
     <div class="cart-counter">
         <span class="count">
           ({{ cart.item_count }})
         </span>
         <small class="items" {% if cart.item_count == 1 %} style="display: none;" {% endif %}>{{ 'sections.cart.items' | t }}</small>
-        <small class="item" {% if cart.item_count > 1 %} style="display: none;"{% endif %}>{{ 'sections.cart.item' | t }}</small>
+        <small class="item" {% if cart.item_count > 1 or cart.item_count == 1 %} style="display: none;"{% endif %}>{{ 'sections.cart.item' | t }}</small>
     </div>
   </div>
   <div class="cart__warnings{% if cart.item_count > 0 %} hidden{% endif %}">

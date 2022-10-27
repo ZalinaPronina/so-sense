@@ -29,15 +29,15 @@
         "e8ed182f-560d-4516-9280-af88feee2a86": {
           "type": "block",
           "settings": {
-            "title": "<p>The reason behind this<\/p>",
-            "subtitle": "<p>With more than 350 children under the age of five dying<\/p>",
-            "text": "<p>By drowning in pools each year nationwide, pool safety alarms should be mandatory.<\/p>"
+            "title": "<p>Why choose SOSense<\/p>",
+            "subtitle": "<p>More than 350 children under the age of five<\/p>",
+            "text": "<p>Unfortunately pass away every year due to accidental drowning in pools nationwide. Knowing this statistic, pool safety alarms should be mandatory.<\/p>"
           }
         },
         "9766be0d-45aa-4172-861b-f2ec0c79a637": {
           "type": "block",
           "settings": {
-            "title": "When it’s to come out",
+            "title": "When You Can Purchase SOSense",
             "subtitle": "The BETA product is now available for early bird backers.",
             "text": "<p>This enables us to further develop our life-saving pool alarm system and you will gain the final product free of charge as soon as it is released.<\/p>"
           }
@@ -45,15 +45,16 @@
         "23d3e689-46e8-4e59-b145-dd40f40bab37": {
           "type": "block",
           "settings": {
-            "title": "Who will benefit from this",
-            "subtitle": "If you’re always worried about what might happen in your own home, it’s time to make a change.",
-            "text": "<p>Our SOSense swimming pool entry detection alarm has a detection range of up to 20 x 40 foot.<\/p>"
+            "title": "Who SOSense Is For",
+            "subtitle": "If you're a pool owner...",
+            "text": "<p>It's important to take responsibility for your home space, to make it a safe space. Our SOSense swimming pool entry detection alarm has a detection range of up to 20 x 40 foot.<\/p>"
           }
         },
         "9f2efc20-050a-4e7d-a9cd-d28b9310adc9": {
           "type": "block",
+          "disabled": true,
           "settings": {
-            "title": "How to purchase, become involved",
+            "title": "How You Can Get Your SOSense",
             "subtitle": "Purchasing: The BETA product is now available for early bird backers.",
             "text": "<p>This enables us to further develop our life-saving pool alarm system and you will gain the final product free of charge as soon as it is released.<\/p>"
           }
@@ -65,12 +66,15 @@
         "23d3e689-46e8-4e59-b145-dd40f40bab37",
         "9f2efc20-050a-4e7d-a9cd-d28b9310adc9"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "1663962924953a2e68": {
       "type": "background-image",
       "settings": {
+        "btn_text": "",
+        "btn_url": "",
+        "title": "",
+        "text": "",
         "background": "shopify:\/\/shop_images\/Rectangle_80.png",
         "background_mobile": "shopify:\/\/shop_images\/Rectangle_80_0ecafdf1-fed0-49ff-a02e-84891c3f6dc1.png"
       }
@@ -195,13 +199,14 @@
       ],
       "settings": {
         "title": "<p>Availability to <strong>purchase<\/strong><\/p>",
-        "text": "<p>Pellentesque faucibus molestie amet enim. Augue fames felis enim et enim lacinia suscipit at. Tellus lectus in tellus elementum imperdiet. <\/p>",
+        "text": "<p>Pre-order your SOSense pool alarm detection unit now, for a huge early bird discount.<\/p>",
         "btn_text": "Order Now",
         "btn_url": ""
       }
     },
     "about-us-blog-section": {
       "type": "about-us-blog-section",
+      "disabled": true,
       "settings": {
         "heading": "<p>Press<\/p>",
         "blog": "business"

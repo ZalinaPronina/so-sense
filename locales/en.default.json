@@ -29,6 +29,7 @@
       }
     },
     "continue_shopping": "Continue shopping",
+    "btn_more": "More",
     "pagination": {
       "label": "Pagination",
       "page": "Page {{ number }}",
@@ -265,6 +266,11 @@
     },
     "footer": {
       "payment": "Payment methods"
+    },
+    "blog": {
+      "show_more": "Show more categories",
+      "Categories": "Categories",
+      "recent_post": "Recent Posts"
     },
     "featured_blog": {
       "view_all": "Read all",
