@@ -260,7 +260,7 @@
   margin: 0;
 }
 
-.article-template__content p {
+.article-template__content p, .article-template__content{
   font-size: 1.8rem;
   color: #525459;
   font-weight: normal;
