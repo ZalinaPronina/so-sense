@@ -18,7 +18,7 @@ footer .list-social {
   display: flex;
   color: rgb(var(--color-foreground));
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 989px) {
   .footer-block-image>img{
     max-width: 125px !important;
     margin-bottom: 32px;

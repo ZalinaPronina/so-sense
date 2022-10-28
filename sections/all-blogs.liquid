@@ -102,6 +102,20 @@
     display: none;
   }
  </style>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    $(document).ready(function(){
+      $(".category-post-item").slice(0,1).css('display', 'flex');
+      $(".show-more-catagories").on("click", function(e){
+        e.preventDefault();
+        $(".category-post-item:hidden").slice(0, 5).css('display', 'flex');
+        if($(".content:hidden").length == 0) {
+          $(".show-more-catagories").hide();
+        }
+      });
+    })
+  });
+</script>
 
 {% schema %}
 {

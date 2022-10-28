@@ -269,7 +269,7 @@
     },
     "blog": {
       "show_more": "Show more categories",
-      "Categories": "Categories",
+      "categories": "Categories",
       "recent_post": "Recent Posts"
     },
     "featured_blog": {

@@ -438,7 +438,10 @@
 }
 
 /* Banner */
-
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 15rem;
+}
 .our-product-banner{
     padding: 15rem 0;
 }
@@ -491,6 +494,9 @@
     }
 }
 @media only screen and (max-width: 989px) {
+    html{
+        scroll-padding-top: 10rem;
+    }
     .our-product .image-wrapper-mobile{
         display: block !important;
     }
