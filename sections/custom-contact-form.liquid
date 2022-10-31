@@ -37,7 +37,7 @@
                 <div class="main-fields">
                     <label for="contForm-name">{{ 'templates.contact.form.name' | t }}<span aria-hidden="true">*</span></label>
                     <div class="field">
-                        <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
+                        <input required aria-required="true" class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
                         <span class="icon-E-mail">{% render 'icon-person' %}</span>
                     </div>
                     <label for="ContactForm-email">{{ 'templates.contact.form.email' | t }}</label>
@@ -68,7 +68,7 @@
                     </div>
                     <label for="ContactForm-phone">Phone<span aria-hidden="true">*</span></label>
                     <div class="field">
-                        <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
+                        <input required aria-required="true" type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
                         <span class="icon-E-mail">{% render 'icon-phone_in_talk' %}</span>
                     </div>
                     <label for="select_in-form" class="select_subject">{{ 'templates.contact.form.subject' | t }}</label>
