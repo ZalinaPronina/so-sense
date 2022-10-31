@@ -13,9 +13,37 @@
 .register-form, .custom-recover_password{
     margin-bottom: 2rem;
 }
+.reset-password{
+    margin: 14.4rem auto 17rem;
+}
+.reset-password h1{
+    margin: 0;
+}
+.reset-password p{
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+}
+body .reset-password form{
+    margin-top: 2rem;
+}
+.reset-password .field label{
+    position: initial;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #8A8C91;
+    margin-bottom: .4rem;
+}
+.reset-password .field{
+   margin-bottom: 1.6rem;
+}
+.reset-password .btn-secondary{
+    margin: 4rem auto 0;
+}
 .email-form,
 .register-form,
-.custom-recover_password{
+.custom-recover_password, .reset-password{
     background-color: #f5f6f8;
     padding: 4rem;
     border-radius: 32px;
@@ -295,6 +323,7 @@ p.pop_up_password_send_description {
     justify-content: space-around;
     background-color: #fff;
     border-radius: 32px;
+    margin: 0 20px;
 }
 button:after {
     display: none;
@@ -304,11 +333,14 @@ button:after {
     transform: translateY(-50%);
 }
 .body-pop_up_password_send {
-    width: 54rem;
+    max-width: 62rem;
     z-index: 10;
     background-color: white;
     border-radius: 32px;
     padding: 8rem 4rem;
+}
+.body-pop_up_password_send .btn-secondary{
+    margin: 0 auto;
 }
 a.style_back_login {
     margin: 4rem auto 0 auto;
@@ -410,6 +442,9 @@ a.style_back_login {
     left: 2rem;
 }
 @media only screen and (max-width: 989px) {
+    .reset-password{
+        margin: 8rem auto 17rem;
+    }
     .body-contact_left-side-text_title,
     .body-contact_left-side-placing-email__placing{
         text-align: -webkit-center;

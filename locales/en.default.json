@@ -405,6 +405,11 @@
       "subtext": "We will send you an email to reset your password",
       "success": "We've sent you an email with a link to update your password."
     },
+    "password_send": {
+      "title": "Congratulations!",
+      "subtext": "The link was already sent.",
+      "btn": "Continue"
+    },
     "register": {
       "title": "Create account",
       "first_name": "First name",
