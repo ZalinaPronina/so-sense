@@ -142,3 +142,13 @@
     ]
 }
 {% endschema %}
+
+ <script>
+  
+  const allArticles  = document.querySelectorAll('.simple-article-style')
+  const mediaSection = document.querySelector('.allblogs-sections-left')
+
+  if (allArticles.length <= 2) {
+    mediaSection.style.display = 'flex'
+  }
+ </script>

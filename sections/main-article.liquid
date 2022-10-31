@@ -5,7 +5,7 @@
   <div class="all-blogs-title">
     <div class="all-blogs-title__subtitile btn-primary">{{ blog.title }}</div>
     <h1 class="all-blogs-title__title title-width h2">{{ article.title | slice : 0,28 }} <span style="color: #28ACE2;">{{article.title | slice: 28, 100}}</span> </h1>
-    <div class="all-blogs-title__create">{{ article.created_at }}</div>
+    <div class="all-blogs-title__create">{{ article.created_at | time_tag: format: 'date' }}</div>
   </div>
   {%- for block in section.blocks -%}
     {%- case block.type -%}
