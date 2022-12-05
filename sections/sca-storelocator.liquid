@@ -1,20 +1,28 @@
-<div id='scasl-app-container' class="new-for-mobile" style="display:none">
-    <div class="bh-sl-container scasl-container" >
-        <div id="page-header">
-            <h1 class="bh-sl-title">Find Our Store</h1>
+<div id='scasl-app-container' class="new-for-mobile page-width-desktop" style="display:none">
+    <div class="bh-sl-container scasl-container">
+        <div class="wrapper-list">
+          <div class="bh-sl-loc-list scasl-location-list">
+            <ul class="list"></ul>
+          </div>
+          <ul id="scasl-tabs">
+            <li class="scasl-tab-list active">List</li>
+            <li class="scasl-tab-map">Map</li>
+          </ul>
         </div>
-    
-        <div class="bh-sl-form-container">
+        <div class="wrapper-map">
+          <div class="bh-sl-form-container">
             <div id="scasl-tab-radius">
                 <form id="bh-sl-user-location" class="scasl-distance" method="post" action="#">
                     <div class="form-input">
                         <label for="bh-sl-address">Current Location</label>
                           <div class="scasl-address-wrap">
-                            <input type="text" id="bh-sl-address" name="bh-sl-address" />
+                            <div class="btn-wrapper">
+                              <input type="text" id="bh-sl-address" name="bh-sl-address" />
+                              <button id="scapl-geocode-btn" type="button">Find My Location</button>
+                            </div>
                               <a href="#" id="scapl-geocode-btn" title="Find My Location" style="background-color: none !important">
                                 <img src="{{ 'sca.location-find-location.png' | asset_url }}">
                             </a>
-                            <button id="scapl-geocode-btn" type="button">Find My Location</button>
                         </div>
                     </div>
     
@@ -52,18 +60,10 @@
                     <div class="double-bounce2"></div>
                   </div>
             </div>
-        </div>
-    
-          <ul id="scasl-tabs">
-          <li class="scasl-tab-list active">List</li>
-          <li class="scasl-tab-map">Map</li>
-        </ul>
-    
-        <div id="bh-sl-map-container" class="bh-sl-map-container scasl-map-container">
-          <div class="bh-sl-loc-list scasl-location-list">
-            <ul class="list"></ul>
           </div>
-          <div id="bh-sl-map" class="bh-sl-map scasl-map"></div>
+          <div id="bh-sl-map-container" class="bh-sl-map-container scasl-map-container">
+            <div id="bh-sl-map" class="bh-sl-map scasl-map"></div>
+          </div>
         </div>
     </div>
     

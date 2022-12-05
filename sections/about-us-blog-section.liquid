@@ -22,6 +22,7 @@
             <li class="blog__post">
                 {%- if article and article != empty -%}
                     <div class="card article-card">
+                      <div>
                         <div class="blog__badge">
                             <span class="btn-primary">{{ section.settings.blog }}</span>
                         </div>
@@ -39,8 +40,9 @@
                                 {%- endif -%}
                             </p>
                         {%- endif -%}
+                      </div>
                         <div class="article-bottom">
-                            <a class="article-more" href="{{ article.url }}">{{ 'general.continue_shopping' | t }} {% include 'icon-arrow-right' %}</a>
+                            <a class="article-more" href="{{ article.url }}">{{ 'general.btn_more' | t }} {% include 'icon-arrow-right' %}</a>
                             <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
                         </div>
                     </div>
