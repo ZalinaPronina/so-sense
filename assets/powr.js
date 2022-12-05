@@ -27,8 +27,13 @@
             }
             if(message_object.data.window_width < 989){
                 document.querySelector('.js-formBuilder-toggle.formbuilder-toggle ').classList.add('mobile-form')
-                console.log(message_object.data.window_width)
             }
+            document.querySelector('#submitButton').addEventListener('click', function(e){
+                setTimeout(() =>{
+                    window.parent.postMessage('submit', "*");
+                    document.querySelector('body').scrollIntoView()
+                }, 0)
+            })
         });
         window.parent.postMessage('request-shipping-address', "*");
     }, 0)
