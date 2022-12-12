@@ -311,6 +311,12 @@
     background: #FFFFFF;
     border-radius: 32px;
 }
+.about-us-blog .card.article-card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .about-us-blog .card__heading{
     font-weight: 600;
     font-size: 2.4rem;

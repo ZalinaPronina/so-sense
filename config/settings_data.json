@@ -84,14 +84,14 @@
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
     "social_twitter_link": "",
-    "social_facebook_link": "\/",
+    "social_facebook_link": "https:\/\/www.facebook.com\/",
     "social_pinterest_link": "",
-    "social_whatsapp_link": "\/",
-    "social_instagram_link": "\/",
+    "social_whatsapp_link": "https:\/\/www.whatsapp.com\/?lang=en",
+    "social_instagram_link": "https:\/\/www.instagram.com\/",
     "social_tiktok_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
-    "social_youtube_link": "\/",
+    "social_youtube_link": "https:\/\/www.youtube.com\/",
     "social_vimeo_link": "",
     "accessibility_link": "\/",
     "privacy_link": "\/",
@@ -103,17 +103,19 @@
     "cart_type": "notification",
     "show_vendor": false,
     "show_cart_note": false,
+    "checkout_logo_image": "shopify:\/\/shop_images\/g10.png",
+    "checkout_accent_color": "#283c92",
+    "checkout_button_color": "#283c92",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "settings": {
-        }
+        "settings": {}
       },
       "header": {
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "{{ shop.brand.logo }}",
+          "logo": "shopify:\/\/shop_images\/logo.png",
           "logo_width": 150,
           "logo_position": "middle-left",
           "menu": "main-menu",
@@ -213,7 +215,7 @@
       "contact-form": {
         "type": "contact-form",
         "settings": {
-          "heading": "Keep in touch"
+          "heading": "Get In Contact"
         }
       },
       "left_block-login": {
@@ -242,9 +244,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   },
   "presets": {
     "Default": {
@@ -363,8 +363,7 @@
           "block_order": [
             "announcement-bar-0"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "header": {
           "type": "header",

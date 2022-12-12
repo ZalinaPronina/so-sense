@@ -10,8 +10,8 @@
         "title": "<p>The alarm that makes <strong>your pool safer<\/strong><\/p>",
         "subtitle": "",
         "text": "Protect your pool with the only AI based drowning detection system",
-        "url_1": "",
-        "url_2": "",
+        "url_1": "https:\/\/www.apple.com\/",
+        "url_2": "https:\/\/play.google.com\/store\/games?hl=us&gl=US",
         "social_1": "shopify:\/\/shop_images\/Frame_753.png",
         "social_2": "shopify:\/\/shop_images\/Frame_754.png",
         "main_photo": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_4.png",
@@ -26,10 +26,11 @@
         "background": "shopify:\/\/shop_images\/Intersect_d0a8b0a8-9fb8-40de-b300-be68d9d49ca1.png",
         "background_mobile": "shopify:\/\/shop_images\/background-mobile-maiin.png",
         "wave": "shopify:\/\/shop_images\/Group_33334.png",
-        "title": "<p>Discounted <\/p><p>Pre-order <strong>Offer<\/strong><\/p>",
+        "wave_mobile": "shopify:\/\/shop_images\/background-mobile-banner.png",
+        "title": "<p>Discounted <\/p><p>Pre-Order <strong>Offer<\/strong><\/p>",
         "subtitle": "<p>Be the first to have<\/p><p><strong>our product<\/strong><\/p>",
-        "btn_text": "Pre-order Yours Now",
-        "btn_url": "\/",
+        "btn_text": "Pre-Order Yours Now",
+        "btn_url": "shopify:\/\/products\/test",
         "price": "49",
         "day": "Today",
         "usual_price": "Usual price $499",
@@ -39,13 +40,15 @@
     },
     "b8497878-f242-4544-bef6-42d67020dcff": {
       "type": "discount-banner-image-left",
+      "disabled": true,
       "settings": {
         "background": "shopify:\/\/shop_images\/Intersect_d0a8b0a8-9fb8-40de-b300-be68d9d49ca1.png",
         "background_mobile": "shopify:\/\/shop_images\/background-mobile-maiin.png",
         "wave": "shopify:\/\/shop_images\/wave_right.png",
+        "wave_mobile": "shopify:\/\/shop_images\/background-mobile-banner.png",
         "title": "<p>The <strong>Best Price<\/strong> We'll Ever Offer <\/p>",
-        "btn_text": "Pre-order Yours Now",
-        "btn_url": "",
+        "btn_text": "Pre-Order Yours Now",
+        "btn_url": "shopify:\/\/products\/test",
         "price": "49",
         "usual_price": "$499",
         "main_photo": "shopify:\/\/shop_images\/10_1_f6eecf3b-1b14-417e-aab1-b0535b844764.png",
@@ -94,8 +97,7 @@
         "2dcaba95-3325-4867-a193-a10c0a107caf",
         "a54b9d23-1d7a-4f0f-bbf0-81e0a69a9862"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "1663229044892e54a1": {
       "type": "our-benefits",
@@ -104,25 +106,25 @@
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/icn0.png",
-            "title": "<p>Pool entrance identification<\/p>",
+            "title": "<p>Pool Entrance Identification<\/p>",
             "color": "#647bdf",
-            "text": "<p>Our technology detects all accidental and deliberate pool entry with pets and toddlers over 12lbs to adults, easing or stepping into the pool or falling or diving in. A notification is sent to your mobile phone while sounding an alarm through your garden and home.<\/p>"
+            "text": "<p>Our technology detects all accidental and deliberate pool entry. Any entry of pets and toddlers over 12lbs or adults, will sound the alarm. This includes entry of easing in, stepping  in, falling or diving in. A notification is sent to your mobile phone while sounding an alarm through your garden and home.<\/p>"
           }
         },
         "c4939ef3-704f-4a27-a95e-db99f2b21811": {
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/icn.png",
-            "title": "<p>Drowning detection<\/p>",
+            "title": "<p>Drowning Detection<\/p>",
             "color": "#339999",
-            "text": "<p>The system detects the sounds of human distress signals at an early stage and warns of this in a local announcement, in the nearby building and in the pool holder's smartphone.<\/p>"
+            "text": "<p>The system detects the sounds of very early human distress signals which sets off the local announcement alarm, in the nearby building and on the pool holder's smartphone.<\/p>"
           }
         },
         "1ed87046-9a51-419e-bb83-0c105ea01f7e": {
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/icn2.png",
-            "title": "<p>Listens<br\/>to water 24\/7<\/p>",
+            "title": "<p>Monitoring Your Pool 24\/7<\/p>",
             "color": "#28ace2",
             "text": "<p>Created by IDF Marine Seal veterans, acoustic & digital processing experts and medical and marine engineers that share more than 120 years of combined experience. This means our underwater acoustic technology is a cut above any others on the market right now.<\/p>"
           }
@@ -135,7 +137,7 @@
       ],
       "settings": {
         "title": "<p>Our <strong>benefits<\/strong><\/p>",
-        "text": "<p>SOSense is a high-tech hydroponic sensor that detects all pool entry & accidents. Alert you of pool entries and drownings faster than any other device on the market. This is the AI lifeguard that every pool-owning household needs…<\/p>"
+        "text": "<p>SOSense is a high-tech hydroponic sensor that detects all pool entry & accidents. It alerts you of pool entries and drownings faster than any other device on the market. This is the AI lifeguard that every pool-owning household needs…<\/p>"
       }
     },
     "166323988412e4b6fe": {
@@ -143,15 +145,15 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/background.png",
         "background_mobile": "shopify:\/\/shop_images\/blue-mobile-background.png",
-        "title": "<p>Almost 6500 children<br\/>younger than 15 years<br\/><strong>were treated for pool<\/strong><\/p>",
+        "title": "<p>Almost 6,500 children younger than 15 years old  <strong>were treated for pool related drowning between 2015 - 2017<\/strong><\/p>",
         "year_from": "2015",
         "year_from_color": "#647bdf",
         "year_to": "2017",
         "year_to_color": "#f8989e",
-        "btn_text": "Description of the problem",
+        "btn_text": "The Importance Of SOSense",
         "btn_url": "\/",
-        "title_second": "Died from drowning or almost died from drowning",
-        "text_second": "<p>Some stats you may find useful:<br\/>According to the CDC, drowning is the number one cause of unintentional death for children between the ages of 1 and 4. <\/p>"
+        "title_second": "More than 350 children drown every year in the US alone.",
+        "text_second": "<p>According to the CDC, drowning is the number one cause of unintentional death for children between the ages of 1 and 4.<\/p>"
       }
     },
     "1663842300cf1d1cd0": {
@@ -159,11 +161,11 @@
       "settings": {
         "title": "<p>There is no other technology like this<br\/> in the <strong>pool drowning<br\/> alarm market<\/strong><\/p>",
         "subtitle": "",
-        "text": "<p>There is a gap in the market for pool drowning detection alarms, so our company mission is to develop our unique disruptive underwater acoustic technology as the global standard for pool safety. We intend on SOSense becoming the acoustic technology that is the standard safety feature in all private pools.<\/p>",
-        "btn_url": "\/",
-        "btn_text": "Description of the problem",
+        "text": "<p>We believe drowning related deaths are preventable. That is why it is our mission and sole purpose to develop our unique, disruptive underwater acoustic SOSense technology as the global safety standard required for all private pools.<\/p>",
+        "btn_url": "shopify:\/\/products\/test",
+        "btn_text": "We Are The Solution",
         "btn_text_product": "Order Product",
-        "btn_url_product": "",
+        "btn_url_product": "shopify:\/\/products\/test",
         "image": "shopify:\/\/shop_images\/video_2.png"
       }
     },
@@ -174,42 +176,42 @@
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_818.png",
-            "text": "Simple set up no tools required"
+            "text": "Simple set up, no tools required"
           }
         },
         "b31d8a1f-a4c8-4e81-8235-7b73f1e768f5": {
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_821.png",
-            "text": "Get Mobile Notifications Alarm Also Sounds In Yard & Home"
+            "text": "Get mobile notifications, alarm also sounds in yard & home"
           }
         },
         "269744d3-3b52-4581-ae73-5fa9285c8ea7": {
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_819.png",
-            "text": "Seasonal battery Life.           6 Months Between Charges"
+            "text": "Seasonal battery life - 6 months between charges"
           }
         },
         "86886919-3c6a-497e-b579-3b01e3d7284d": {
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_822.png",
-            "text": "Pool Alarm Entry Detection For Pools Of 20x40ft"
+            "text": "Pool alarm entry detection for pools of 20x40ft"
           }
         },
         "686685b2-a8ec-4cc9-a478-f0d95f91777d": {
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_820.png",
-            "text": "Works With Bluetooth Via Mobile Application"
+            "text": "Works with bluetooth via mobile app"
           }
         },
         "0bfe077f-a36e-474d-bae3-c024e9b54e53": {
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_823.png",
-            "text": "Detects and Sounds Alarm On Human and Pet Entry"
+            "text": "Detects & sounds alarm for human & pet pool entry"
           }
         }
       },
@@ -223,8 +225,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/17.png",
-        "title": "<p>The power of <strong>SOSense technology<\/strong><\/p>",
-        "btn_text": "Technology and solution",
+        "title": "<p>The Power Of <strong>SOSense Technology<\/strong><\/p>",
+        "btn_text": "Technology & Solution",
         "btn_url": ""
       }
     },
@@ -233,11 +235,11 @@
       "settings": {
         "btn_url_top": "",
         "btn_text_top": "",
-        "title": "<p>How the <strong>technology works<\/strong><\/p>",
+        "title": "<p>How Our <strong>Technology Works<\/strong><\/p>",
         "subtitle": "",
-        "text": "<p>Using our advanced technology, our products are able to correctly identify and monitor all pool entries. This function gives each user peace of mind knowing that they have an additional layer of supervising the pool. <\/p>",
-        "text_second": "<p>Our system it self is meant to be<br\/>a <a href=\"\/products\/test\" title=\"Test\">supplemental aid<\/a> and, when mounted in the pool, generates alerts via its advanced <a href=\"\/\" title=\"\/\">acoustic sensors<\/a> and <a href=\"\/\" title=\"\/\">AI-<\/a><a href=\"\/\" title=\"\/\">algorithm technology<\/a> transferred to the Home Unit and, subsequently, to the app on the user's phone.<\/p>",
-        "btn_url": "\/",
+        "text": "<p>Our advanced technology enables our products to correctly identify and monitor all pool entry, helping you supervise your pool from afar.<\/p>",
+        "text_second": "<p>Our system is a <a href=\"\/products\/test\" title=\"Test\">supplemental aid<\/a> that, when mounted in the pool, generates alerts via its advanced <a href=\"\/\" title=\"\/\">acoustic sensors<\/a> and <a href=\"\/\" title=\"\/\">AI-algorithm technology. <\/a>These alerts sound throughout your yard, home and on your mobile phone.<\/p>",
+        "btn_url": "shopify:\/\/products\/test",
         "btn_text": "Order Product"
       }
     },
@@ -283,9 +285,9 @@
       ],
       "settings": {
         "title": "<p>Availability <\/p><p>to <strong>purchase<\/strong><\/p>",
-        "text": "<p>Pellentesque faucibus molestie amet enim. Augue fames felis enim et enim lacinia suscipit at. Tellus lectus in tellus elementum imperdiet. <\/p>",
+        "text": "<p>Be the first to pre-order your SOSense pool alarm unit for a huge discount.<\/p>",
         "btn_text": "Order Now",
-        "btn_url": ""
+        "btn_url": "shopify:\/\/products\/test"
       }
     },
     "166358222463b395ed": {
@@ -294,28 +296,28 @@
         "594353d1-0f85-45c5-80d0-b80174443705": {
           "type": "block",
           "settings": {
-            "title": "<p>The #1 cause of death<\/p><p>for under 5s<\/p>",
+            "title": "<p>The #1  cause of death for under five year olds<\/p>",
             "text": "In the United States, drowning is the leading cause of death for children 1-4 years of age. Although nothing can replace adult supervision, SOSense is a step in a safer direction."
           }
         },
         "c2b8aa7e-4d36-47fa-bc31-146cb19643dc": {
           "type": "block",
           "settings": {
-            "title": "<p>Swimming pool drowning<\/p><p>deaths are preventable<\/p>",
+            "title": "<p>Swimming pool drowning deaths are preventable<\/p>",
             "text": "23% of child drownings happen during a family gathering near a pool. Our pool detection alarm system sounds through the yard, your home and on your phone."
           }
         },
         "1ec369d4-fab5-4c1e-a136-4bbfe1cdbffa": {
           "type": "block",
           "settings": {
-            "title": "<p>Summer is the most<\/p><p>deadly time<\/p>",
+            "title": "<p>Summer is the most deadly time<\/p>",
             "text": "Summertime should be a happy time, where family is reunited with garden barbecues and pool parties - but it’s during these months, June, July and August that the majority of pool related deaths occur, with most of them being in backyard pools."
           }
         },
         "b5066fff-ad96-4b82-933d-528965e5cb27": {
           "type": "block",
           "settings": {
-            "title": "<p>390 pool-related deaths<\/p><p>a year in the US<\/p>",
+            "title": "<p>390 pool-related deaths a year in the US<\/p>",
             "text": "Every year, there are 390 swimming pool and spa related death in the US, according to the U.S. Consumer Product Safety Commission."
           }
         }
@@ -328,7 +330,7 @@
       ],
       "settings": {
         "title": "<p>How many<strong> lives could be saved<\/strong> every year if all pools incorporated this product<\/p>",
-        "btn_text": "Technology and solution",
+        "btn_text": "SOSense Prevents Drowning",
         "btn_url": ""
       }
     },
@@ -337,6 +339,7 @@
       "blocks": {
         "29b445a2-79d8-47c0-90d1-72a1e4e9eeb2": {
           "type": "block",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Re.png",
             "title": "Today I installed the system, it's a life saving, ingenious invention!",
@@ -352,7 +355,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_59.png",
             "title": "Today I installed the system, it's a life saving, ingenious invention!",
-            "text": "<p>Customer satisfaction is above all for them and the team will do everything to make sure customers are 100% satisfied.<\/p>",
+            "text": "<p>I honestly can't believe it's 2022 and there's nothing else out on the market like this at the moment - so grateful to know SOSense is watching my pool when I'm not there!<\/p>",
             "author_image": "shopify:\/\/shop_images\/Avatar.png",
             "author_name": "Lubin",
             "date": "June",
@@ -370,6 +373,7 @@
     },
     "16636051296d0a438a": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Blog",
         "blog": "news",
@@ -381,6 +385,7 @@
     },
     "16636869232137d827": {
       "type": "blog-two-column",
+      "disabled": true,
       "settings": {
         "heading": "<p>News <strong>Archive<\/strong><\/p>",
         "blog": "news",

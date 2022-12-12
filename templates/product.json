@@ -5,8 +5,7 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "caption": {
           "type": "text",
@@ -16,13 +15,11 @@
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -60,10 +57,10 @@
     "product-show-map": {
       "type": "product-show-map",
       "settings": {
+        "title": "Find Your Nearby Dealer",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu quam eget dui iaculis tincidunt. Etiam turpis nunc, luctus feugiat erat id, euismod laoreet nisl. Suspendisse id dignissim tellus.<\/p>",
         "btn_text": "Show on the map",
-        "btn_url": "",
-        "title": "Find Nearby Dealer",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu quam eget dui iaculis tincidunt. Etiam turpis nunc, luctus feugiat erat id, euismod laoreet nisl. Suspendisse id dignissim tellus.<\/p>"
+        "btn_url": ""
       }
     }
   },
