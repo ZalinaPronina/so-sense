@@ -3,19 +3,99 @@
     "1662726121a022b914": {
       "type": "main-banner",
       "settings": {
-        "background": "shopify:\/\/shop_images\/Intersect.png",
-        "background_mobile": "shopify:\/\/shop_images\/background-mobile-maiin.png",
+        "background": "shopify:\/\/shop_images\/Intersect_d0a8b0a8-9fb8-40de-b300-be68d9d49ca1.png",
+        "background_mobile": "shopify:\/\/shop_images\/background-mobile-maiin_1.png",
+        "btn_text": "",
+        "btn_url": "",
         "title": "<p>The alarm that makes <strong>your pool safer<\/strong><\/p>",
+        "subtitle": "",
         "text": "Protect your pool with the only AI based drowning detection system",
         "url_1": "",
         "url_2": "",
         "social_1": "shopify:\/\/shop_images\/Frame_753.png",
         "social_2": "shopify:\/\/shop_images\/Frame_754.png",
         "main_photo": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_4.png",
-        "border_photo": "shopify:\/\/shop_images\/Group_33292.png",
+        "border_photo": "shopify:\/\/shop_images\/Group_33292.webp",
         "fix_photo": "shopify:\/\/shop_images\/Group_33332.png",
         "fix_photo_second": "shopify:\/\/shop_images\/Group_59.png"
       }
+    },
+    "d1193948-e26c-4707-94fa-9016ee6948d3": {
+      "type": "discount-banner-image-right",
+      "settings": {
+        "background": "shopify:\/\/shop_images\/Intersect_d0a8b0a8-9fb8-40de-b300-be68d9d49ca1.png",
+        "background_mobile": "shopify:\/\/shop_images\/background-mobile-maiin_1.png",
+        "wave": "shopify:\/\/shop_images\/Group_33334.png",
+        "wave_mobile": "shopify:\/\/shop_images\/background-mobile-banner.webp",
+        "title": "<p>Discounted <\/p><p>Pre-order <strong>Offer<\/strong><\/p>",
+        "subtitle": "<p>Be the first to have<\/p><p><strong>our product<\/strong><\/p>",
+        "btn_text": "Pre-order Yours Now",
+        "btn_url": "\/",
+        "price": "49",
+        "day": "Today",
+        "usual_price": "Usual price $499",
+        "discount_total": "Just $398 in total"
+      }
+    },
+    "b8497878-f242-4544-bef6-42d67020dcff": {
+      "type": "discount-banner-image-left",
+      "settings": {
+        "background": "shopify:\/\/shop_images\/Intersect_d0a8b0a8-9fb8-40de-b300-be68d9d49ca1.png",
+        "background_mobile": "shopify:\/\/shop_images\/background-mobile-maiin_1.png",
+        "wave": "shopify:\/\/shop_images\/wave_right.png",
+        "wave_mobile": "shopify:\/\/shop_images\/background-mobile-banner.webp",
+        "title": "<p>The <strong>Best Price<\/strong> We'll Ever Offer <\/p>",
+        "btn_text": "Pre-order Yours Now",
+        "btn_url": "",
+        "price": "49",
+        "usual_price": "$499",
+        "main_photo": "shopify:\/\/shop_images\/10_1_f6eecf3b-1b14-417e-aab1-b0535b844764.webp",
+        "limit": "Limited stock available!"
+      }
+    },
+    "16644615467c275e11": {
+      "type": "home-slider-steps",
+      "blocks": {
+        "64a4954b-dfa8-4d43-b9ab-e05a2681ec3a": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_3.png",
+            "title": "<p>Be alerted, prevent drowning, <strong>save lives<\/strong><\/p>",
+            "subtitle": "",
+            "text": "<p>350 children under the age of five drown in pools each year in the US. These deaths are preventable.<\/p>",
+            "btn_url": "\/",
+            "btn_text": "Get to know our solution"
+          }
+        },
+        "2dcaba95-3325-4867-a193-a10c0a107caf": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/video_3.png",
+            "title": "<p>Be alerted, prevent drowning, <strong>save lives<\/strong><\/p>",
+            "subtitle": "",
+            "text": "<p>There is a gap in the market for pool drowning detection alarms, so our company mission is to develop our unique disruptive underwater acoustic technology as the global standard for pool safety.<\/p>",
+            "btn_url": "\/",
+            "btn_text": "Description of the problem"
+          }
+        },
+        "a54b9d23-1d7a-4f0f-bbf0-81e0a69a9862": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_80.png",
+            "title": "<p>Test<\/p>",
+            "subtitle": "",
+            "text": "<p>350 children under the age of five drown in pools each year in the US. These deaths are preventable.<\/p>",
+            "btn_url": "",
+            "btn_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "64a4954b-dfa8-4d43-b9ab-e05a2681ec3a",
+        "2dcaba95-3325-4867-a193-a10c0a107caf",
+        "a54b9d23-1d7a-4f0f-bbf0-81e0a69a9862"
+      ],
+      "settings": {}
     },
     "1663229044892e54a1": {
       "type": "our-benefits",
@@ -23,7 +103,7 @@
         "fc50f7dc-a3aa-45e1-85cb-fb5166e41ab0": {
           "type": "block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/icn0.png",
+            "image": "shopify:\/\/shop_images\/icn2_1.png",
             "title": "<p>Pool entrance identification<\/p>",
             "color": "#647bdf",
             "text": "<p>Our technology detects all accidental and deliberate pool entry with pets and toddlers over 12lbs to adults, easing or stepping into the pool or falling or diving in. A notification is sent to your mobile phone while sounding an alarm through your garden and home.<\/p>"
@@ -32,7 +112,7 @@
         "c4939ef3-704f-4a27-a95e-db99f2b21811": {
           "type": "block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/icn.png",
+            "image": "shopify:\/\/shop_images\/icn_1.png",
             "title": "<p>Drowning detection<\/p>",
             "color": "#339999",
             "text": "<p>The system detects the sounds of human distress signals at an early stage and warns of this in a local announcement, in the nearby building and in the pool holder's smartphone.<\/p>"
@@ -41,10 +121,10 @@
         "1ed87046-9a51-419e-bb83-0c105ea01f7e": {
           "type": "block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/icn2.png",
+            "image": "shopify:\/\/shop_images\/icn2_1.png",
             "title": "<p>Listens<br\/>to water 24\/7<\/p>",
             "color": "#28ace2",
-            "text": "<p>Created by IDF Marine Seal veterans, acoustic & digital processing experts and medical and marine engineers that share more than 120 years of combined experience. This means means our underwater acoustic technology is a cut above any others on the market right now.<\/p>"
+            "text": "<p>Created by IDF Marine Seal veterans, acoustic & digital processing experts and medical and marine engineers that share more than 120 years of combined experience. This means our underwater acoustic technology is a cut above any others on the market right now.<\/p>"
           }
         }
       },
@@ -61,7 +141,7 @@
     "166323988412e4b6fe": {
       "type": "info-section",
       "settings": {
-        "background": "shopify:\/\/shop_images\/background.png",
+        "background": "shopify:\/\/shop_images\/Exclude_1.png",
         "background_mobile": "shopify:\/\/shop_images\/blue-mobile-background.png",
         "title": "<p>Almost 6500 children<br\/>younger than 15 years<br\/><strong>were treated for pool<\/strong><\/p>",
         "year_from": "2015",
@@ -77,11 +157,11 @@
     "1663842300cf1d1cd0": {
       "type": "text-with-image",
       "settings": {
-        "title": "<p>There is no other technology like this<br\/>in the <strong>pool drowning<br\/>alarm market<\/strong><\/p>",
+        "title": "<p>There is no other technology like this<br\/> in the <strong>pool drowning<br\/> alarm market<\/strong><\/p>",
         "subtitle": "",
         "text": "<p>There is a gap in the market for pool drowning detection alarms, so our company mission is to develop our unique disruptive underwater acoustic technology as the global standard for pool safety. We intend on SOSense becoming the acoustic technology that is the standard safety feature in all private pools.<\/p>",
         "btn_url": "\/",
-        "btn_text": "Order Product",
+        "btn_text": "Description of the problem",
         "btn_text_product": "Order Product",
         "btn_url_product": "",
         "image": "shopify:\/\/shop_images\/video_2.png"
@@ -142,7 +222,7 @@
         "0bfe077f-a36e-474d-bae3-c024e9b54e53"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/17.png",
+        "image": "shopify:\/\/shop_images\/10_1_f6eecf3b-1b14-417e-aab1-b0535b844764.webp",
         "title": "<p>The power of <strong>SOSense technology<\/strong><\/p>",
         "btn_text": "Technology and solution",
         "btn_url": ""
@@ -153,11 +233,10 @@
       "settings": {
         "btn_url_top": "",
         "btn_text_top": "",
-        "background": "shopify:\/\/shop_images\/7.png",
         "title": "<p>How the <strong>technology works<\/strong><\/p>",
         "subtitle": "",
         "text": "<p>Using our advanced technology, our products are able to correctly identify and monitor all pool entries. This function gives each user peace of mind knowing that they have an additional layer of supervising the pool. <\/p>",
-        "text_second": "<p>Our system itself is meant to be<br\/>a <a href=\"\/products\/test\" title=\"Test\">supplemental aid<\/a> and, when mounted<br\/>in the pool, generates alerts via<br\/>its advanced acoustic sensors and AI-algorithm technology transferred<br\/>to the Home Unit and, subsequently,<br\/>to the app on the user's phone.<\/p>",
+        "text_second": "<p>Our system it self is meant to be<br\/>a <a href=\"\/products\/test\" title=\"Test\">supplemental aid<\/a> and, when mounted in the pool, generates alerts via its advanced <a href=\"\/\" title=\"\/\">acoustic sensors<\/a> and <a href=\"\/\" title=\"\/\">AI-<\/a><a href=\"\/\" title=\"\/\">algorithm technology<\/a> transferred to the Home Unit and, subsequently, to the app on the user's phone.<\/p>",
         "btn_url": "\/",
         "btn_text": "Order Product"
       }
@@ -165,7 +244,14 @@
     "1663235255967312d3": {
       "type": "background-image",
       "settings": {
-        "background": "shopify:\/\/shop_images\/2022-07-21_13.52_1.png"
+        "btn_text": "",
+        "btn_url": "",
+        "title": "",
+        "text": "",
+        "background": "shopify:\/\/shop_images\/2022-07-21_13.52_1_1_64561455-e0a6-43ba-aa3a-708591ac4014.png",
+        "background_mobile": "shopify:\/\/shop_images\/mobile-image.png",
+        "background_white": "shopify:\/\/shop_images\/white-small.png",
+        "background_white_mobile": "shopify:\/\/shop_images\/white-background-mobile.png"
       }
     },
     "166342550880d8fae0": {
@@ -174,13 +260,7 @@
         "0a2671c8-c4b5-4aa2-9a51-bb094773862d": {
           "type": "block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Re.png"
-          }
-        },
-        "b4bd776e-dd0d-4fd5-af39-e63aa4f0c200": {
-          "type": "block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_59.png"
+            "image": "shopify:\/\/shop_images\/10_1_f6eecf3b-1b14-417e-aab1-b0535b844764.webp"
           }
         },
         "4fe5567f-b24c-4abe-a2d0-202f9853622b": {
@@ -192,11 +272,10 @@
       },
       "block_order": [
         "0a2671c8-c4b5-4aa2-9a51-bb094773862d",
-        "b4bd776e-dd0d-4fd5-af39-e63aa4f0c200",
         "4fe5567f-b24c-4abe-a2d0-202f9853622b"
       ],
       "settings": {
-        "title": "<p>Availability to <strong>purchase<\/strong><\/p>",
+        "title": "<p>Availability <\/p><p>to <strong>purchase<\/strong><\/p>",
         "text": "<p>Pellentesque faucibus molestie amet enim. Augue fames felis enim et enim lacinia suscipit at. Tellus lectus in tellus elementum imperdiet. <\/p>",
         "btn_text": "Order Now",
         "btn_url": ""
@@ -208,28 +287,28 @@
         "594353d1-0f85-45c5-80d0-b80174443705": {
           "type": "block",
           "settings": {
-            "title": "The #1 cause of death for under 5s",
+            "title": "<p>The #1 cause of death<\/p><p>for under 5s<\/p>",
             "text": "In the United States, drowning is the leading cause of death for children 1-4 years of age. Although nothing can replace adult supervision, SOSense is a step in a safer direction."
           }
         },
         "c2b8aa7e-4d36-47fa-bc31-146cb19643dc": {
           "type": "block",
           "settings": {
-            "title": "Swimming pool drowning deaths are preventable",
+            "title": "<p>Swimming pool drowning<\/p><p>deaths are preventable<\/p>",
             "text": "23% of child drownings happen during a family gathering near a pool. Our pool detection alarm system sounds through the yard, your home and on your phone."
           }
         },
         "1ec369d4-fab5-4c1e-a136-4bbfe1cdbffa": {
           "type": "block",
           "settings": {
-            "title": "Summer is the most deadly time",
+            "title": "<p>Summer is the most<\/p><p>deadly time<\/p>",
             "text": "Summertime should be a happy time, where family is reunited with garden barbecues and pool parties - but it’s during these months, June, July and August that the majority of pool related deaths occur, with most of them being in backyard pools."
           }
         },
         "b5066fff-ad96-4b82-933d-528965e5cb27": {
           "type": "block",
           "settings": {
-            "title": "390 pool-related deaths a year in the US",
+            "title": "<p>390 pool-related deaths<\/p><p>a year in the US<\/p>",
             "text": "Every year, there are 390 swimming pool and spa related death in the US, according to the U.S. Consumer Product Safety Commission."
           }
         }
@@ -252,25 +331,22 @@
         "29b445a2-79d8-47c0-90d1-72a1e4e9eeb2": {
           "type": "block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Re.png",
+            "image": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_5_66b44771-247e-4f68-8dc7-2aa5a6e19130.png",
             "title": "Today I installed the system, it's a life saving, ingenious invention!",
             "text": "<p>Customer satisfaction is above all for them and the team will do everything to make sure customers are 100% satisfied.<\/p>",
             "author_image": "shopify:\/\/shop_images\/Avatar.png",
             "author_name": "Kierra Lubin",
-            "date": "23 June 2022",
-            "date_image": "shopify:\/\/shop_images\/da21dde662a19a4b8a6e17048660983a.png"
+            "date": "23 June 2022"
           }
         },
         "46e863d6-5fa6-46c6-a953-ff6a44ea0770": {
           "type": "block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_59.png",
             "title": "Today I installed the system, it's a life saving, ingenious invention!",
             "text": "<p>Customer satisfaction is above all for them and the team will do everything to make sure customers are 100% satisfied.<\/p>",
             "author_image": "shopify:\/\/shop_images\/Avatar.png",
             "author_name": "Lubin",
-            "date": "June",
-            "date_image": "shopify:\/\/shop_images\/da21dde662a19a4b8a6e17048660983a.png"
+            "date": "June"
           }
         }
       },
@@ -307,6 +383,9 @@
   },
   "order": [
     "1662726121a022b914",
+    "d1193948-e26c-4707-94fa-9016ee6948d3",
+    "b8497878-f242-4544-bef6-42d67020dcff",
+    "16644615467c275e11",
     "1663229044892e54a1",
     "166323988412e4b6fe",
     "1663842300cf1d1cd0",

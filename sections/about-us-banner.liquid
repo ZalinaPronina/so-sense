@@ -17,7 +17,7 @@
     </style>
 {% endif %}
 <section class="about-us-banner background-image">
-    <div class="page-width-desktop about-us-banner__container">
+    <div class="page-width-desktop about-us-banner__container" data-aos="fade-up">
         <div class="about-us-banner__text">
             {% if section.settings.title != blank %}
                 <h1 class="h1">{{section.settings.title}}</h1>
@@ -28,7 +28,7 @@
             {% if section.settings.text != blank %}
                 <p class="description">{{section.settings.text}}</p>
             {% endif %}
-            <a class="btn-secondary desktop-screen" href="{{section.settings.url}}">{{section.settings.btn_text}} {% include 'icon-cart-btn' %}</a>
+            <a class="btn-secondary desktop-screen" href="{{section.settings.btn_url}}">{{section.settings.btn_text}} {% include 'icon-cart-btn' %}</a>
         </div>
         <div class="about-us-banner__position">
             {% if section.settings.main_photo != blank %}
@@ -44,7 +44,7 @@
                     {{section.settings.text_bottom}}
                 </div>
             {% endif %}
-            <a class="btn-secondary mobile-screen" href="{{section.settings.url}}">{{section.settings.btn_text}} {% include 'icon-cart-btn' %}</a>
+            <a class="btn-secondary mobile-screen" href="{{section.settings.btn_url}}">{{section.settings.btn_text}} {% include 'icon-cart-btn' %}</a>
         </div>
     </div>
 </section>

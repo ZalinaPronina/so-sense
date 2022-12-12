@@ -1,7 +1,7 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 
 <div class="contact-form">
-  <div class="contact page-width-desktop">
+  <div class="contact page-width-desktop" data-aos="fade-up">
     {%- if section.settings.heading != blank -%}
       <h2 class="h2">{{ section.settings.heading | escape }}</h2>
     {%- else -%}
@@ -27,7 +27,7 @@
           <div class="field">
             <label for="ContactForm-name">{{ 'templates.contact.form.name' | t }}<span aria-hidden="true">*</span></label>
             <div class="contact-input-wrapper">
-              <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
+              <input required aria-required="true" class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
               <span class="icon-E-mail">{% render 'icon-person' %}</span>
             </div>
           </div>
@@ -62,7 +62,7 @@
           <div class="field">
             <label for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}<span aria-hidden="true">*</span></label>
             <div class="contact-input-wrapper">
-              <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
+              <input required aria-required="true" type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
               <span class="icon-E-mail">{% render 'icon-phone_in_talk' %}</span>
             </div>
           </div>
@@ -108,11 +108,29 @@
   "class": "section",
   "settings": [
     {
+        "type": "image_picker",
+        "id": "background",
+        "label": "Background"
+    },
+    {
       "type": "text",
       "id": "heading",
       "default": "Contact form",
       "label": "Heading"
     }
+  ],
+  "blocks": [
+    {
+        "type": "block",
+        "name": "Subject value",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Subject Value"
+            }
+        ]
+    }
   ]
-}
+  }
 {% endschema %}

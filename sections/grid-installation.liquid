@@ -1,4 +1,4 @@
-<section class="page-width-desktop grid-installation">
+<section class="page-width-desktop grid-installation" data-aos="fade-up">
     <div class="title-description">
         {% if section.settings.title != blank %}
             <h2 class="h2">{{section.settings.title}}</h2>
@@ -8,10 +8,10 @@
         {% endif %}
         <div class="grid-installation__btn-wrapper">
             {% if section.settings.btn_text_1 != blank %}
-                <a href="{{section.settings.btn_url_1}}" class="btn-secondary">{{section.settings.btn_text_1}} {% include 'icon-play' %}</a>
+                <a href="{{section.settings.btn_url_1}}" target="_blank" class="btn-secondary">{{section.settings.btn_text_1}} {% include 'icon-play' %}</a>
             {% endif %}
             {% if section.settings.btn_text_2 != blank %}
-                <a href="{{section.settings.btn_url_2}}" class="btn-secondary white-background">{{section.settings.btn_text_2}} {% include 'icon-download' %}</a>
+                <a href="{{section.settings.btn_url_2}}" download class="btn-secondary white-background">{{section.settings.btn_text_2}} {% include 'icon-download' %}</a>
             {% endif %}
         </div>
     </div>

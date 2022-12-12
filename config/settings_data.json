@@ -99,7 +99,7 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
-    "currency_code_enabled": true,
+    "currency_code_enabled": false,
     "cart_type": "notification",
     "show_vendor": false,
     "show_cart_note": false,
@@ -112,7 +112,7 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "{{ shop.brand.logo }}",
+          "logo": "shopify:\/\/shop_images\/logo.png",
           "logo_width": 150,
           "logo_position": "middle-left",
           "menu": "main-menu",
@@ -132,7 +132,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/footer-logo.png",
               "image_width": 190,
-              "image_width_1": 5,
+              "image_width_1": 19,
               "alignment": ""
             }
           },
@@ -147,7 +147,7 @@
             "type": "link_list",
             "settings": {
               "heading": "COMPANY",
-              "menu": "footer-company"
+              "menu": "footer"
             }
           },
           "9fc405c5-aedb-4ba7-8aa8-4a40cbd562b2": {
@@ -181,7 +181,8 @@
           "81680c04-9fbd-47cd-814f-8233d6d16c56"
         ],
         "settings": {
-          "background": "shopify:\/\/shop_images\/Exclude.png",
+          "background": "shopify:\/\/shop_images\/Exclude_1.png",
+          "background_mobile": "shopify:\/\/shop_images\/Footer_mob.png",
           "color_scheme": "accent-2",
           "newsletter_enable": false,
           "newsletter_heading": "Subscribe to our emails",
@@ -211,13 +212,32 @@
       "contact-form": {
         "type": "contact-form",
         "settings": {
-          "background": "shopify:\/\/shop_images\/In.png",
-          "heading": "Keep in touch",
-          "up_text": "",
-          "bottom_text": "",
-          "text_description": "",
-          "button": "",
-          "doun_text": ""
+          "heading": "Keep in touch"
+        }
+      },
+      "left_block-login": {
+        "type": "left_block-login",
+        "settings": {
+          "title": "<p>Log In <strong>As User<\/strong><\/p>",
+          "text_description_before": "Hi, Welcome back!",
+          "text_description_after": "Please enter your details.",
+          "placing": "Eget pulvinar facilisis in pellentesque nisl auctor amet. Vel mauris duis cras et."
+        }
+      },
+      "left-block-register": {
+        "type": "left-block-register",
+        "settings": {
+          "title": "<p>Sign Up <strong>As User<\/strong><\/p>",
+          "text_description_before": "Hi, Welcome!",
+          "text_description_after": "Please enter your details.",
+          "placing": "Eget pulvinar facilisis in pellentesque nisl auctor amet. Vel mauris duis cras et."
+        }
+      },
+      "left-block-password-recovery": {
+        "type": "left-block-password-recovery",
+        "settings": {
+          "title": "<p>Password <strong>Recovery<\/strong><\/p>",
+          "placing": "Eget pulvinar facilisis in pellentesque nisl auctor amet. Vel mauris duis cras et."
         }
       }
     },
@@ -394,10 +414,7 @@
             "show_social": true,
             "enable_country_selector": false,
             "enable_language_selector": false,
-            "payment_enable": true,
-            "margin_top": 48,
-            "padding_top": 36,
-            "padding_bottom": 36
+            "payment_enable": true
           }
         },
         "main-password-header": {

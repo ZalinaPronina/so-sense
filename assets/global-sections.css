@@ -44,9 +44,12 @@
 .instruction-section .h2{
     margin: 0 0 1.2rem;
 }
+.index .instruction-section .instruction-section__content{
+    max-width: 52rem;
+}
 .instruction-section .instruction-section__content{
     width: 50%;
-    max-width: 47rem
+    max-width: 47rem;
 }
 .instruction-section .instruction-section__content .text{
     font-weight: 400;
@@ -139,7 +142,7 @@
     border-radius: 32px;
     max-height: 43rem;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
 }
 .product-purchase__container .btn-secondary{
     outline: 2px solid #FFFFFF;

@@ -1,5 +1,9 @@
 {
   "sections": {
+    "5da8de46-0de5-492a-ba1c-3a1a5c071492": {
+      "type": "sca-storelocator",
+      "settings": {}
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -9,6 +13,7 @@
     }
   },
   "order": [
+    "5da8de46-0de5-492a-ba1c-3a1a5c071492",
     "main"
   ]
 }

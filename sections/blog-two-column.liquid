@@ -9,7 +9,7 @@
 
 {{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}
 <div class="blog-2-column color-{{ section.settings.color_scheme }} gradient">
-  <div class="page-width-desktop">
+  <div class="page-width-desktop" data-aos="fade-up">
     {%- unless section.settings.heading == blank -%}
       <div class="title-wrapper-with-link">
         <h2 class="h2">{{ section.settings.heading}}</h2>
@@ -70,7 +70,7 @@
                     </div>
                     <div class="card__content">
                       <div class="card__information">
-                        <h3 class="card__heading">
+                        <h3 class="h6 card__heading">
                           <a href="{{ article.url }}" class="full-unstyled-link">
                             {{ article.title | truncate: 48 | escape }}
                           </a>
@@ -86,14 +86,14 @@
                         {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
                             <p class="article-card__excerpt">
                                 {%- if article.excerpt.size > 0 -%}
-                                    {{ article.excerpt | strip_html | truncatewords: 30 }}
+                                    {{ article.excerpt | strip_html | truncatewords: 12 }}
                                 {%- else -%}
-                                    {{ article.content | strip_html | truncatewords: 30 }}
+                                    {{ article.content | strip_html | truncatewords: 12 }}
                                 {%- endif -%}
                             </p>
                         {%- endif -%}
                         <div class="article-bottom">
-                            <a href="{{ article.url }}">More {% include 'icon-arrow-right' %}</a>
+                            <a href="{{ article.url }}">{{ 'general.btn_more' | t }} {% include 'icon-arrow-right' %}</a>
                         </div>
                       </div>
                     </div>

@@ -29,6 +29,7 @@
       }
     },
     "continue_shopping": "Continue shopping",
+    "btn_more": "More",
     "pagination": {
       "label": "Pagination",
       "page": "Page {{ number }}",
@@ -209,6 +210,7 @@
         "name": "Full name",
         "email": "E-mail",
         "phone": "Phone number",
+        "subject": "Subject",
         "comment": "How can we help?",
         "agree": "I agree to send updates to my inbox",
         "send": "Please get in contact with me",
@@ -231,14 +233,18 @@
       }
     },
     "cart": {
-      "title": "Your cart",
+      "title": "Cart",
+      "item": "item",
+      "items": "items",
+      "oops": "Oops",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
       "subtotal": "Subtotal",
+      "total": "Total",
       "new_subtotal": "New subtotal",
       "note": "Order special instructions",
-      "checkout": "Check out",
-      "empty": "Your cart is empty",
+      "checkout": "Proceed to checkout",
+      "empty": "Your cart is currently empty...",
       "cart_error": "There was an error while updating your cart. Please try again.",
       "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your cart.",
       "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
@@ -248,7 +254,7 @@
       "headings": {
         "product": "Product",
         "price": "Price",
-        "total": "Total",
+        "subtotal": "Subtotal",
         "quantity": "Quantity",
         "image": "Product image"
       },
@@ -260,6 +266,11 @@
     },
     "footer": {
       "payment": "Payment methods"
+    },
+    "blog": {
+      "show_more": "Show more categories",
+      "categories": "Categories",
+      "recent_post": "Recent Posts"
     },
     "featured_blog": {
       "view_all": "Read all",
@@ -344,15 +355,15 @@
     "log_out": "Log out",
     "login_page": {
       "cancel": "Cancel",
-      "create_account": "Create account",
+      "create_account": "Don't have an account? Sign Up",
       "email": "Email",
-      "forgot_password": "Forgot your password?",
+      "forgot_password": "Forgot password?",
       "guest_continue": "Continue",
       "guest_title": "Continue as a guest",
       "password": "Password",
       "title": "Login",
-      "sign_in": "Sign in",
-      "submit": "Submit"
+      "sign_in": "Log in",
+      "submit": "Send"
     },
     "order": {
       "title": "Order {{ name }}",
@@ -394,13 +405,18 @@
       "subtext": "We will send you an email to reset your password",
       "success": "We've sent you an email with a link to update your password."
     },
+    "password_send": {
+      "title": "Congratulations!",
+      "subtext": "The link was already sent.",
+      "btn": "Continue"
+    },
     "register": {
       "title": "Create account",
       "first_name": "First name",
       "last_name": "Last name",
       "email": "Email",
       "password": "Password",
-      "submit": "Create"
+      "submit": "Sign up"
     },
     "reset_password": {
       "title": "Reset account password",

@@ -19,10 +19,19 @@
 {%- endstyle -%} 
 {%- endcomment -%}
 
+  
+<!--  {% if current_tags contains 'News' %}
+   <div class="qwerty" >News</div>
+   {% elsif current_tags contains 'bussiness' %}
+   <div class="qwerty">Recent</div>
+
+   {% else%}
+   <div class="qwerty">{{ blog.title}}</div>
+{% endif %} -->
 
 <div class="all-blogs-title">
-  <div class="all-blogs-title__subtitile">Latest articles</div>
-  <h1 class="all-blogs-title__title">{{ blog.title }}</h1>
+  <a class="all-blogs-title__subtitile btn-primary">Latest articles</a>
+  <h1 class="all-blogs-title__title h2">{{ blog.title }}</h1>
 </div>
 {%- paginate blog.articles by 6 -%}
   <div class="main-blog main-catogiry page-width section-{{ section.id }}-padding">
@@ -56,7 +65,7 @@
       </form>
 
       <div class="recent-post">
-        <div class="recent-post__title">Recent Posts</div>
+        <div class="recent-post__title">{{ 'sections.blog.recent_post' | t }}</div>
         <div class="recent-post-box">
             {% for article in blog.articles %}
                 {% if article.tags contains 'recent-post' %}
@@ -81,8 +90,6 @@
     </div>
 
     </div>
-
-
 
     {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}

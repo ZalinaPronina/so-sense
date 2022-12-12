@@ -1,0 +1,98 @@
+<script src="{{ 'powr-theme.js' | asset_url }}"></script>
+<style>
+    .page-form-app{
+        display: flex;
+        gap: 4rem;
+        justify-content: space-between;
+        margin-top: 14.4rem;
+        margin-bottom: 15rem;
+    }
+    .page-form-app .page-form-app__text{
+        max-width: 50rem;
+        width: 100%;
+    }
+    .page-form-app .page-form-app__form{
+        max-width: 62rem;
+        width: 100%;
+    }
+    .page-form-app .h2{
+        margin: 0 0 1.2rem;
+    }
+    .page-form-app .h5{
+        margin: 0 0 1.6rem;
+        max-width: 83%;
+    }
+    .page-form-app .text{
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 180%;
+        margin: 0;
+        width: 86%;
+    }
+    @media only screen and (max-width: 989px) {
+        .page-form-app{
+            margin: 3.2rem 0 0 0;
+            flex-direction: column;
+            gap: 4rem;
+        }
+        .page-form-app .page-form-app__text{
+            margin: 0 20px;
+            text-align: center;
+            width: initial;
+        }
+        .page-form-app .h5{
+            font-weight: 500;
+            margin: 0 auto 1.4rem;
+        }
+        .page-form-app .text{
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 180%;
+            margin: 0;
+            width: 100%;
+        }
+    }
+</style>
+<div class="page-form-app page-width-desktop">
+    <div class="page-form-app__text">
+        {% if section.settings.title != blank%}
+            <h2 class="h2">{{section.settings.title}}</h2>
+        {% endif %}
+        {% if section.settings.subtitle != blank%}
+            <h5 class="h5">{{section.settings.subtitle}}</h5>
+        {% endif %}
+        {% if section.settings.text != blank%}
+            <p class="text">{{section.settings.text}}</p>
+        {% endif %}
+    </div>
+    <div class="page-form-app__form">
+        {% if page.handle == 'become-a-dealer' %}
+            <div class="powr-form-builder" id="970de513_1666863724"></div><script src="https://www.powr.io/powr.js?platform=shopify"></script>
+        {% else %}
+            <div class="powr-form-builder" id="630b86ec_1666860009"></div><script src="https://www.powr.io/powr.js?platform=shopify"></script>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+{
+"name": "App Form",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type":"text",
+            "id": "subtitle",
+            "label":"Subtitle"
+        },
+        {
+            "type":"text",
+            "id":"text",
+            "label":"Text"
+        }
+    ]
+}
+{% endschema %}

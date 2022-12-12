@@ -7,6 +7,8 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -31,6 +33,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
+    <script src="{{ 'powr.js' | asset_url }}"></script>
     {{ content_for_header }}
 
     {%- liquid
@@ -210,7 +213,9 @@
   </head>
 
   <body class="gradient {{template.name}} {{page.handle}}">
-
+    <script>
+      AOS.init();
+    </script>
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
     {%- endif -%}
@@ -221,12 +226,11 @@
       {{ content_for_layout }}
     </main>
 
-    {% assign acontct = page_title  %}
-    {% if acontct != 'Contact'%}
-    {% section 'contact-form' %}
-    {% endif %}
-    {% section 'footer' %}
+    {% unless template contains 'cart' or template contains 'contact' %}
+      {% section 'contact-form' %}
+    {% endunless %}
 
+    {% section 'footer' %}
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
       <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>

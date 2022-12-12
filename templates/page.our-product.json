@@ -3,6 +3,14 @@
     "our-product-banner": {
       "type": "our-product-banner",
       "settings": {
+        "background": "shopify:\/\/shop_images\/Intersect_d0a8b0a8-9fb8-40de-b300-be68d9d49ca1.png",
+        "background_mobile": "shopify:\/\/shop_images\/background-mobile-maiin_1.png",
+        "title": "<p>Velit, sed <strong>mollis neque<\/strong><\/p>",
+        "subtitle": "",
+        "text": "",
+        "btn_url": "\/",
+        "btn_text": "Order Product",
+        "main_photo": "shopify:\/\/shop_images\/video_3.png"
       }
     },
     "1663836676d03533fb": {
@@ -13,7 +21,7 @@
         "title": "<p>The <strong>Problem<\/strong><\/p>",
         "subtitle": "<p>Your home should be a happy place.<\/p>",
         "text": "<p>If you find yourself always worrying about what might go wrong in your at-home swimming pool when you’re not watching, you’re not alone and it’s definitely a warranted concern.<\/p>",
-        "text_second": "<p>With more than 3<a href=\"\/\" title=\"\/\">50 children under the age of five, dying by drowning in pools each year<\/a> nationwide, pool safety alarms should be mandatory. That is why we have created our SOSense acoustic sensor alarm that is capable of detecting pool entry earlier than any other technology currently on the market.<\/p>",
+        "text_second": "<p>With more than <a href=\"\/\" title=\"\/\">350 children under the age of five, dying by drowning in pools each year<\/a> nationwide, pool safety alarms should be mandatory. That is why we have created our SOSense acoustic sensor alarm that is capable of detecting pool entry earlier than any other technology currently on the market.<\/p>",
         "btn_url": "",
         "btn_text": ""
       }
@@ -21,7 +29,6 @@
     "our-product-info": {
       "type": "our-product-info",
       "settings": {
-        "background": "shopify:\/\/shop_images\/background.png",
         "background_mobile": "shopify:\/\/shop_images\/blue-mobile-background.png",
         "btn_text": "Overview",
         "btn_url": "\/",
@@ -52,7 +59,6 @@
             "title": "Connect",
             "text": "<p>Plug the Home Unit into a power outlet using the USB Cable and Power Supply Unit & Press on the POWER button for 3 seconds to turn the system on. Pool Unit: Charge the Pool unit & Press on the POWER button for 1 second to turn the system on.<\/p>",
             "image_1": "shopify:\/\/shop_images\/video_3.png",
-            "image_2": "shopify:\/\/shop_images\/Re.png",
             "btn_text": "Home Unit",
             "btn_url": ""
           }
@@ -62,7 +68,7 @@
           "settings": {
             "title": "Pairing",
             "text": "<p>Log in with your social profile or register with your email & Press on ADD HOME UNIT. Add your Home Unit by scanning the QR code on the unit & connect it to your Wi-Fi network. Press on PAIR POOL UNIT to automatically pair the Pool Unit via Bluetooth.<\/p>",
-            "image_1": "shopify:\/\/shop_images\/Re.png",
+            "image_2": "shopify:\/\/shop_images\/Rectangle_80.png",
             "btn_text": "Open the SoSense app",
             "btn_url": ""
           }
@@ -73,6 +79,7 @@
             "title": "Place",
             "text": "<p>Mount the Home Unit on a wall next to the AC outlet only after setting up the system via the SoSense app. Anchor the Pool Unit to the side of the pool.<\/p>",
             "image_1": "shopify:\/\/shop_images\/video_2.png",
+            "image_2": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_4_720476ec-f381-4432-9d1c-e267a54c7aa8.png",
             "btn_text": "Home Unit \/ Pool Unit",
             "btn_url": ""
           }
@@ -83,7 +90,8 @@
             "title": "Install",
             "text": "<p>You can manage and operate the SoSense pool alert system straight from the SoSense app DASHBOARD. The status of the system is displayed in the User Dashboard: DISARMED\/ARMED. Press on ARM or DISARM to initiate or remove the Pool alert system.<\/p>",
             "image_1": "shopify:\/\/shop_images\/video_3.png",
-            "btn_text": "",
+            "image_2": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_5.png",
+            "btn_text": "SoSense app DASHBOARD",
             "btn_url": ""
           }
         }
@@ -114,9 +122,7 @@
         },
         "9d392c5f-2bf0-4965-ad36-25619ea5a895": {
           "type": "block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Re.png"
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -176,20 +182,19 @@
         "99c2b755-0632-4b27-8f8d-9ab432a05d93",
         "2c38472c-8b7a-484c-9e3d-f1a396c6bcce"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "166383686926e73919": {
       "type": "instruction-section",
       "settings": {
         "btn_url_top": "",
         "btn_text_top": "",
-        "title": "<p>Availability to <strong>purchase<\/strong><\/p>",
+        "title": "<p>Availability<\/p><p>to <strong>purchase<\/strong><\/p>",
         "subtitle": "<p>Our unique disruptive underwater acoustic technology with ML & AI detects all entry & underwater disturbances. <\/p>",
         "text": "<p>Earlybird purchases will help us complete the development of this life-saving alarm system that we have put years of research into creating because we know that this is necessary for global swimming pool safety measures, in order to save hundreds of lives. <\/p>",
         "text_second": "<p>As an early adopter, you will also gain a <a href=\"\/\" title=\"\/\">free upgrade from your BETA product<\/a> to the final product as soon as this is released.<\/p>",
-        "btn_url": "",
-        "btn_text": ""
+        "btn_url": "\/",
+        "btn_text": "Order Product"
       }
     },
     "become-block": {
@@ -216,8 +221,7 @@
         "190030e5-bf85-4f55-9ceb-0e0c7da7c870",
         "2b6480b1-9b81-4108-9b8b-92f800183de4"
       ],
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [

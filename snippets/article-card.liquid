@@ -59,11 +59,11 @@
       </div>
       <div class="card__content">
         <div class="card__information">
-          <h3 class="card__heading">
+          <h6 class="h6 card__heading">
             <a href="{{ article.url }}" class="full-unstyled-link">
               {{ article.title | truncate: 50 | escape }}
             </a>
-          </h3>
+          </h6>
           <div class="caption-with-letter-spacing">
             {%- if show_date -%}
               <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
@@ -77,17 +77,7 @@
                   <span class="blog_author">{{ article.author }}</span>
                 </div>
               {%- endif -%}
-              <a href="{{ article.url }}">More <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_1812_7851)">
-                <path d="M5 12.5H19" stroke="#283C92" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12 5.5L19 12.5L12 19.5" stroke="#283C92" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_1812_7851">
-                <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
-                </clipPath>
-                </defs>
-                </svg>
+              <a href="{{ article.url }}">{{ 'general.btn_more' | t }} {% render 'icon-arrow-right' %}
               </a>
             </div>
           </div>

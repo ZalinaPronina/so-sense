@@ -1,10 +1,5 @@
 {
   "sections": {
-    "block-with-scroll": {
-      "type": "block-with-scroll",
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -17,7 +12,7 @@
       "type": "main-banner",
       "settings": {
         "background": "shopify:\/\/shop_images\/Intersect_d0a8b0a8-9fb8-40de-b300-be68d9d49ca1.png",
-        "background_mobile": "shopify:\/\/shop_images\/background-mobile-maiin.png",
+        "background_mobile": "shopify:\/\/shop_images\/background-mobile-maiin_1.png",
         "btn_text": "Investor Information",
         "btn_url": "",
         "title": "<p>Our Technology <\/p><p>& Solution - <\/p><p><strong>in more detail<\/strong><\/p>",
@@ -27,6 +22,58 @@
         "url_2": "",
         "main_photo": "shopify:\/\/shop_images\/8214008_4.png"
       }
+    },
+    "block-with-scroll": {
+      "type": "block-with-scroll",
+      "blocks": {
+        "28a87d3b-13b3-407b-9835-680edf86a5c2": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fram73.png",
+            "title": "<p>Team<\/p>",
+            "color": "#647bdf",
+            "subtitle": "<p>More than 120 years of combined experience in specialised fields<\/p>",
+            "text": "<p>Entirely Israeli, IDF veterans, audio and digital processing experts, medical and marine engineers.<\/p>"
+          }
+        },
+        "36a1e00d-27a7-4176-82df-cef3c61d29f0": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_873.png",
+            "title": "<p>Product<\/p>",
+            "color": "#28ace2",
+            "subtitle": "<p>Pool entry and drowning detection<\/p>",
+            "text": "<p>SOSense is the all-in-one ultimate tech-lifeguard that uses the most advanced acoustic technology available, to detect both accidental pool entry and the earliest signs of drowning, ensuring the highest possible rate of survival.<\/p>"
+          }
+        },
+        "223abdcb-9c1d-4ed0-b800-8903795d7049": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_8733.png",
+            "title": "<p>Goal<\/p>",
+            "color": "#647bdf",
+            "subtitle": "<p>Eradicate these avoidable deaths caused by drowning in swimming pools<\/p>",
+            "text": "<p>To become the global standard for pool safety, recognised as a staple, non-negotiable, life-saving addition to all swimming pools.<\/p>"
+          }
+        },
+        "512dabd4-a9ce-429d-b32e-4b7233f910db": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame73.png",
+            "title": "<p>Technology<\/p>",
+            "color": "#28ace2",
+            "subtitle": "<p>Acoustic technology, with ML & AI<\/p>",
+            "text": "<p>The only pool alarm system on the market that uses revolutionary acoustic technology to detect signals of stress, paired with machine learning and artificial intelligence so that our product is continually learning and adapting to your environment.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "28a87d3b-13b3-407b-9835-680edf86a5c2",
+        "36a1e00d-27a7-4176-82df-cef3c61d29f0",
+        "223abdcb-9c1d-4ed0-b800-8903795d7049",
+        "512dabd4-a9ce-429d-b32e-4b7233f910db"
+      ],
+      "settings": {}
     },
     "1664869950296a413f": {
       "type": "text-with-image",
@@ -38,7 +85,7 @@
         "btn_text": "Investor Information",
         "btn_text_product": "Order Product",
         "btn_url_product": "",
-        "image": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_5_b1d37ed6-ee0d-4481-923a-2bc51e733eb3.png"
+        "image": "shopify:\/\/shop_images\/img1.png"
       }
     },
     "1664871074c5521461": {
@@ -83,8 +130,7 @@
         "db66161d-03a2-4d13-9f7a-a8c115808614",
         "9c1eddca-ec95-446c-b163-1ca70748dcd0"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "1664869665086355f9": {
       "type": "product-purchase",
@@ -120,18 +166,54 @@
         "btn_url": "\/",
         "title": "<p>The T<strong>eam<\/strong><\/p>",
         "text": "The SOSense team is made up of professionals that are the best of the best in their respective fields, ensuring that every aspect of the SOSense pool entry alarm unit is of supreme quality, so that the final product is  a one-of-a-kind, state-of-the-art technology unlike any other pool entry unit available on the market to date.",
-        "background": "shopify:\/\/shop_images\/Rectangle880.png",
-        "background_mobile": "shopify:\/\/shop_images\/Rectangle6680.png"
+        "background": "shopify:\/\/shop_images\/Rec0.png",
+        "background_mobile": "shopify:\/\/shop_images\/Rec0.png"
+      }
+    },
+    "investor-information": {
+      "type": "investor-information",
+      "blocks": {
+        "b8e0dbc3-c71e-410c-aa9f-9cf9dbb30829": {
+          "type": "block",
+          "settings": {
+            "btn_text": "Sign up as user",
+            "btn_url": ""
+          }
+        },
+        "34746a4d-cf10-4655-9f45-a37c3d2b154a": {
+          "type": "block",
+          "settings": {
+            "btn_text": "Sign up as investor",
+            "btn_url": ""
+          }
+        },
+        "c8ee8cf8-c1a4-48a4-85ed-48213fea1c48": {
+          "type": "block",
+          "settings": {
+            "btn_text": "Sign up as service provider",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "b8e0dbc3-c71e-410c-aa9f-9cf9dbb30829",
+        "34746a4d-cf10-4655-9f45-a37c3d2b154a",
+        "c8ee8cf8-c1a4-48a4-85ed-48213fea1c48"
+      ],
+      "settings": {
+        "title": "Our SOSense BETA product is now available for early bird backers",
+        "subtitle": "This enables us to further develop our life-saving pool alarm system and you will gain the final product free of charge as soon as it is released."
       }
     }
   },
   "order": [
     "main",
-    "block-with-scroll",
     "1664870270e75df3ff",
+    "block-with-scroll",
     "1664869950296a413f",
     "1664871074c5521461",
     "1664869665086355f9",
-    "166487010302fd5b0e"
+    "166487010302fd5b0e",
+    "investor-information"
   ]
 }

@@ -1,9 +1,8 @@
 {{ 'component-cart.css' | asset_url | stylesheet_tag }}
 {{ 'component-totals.css' | asset_url | stylesheet_tag }}
-{{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
+<div class="page-width-desktop{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}" data-aos="fade-up">
   <div>
     <div class="cart__footer">
       {%- if settings.show_cart_note -%}
@@ -20,11 +19,16 @@
               {% render block %}
             {%- when 'subtotal' -%}
               <div class="js-contents" {{ block.shopify_attributes }}>
-                <div class="totals">
-                  <h2 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h2>
-                  <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
+                <div class="subtotal-table">
+                  <div class="subtotals">
+                    <h2 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h2>
+                    <p class="totals__subtotal-value">{{ cart.total_price | money }}</p>
+                  </div>
+                  <div class="totals">
+                    <h2 class="totals__subtotal">{{ 'sections.cart.total' | t }}</h2>
+                    <p class="totals__subtotal-value">{{ cart.total_price | money  }}</p>
+                  </div>
                 </div>
-
                 <div>
                   {%- if cart.cart_level_discount_applications.size > 0 -%}
                     <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
@@ -38,7 +42,7 @@
                     </ul>
                   {%- endif -%}
                 </div>
-
+                {%- comment -%}
                 <small class="tax-note caption-large rte">
                   {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
                     {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
@@ -50,6 +54,7 @@
                     {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
                   {%- endif -%}
                 </small>
+                {%- endcomment -%}
               </div>
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
@@ -58,12 +63,10 @@
                     {{ 'sections.cart.update' | t }}
                   </button>
                 </noscript>
-
-                <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
-                  {{ 'sections.cart.checkout' | t }}
-                </button>
               </div>
-
+              <button type="submit" id="checkout" class="cart__checkout-button btn-secondary" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+                {{ 'sections.cart.checkout' | t }}{% include 'icon-arrow-right' %}
+              </button>
               {%- if additional_checkout_buttons -%}
                 <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
                   {{ content_for_additional_checkout_buttons }}

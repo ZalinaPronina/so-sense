@@ -1,6 +1,6 @@
 {{ 'about-us.css' | asset_url | stylesheet_tag }}
 <section class="about-us-4-blocks">
-    <div class="about-us-4-blocks__flex page-width-desktop ">
+    <div class="about-us-4-blocks__flex page-width-desktop" data-aos="fade-up">
         {%- for block in section.blocks -%}
             <div class="block-text masonry-entry">
                 {% if block.settings.title != blank %}
@@ -17,7 +17,7 @@
     </div>
 </section>
 <script>
-    
+
     // if(document.querySelectorAll('.about-us-4-blocks__flex .block-text')[0].clientHeight > document.querySelectorAll('.about-us-4-blocks__flex .block-text')[1].clientHeight){
     //     var result = document.querySelectorAll('.about-us-4-blocks__flex .block-text')[0].clientHeight - document.querySelectorAll('.about-us-4-blocks__flex .block-text')[1].clientHeight;
     //     document.querySelectorAll('.about-us-4-blocks__flex .block-text')[3].style.marginTop = '- +'result';
@@ -25,7 +25,7 @@
     //     var result_1 = document.querySelectorAll('.about-us-4-blocks__flex .block-text')[1].clientHeight - document.querySelectorAll('.about-us-4-blocks__flex .block-text')[0].clientHeight;
     //     document.querySelectorAll('.about-us-4-blocks__flex .block-text')[2].style.marginTop = result_1
     // }
-    
+
 </script>
 
 {% schema %}

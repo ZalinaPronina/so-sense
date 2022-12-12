@@ -358,7 +358,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 1.6rem;
 }
 .grid-installation .image-container{
     display: flex;
@@ -375,6 +374,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.grid-installation .flex-content_heading{
+    gap: 1.6rem;
 }
 .grid-installation .block-heading{
     font-weight: 600;
@@ -428,17 +430,20 @@
 #shopify-section-template--14404173529134__166383686926e73919 .instruction-section .description-block{
     max-width: 51rem;
 }
-#shopify-section-template--14412586450990__1663836676d03533fb .instruction-section {
+#shopify-section-template--16538792624373__1663836676d03533fb .instruction-section {
     padding: 15rem 0;
 }
 @media only screen and (max-width: 989px){
-    #shopify-section-template--14412586450990__1663836676d03533fb .instruction-section{
+    #shopify-section-template--16538792624373__1663836676d03533fb .instruction-section{
         padding: 8rem 0;
     }
 }
 
 /* Banner */
-
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 15rem;
+}
 .our-product-banner{
     padding: 15rem 0;
 }
@@ -473,24 +478,27 @@
     }
 }
 
-#shopify-section-template--14412586450990__166383686926e73919 .instruction-section .instruction-section__content .text{
+#shopify-section-template--16538792624373__166383686926e73919 .instruction-section .instruction-section__content .text{
     text-align: initial;
 }
-#shopify-section-template--14412586450990__166383686926e73919 .instruction-section .instruction-section__content{
+#shopify-section-template--16538792624373__166383686926e73919 .instruction-section .instruction-section__content{
     width: 52%;
     max-width: 70rem;
 }
-#shopify-section-template--14412586450990__166383686926e73919 .instruction-section .description-block{
+#shopify-section-template--16538792624373__166383686926e73919 .instruction-section .description-block{
     width: 48%;
     max-width: 51rem;
 }
 @media only screen and (max-width: 989px) {
-    #shopify-section-template--14412586450990__166383686926e73919 .instruction-section .instruction-section__content,  #shopify-section-template--14412586450990__166383686926e73919 .instruction-section .description-block{
+    #shopify-section-template--16538792624373__166383686926e73919 .instruction-section .instruction-section__content,  #shopify-section-template--14412586450990__166383686926e73919 .instruction-section .description-block{
         width: 100%;
         max-width: 100%;
     }
 }
 @media only screen and (max-width: 989px) {
+    html{
+        scroll-padding-top: 10rem;
+    }
     .our-product .image-wrapper-mobile{
         display: block !important;
     }

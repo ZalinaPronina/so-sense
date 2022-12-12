@@ -5,8 +5,7 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "caption": {
           "type": "text",
@@ -16,13 +15,11 @@
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -41,9 +38,7 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/Intersect_d0a8b0a8-9fb8-40de-b300-be68d9d49ca1.png",
         "background_mobile": "shopify:\/\/shop_images\/background-mobile-maiin.png",
-        "enable_sticky_info": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "enable_sticky_info": false
       }
     },
     "166395036947319d0b": {
@@ -62,6 +57,10 @@
     "product-show-map": {
       "type": "product-show-map",
       "settings": {
+        "title": "Find Nearby Dealer",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu quam eget dui iaculis tincidunt. Etiam turpis nunc, luctus feugiat erat id, euismod laoreet nisl. Suspendisse id dignissim tellus.<\/p>",
+        "btn_text": "Show on the map",
+        "btn_url": ""
       }
     }
   },

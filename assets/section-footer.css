@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 20rem;
+  padding-top: 19rem;
   padding-bottom: 8rem;
   background-position: top;
   background-size: cover;
@@ -14,6 +14,12 @@
 
 .footer__content-top {
   padding-bottom: 10rem;
+  display: block;
+}
+.footer-block__details-content .hide{
+  display: none;
+}
+.footer-block__details-content .show{
   display: block;
 }
 .grid__item.text .footer-block__details-content p{
@@ -461,10 +467,6 @@ noscript .localization-selector.link {
     font-size: 1.4rem;
     padding: 1rem 0;
     line-height: 150%;
-  }
-
-  .footer-block__details-content > :first-child .list-menu__item--link {
-    padding-top: 0;
   }
 }
 @media screen and (min-width: 1400px) {

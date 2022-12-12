@@ -19,11 +19,23 @@
       </div>
       <div id="cart-notification-product" class="cart-notification-product"></div>
       <div class="cart-notification__links">
-        <a href="{{ routes.cart_url }}" id="cart-notification-button" class="button button--secondary button--full-width"></a>
+        <a href="{{ routes.cart_url }}" id="cart-notification-button" class="btn-secondary"></a>
         <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
-          <button class="button button--primary button--full-width" name="checkout">{{ 'sections.cart.checkout' | t }}</button>
+          <button class="btn-secondary" name="checkout">{{ 'sections.cart.checkout' | t }}</button>
         </form>
-        <button type="button" class="link button-label">{{ 'general.continue_shopping' | t }}</button>
+        <button type="button" class="link button-label">{{ 'general.continue_shopping' | t }}
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <g>
+            <path d="M5 12H19" stroke="#283C92" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 5L19 12L12 19" stroke="#283C92" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath>
+            <rect width="24" height="24" fill="white"/>
+            </clipPath>
+            </defs>
+        </svg>
+    </button>
       </div>
     </div>
   </div>

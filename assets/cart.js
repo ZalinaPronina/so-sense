@@ -14,7 +14,6 @@ customElements.define('cart-remove-button', CartRemoveButton);
 class CartItems extends HTMLElement {
   constructor() {
     super();
-
     this.lineItemStatusElement = document.getElementById('shopping-cart-line-item-status') || document.getElementById('CartDrawer-LineItemStatus');
 
     this.currentItemCount = Array.from(this.querySelectorAll('[name="updates[]"]'))
@@ -85,12 +84,21 @@ class CartItems extends HTMLElement {
           elementToReplace.innerHTML =
             this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
         }));
-
+        if(parsedState.item_count == 1){
+          document.querySelector('.cart-title-header .cart-counter .item').style.display = 'inline-block';
+          document.querySelector('.cart-title-header .cart-counter .items').style.display = 'none';
+        }else{
+          document.querySelector('.cart-title-header .cart-counter .items').style.display = 'inline-block';
+          document.querySelector('.cart-title-header .cart-counter .item').style.display = 'none';
+        }
+        parsedState.item_count == 0 ? document.querySelector('.cart__warnings').classList.remove('hidden') : '';
+        document.querySelector('.cart-title-header .count').innerHTML = '('+ parsedState.item_count + ')';
         this.updateLiveRegions(line, parsedState.item_count);
         const lineItem =  document.getElementById(`CartItem-${line}`) || document.getElementById(`CartDrawer-Item-${line}`);
         if (lineItem && lineItem.querySelector(`[name="${name}"]`)) {
           cartDrawerWrapper ? trapFocus(cartDrawerWrapper, lineItem.querySelector(`[name="${name}"]`)) : lineItem.querySelector(`[name="${name}"]`).focus();
         } else if (parsedState.item_count === 0 && cartDrawerWrapper) {
+          console.log('empty')
           trapFocus(cartDrawerWrapper.querySelector('.drawer__inner-empty'), cartDrawerWrapper.querySelector('a'))
         } else if (document.querySelector('.cart-item') && cartDrawerWrapper) {
           trapFocus(cartDrawerWrapper, document.querySelector('.cart-item__name'))
@@ -108,6 +116,7 @@ class CartItems extends HTMLElement {
     if (this.currentItemCount === itemCount) {
       const lineItemError = document.getElementById(`Line-item-error-${line}`) || document.getElementById(`CartDrawer-LineItemError-${line}`);
       const quantityElement = document.getElementById(`Quantity-${line}`) || document.getElementById(`Drawer-quantity-${line}`);
+      console.log(this.currentItemCount)
 
       lineItemError
         .querySelector('.cart-item__error-text')

@@ -23,8 +23,17 @@
         }
     </style>
 {% endif %}
+{% if section.settings.wave != blank %}
+    <style>
+        @media only screen and (max-width: 989px){
+            .discount-left-image_wave{
+                    background-image: url('{{section.settings.wave_mobile | img_url: 'master' }}')
+            }
+        }
+    </style>
+{% endif %}
 <section class="discount-left-image background-image">
-    <div class="page-width-desktop discount-left-image__container">
+    <div class="page-width-desktop discount-left-image__container" data-aos="fade-up">
         <div class="discount-left-image_wave">
             {% if section.settings.main_photo != blank or section.settings.discount_total != blank%}
                 <div class="discount-left-image__image">
@@ -39,7 +48,7 @@
                     <h2 class="h2">{{section.settings.title}}</h1>
                 {% endif %}
                 {% if section.settings.btn_text != blank %}
-                    <a class="btn-secondary" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
+                    <a class="btn-secondary desktop-screen" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
                 {% endif %}
             </div>
             <div class="discount-left-image__price">
@@ -48,6 +57,9 @@
                 {% endif %}
                 {% if section.settings.price != blank %}
                     <span class="usual-price">{{section.settings.usual_price}}</span>
+                {% endif %}
+                {% if section.settings.btn_text != blank %}
+                    <a class="btn-secondary mobile-screen" href="{{section.settings.btn_url}}">{{section.settings.btn_text}}</a>
                 {% endif %}
             </div>
         </div>
@@ -71,6 +83,11 @@
             "type": "image_picker",
             "id": "wave",
             "label": "Wave Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "wave_mobile",
+            "label": "Wave Image Mobile"
         },
         {
             "type": "richtext",

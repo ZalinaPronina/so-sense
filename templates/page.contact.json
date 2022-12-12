@@ -12,12 +12,7 @@
       "type": "contact-form",
       "disabled": true,
       "settings": {
-        "heading": "",
-        "up_text": "",
-        "bottom_text": "",
-        "text_description": "",
-        "button": "",
-        "doun_text": ""
+        "heading": ""
       }
     },
     "16635622753905bf94": {
@@ -26,22 +21,14 @@
         "b2e75b3a-40cd-4d87-899a-f84717cb37a7": {
           "type": "blocks",
           "settings": {
-            "option_select": ""
-          }
-        },
-        "ca60a28b-7d28-447c-85a0-0751bf597bfc": {
-          "type": "blocks",
-          "settings": {
-            "option_select": ""
+            "option_select": "test"
           }
         }
       },
       "block_order": [
-        "b2e75b3a-40cd-4d87-899a-f84717cb37a7",
-        "ca60a28b-7d28-447c-85a0-0751bf597bfc"
+        "b2e75b3a-40cd-4d87-899a-f84717cb37a7"
       ],
       "settings": {
-        "background": "shopify:\/\/shop_images\/7.png",
         "title": "<p>Let's Keep <strong>In Touch<\/strong><\/p>",
         "text_description": "Porttitor dolor odio purus porttitor. Id risus mattis fringilla semper.",
         "placing": "Derech Harishonim 10, Bnei Atarot",
