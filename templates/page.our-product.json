@@ -8,7 +8,7 @@
         "title": "<p>Velit, sed <strong>mollis neque<\/strong><\/p>",
         "subtitle": "",
         "text": "",
-        "btn_url": "\/",
+        "btn_url": "shopify:\/\/products\/test",
         "btn_text": "Order Product",
         "main_photo": "shopify:\/\/shop_images\/video_3.png"
       }
@@ -109,9 +109,9 @@
         "title": "<p>Installation <strong>Guide<\/strong><\/p>",
         "text": "<p>Make your swimming pool a safe space, with our simple to install, no-tools-required pool entry and drowning detection alarm. Complete with an in-pool unit, at-home unit, and app.<\/p>",
         "btn_text_1": "Watch a video",
-        "btn_url_1": "",
+        "btn_url_1": "https:\/\/youtu.be\/Rr8V_IRcYfk",
         "btn_text_2": "Instruction",
-        "btn_url_2": ""
+        "btn_url_2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0552\/8682\/5006\/files\/So_sense.pdf?v=1666874357"
       }
     },
     "16638367595881507b": {
@@ -138,7 +138,7 @@
         "title": "<p>Availability to <strong>purchase<\/strong><\/p>",
         "text": "<p>Pellentesque faucibus molestie amet enim. Augue fames felis enim et enim lacinia suscipit at. Tellus lectus in tellus elementum imperdiet. <\/p>",
         "btn_text": "Order Now",
-        "btn_url": "\/"
+        "btn_url": "shopify:\/\/products\/test"
       }
     },
     "faq": {
@@ -187,8 +187,7 @@
         "99c2b755-0632-4b27-8f8d-9ab432a05d93",
         "2c38472c-8b7a-484c-9e3d-f1a396c6bcce"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "166383686926e73919": {
       "type": "instruction-section",
@@ -199,7 +198,7 @@
         "subtitle": "<p>Our unique disruptive underwater acoustic technology with ML & AI detects all entry & underwater disturbances. <\/p>",
         "text": "<p>Earlybird purchases will help us complete the development of this life-saving alarm system that we have put years of research into creating because we know that this is necessary for global swimming pool safety measures, in order to save hundreds of lives. <\/p>",
         "text_second": "<p>As an early adopter, you will also gain a <a href=\"\/\" title=\"\/\">free upgrade from your BETA product<\/a> to the final product as soon as this is released.<\/p>",
-        "btn_url": "\/",
+        "btn_url": "shopify:\/\/products\/test",
         "btn_text": "Order Product"
       }
     },
@@ -211,7 +210,7 @@
           "settings": {
             "title": "Become a dealer",
             "btn_text": "Join",
-            "btn_url": "\/"
+            "btn_url": "shopify:\/\/pages\/become-a-dealer"
           }
         },
         "2b6480b1-9b81-4108-9b8b-92f800183de4": {
@@ -219,7 +218,7 @@
           "settings": {
             "title": "Become an affiliate",
             "btn_text": "Join",
-            "btn_url": "\/"
+            "btn_url": "shopify:\/\/pages\/affiliate"
           }
         }
       },
@@ -227,8 +226,7 @@
         "190030e5-bf85-4f55-9ceb-0e0c7da7c870",
         "2b6480b1-9b81-4108-9b8b-92f800183de4"
       ],
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [

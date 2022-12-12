@@ -73,8 +73,7 @@
         "223abdcb-9c1d-4ed0-b800-8903795d7049",
         "512dabd4-a9ce-429d-b32e-4b7233f910db"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "1664869950296a413f": {
       "type": "text-with-image",
@@ -82,10 +81,10 @@
         "title": "<p>About The <strong>Company<\/strong><\/p>",
         "subtitle": "<p>SOSense. We save lives.<\/p><p>It’s in our name. <\/p>",
         "text": "<p>SOSense is the tech-lifeguard that everyone needs as a non-negotiable addition to their swimming pool.<\/p>",
-        "btn_url": "\/",
+        "btn_url": "shopify:\/\/products\/test",
         "btn_text": "Investor Information",
         "btn_text_product": "Order Product",
-        "btn_url_product": "",
+        "btn_url_product": "shopify:\/\/products\/test",
         "image": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_5_b1d37ed6-ee0d-4481-923a-2bc51e733eb3.png"
       }
     },
@@ -131,8 +130,7 @@
         "db66161d-03a2-4d13-9f7a-a8c115808614",
         "9c1eddca-ec95-446c-b163-1ca70748dcd0"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "1664869665086355f9": {
       "type": "product-purchase",
@@ -158,7 +156,7 @@
         "title": "<p>Availability to <strong>purchase<\/strong><\/p>",
         "text": "<p>Pellentesque faucibus molestie amet enim. Augue fames felis enim et enim lacinia suscipit at. Tellus lectus in tellus elementum imperdiet. <\/p>",
         "btn_text": "Order Now",
-        "btn_url": "\/"
+        "btn_url": "shopify:\/\/products\/test"
       }
     },
     "166487010302fd5b0e": {
@@ -179,21 +177,21 @@
           "type": "block",
           "settings": {
             "btn_text": "Sign up as user",
-            "btn_url": ""
+            "btn_url": "\/account\/register"
           }
         },
         "34746a4d-cf10-4655-9f45-a37c3d2b154a": {
           "type": "block",
           "settings": {
             "btn_text": "Sign up as investor",
-            "btn_url": ""
+            "btn_url": "shopify:\/\/pages\/become-a-dealer"
           }
         },
         "c8ee8cf8-c1a4-48a4-85ed-48213fea1c48": {
           "type": "block",
           "settings": {
             "btn_text": "Sign up as service provider",
-            "btn_url": ""
+            "btn_url": "shopify:\/\/pages\/affiliate"
           }
         }
       },

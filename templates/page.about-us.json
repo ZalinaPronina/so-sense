@@ -16,7 +16,7 @@
         "title": "<p>About The <strong>Company<\/strong><\/p>",
         "subtitle": "If you own a home swimming pool, this is the AI lifeguard that you need.",
         "text": "Our SOSense technology is the ultimate swimming pool entry detection technology that has been made to keep your family safe.",
-        "btn_url": "",
+        "btn_url": "shopify:\/\/products\/test",
         "btn_text": "Order Product",
         "main_photo": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_4_720476ec-f381-4432-9d1c-e267a54c7aa8.png",
         "small_photo": "shopify:\/\/shop_images\/pexels-kindel-media-8214008_5.png",
@@ -82,58 +82,13 @@
     "about-us-team": {
       "type": "about-us-team",
       "blocks": {
-        "5bb53d6f-8cae-41b4-a1f1-650061ce09de": {
-          "type": "block",
-          "settings": {
-            "title": "Josef Rott",
-            "author_image": "shopify:\/\/shop_images\/Ellipse_95.png",
-            "subtitle": "Head of Acoustics R&D",
-            "text": "<p>Naval Architect\/Marine Engineer with 35 years of development in underwater acoustics systems RAFAEL\/ Israeli Navy\/Ministry of Defense.<\/p>"
-          }
-        },
-        "49e408fc-7198-419d-b1a6-9a58108e3c14": {
-          "type": "block",
-          "settings": {
-            "title": "Amir Ben-Shlomo",
-            "author_image": "shopify:\/\/shop_images\/author1.png",
-            "subtitle": "Head of Sales and Marketing",
-            "text": "<p>Seasoned professional with more than 20 years of experience in high-tech projects and marketing management. D2C channels expert.<\/p>"
-          }
-        },
-        "62c10467-169d-45b5-8b86-09202b9e743a": {
-          "type": "block",
-          "settings": {
-            "title": "Dr Asaf Frieman, M.D",
-            "author_image": "shopify:\/\/shop_images\/author2.png",
-            "subtitle": "Head of Medical Research",
-            "text": "<p>IDF Qualified in Field Diving Medicine, former Navy seal. Fourth year resident in Ophthalmology, Meir Hospital, Israel.<\/p>"
-          }
-        },
-        "afec3fd9-6fe7-4757-a015-513132515d2c": {
-          "type": "block",
-          "settings": {
-            "title": "Tal Zuri",
-            "author_image": "shopify:\/\/shop_images\/author3.png",
-            "subtitle": "CFO & BD Director",
-            "text": "<p>Entrepreneur with background in finances. Tal holds many years of experience as CFO in international companies and startups.<\/p>"
-          }
-        },
         "bb1fe83a-c2dd-4c43-b226-4dd3554e9211": {
           "type": "block",
           "settings": {
-            "title": "Josef Rott",
+            "title": "Ofer Verfel",
             "author_image": "shopify:\/\/shop_images\/Ellipse5.png",
-            "subtitle": "Head of Acoustics R&D",
-            "text": "<p>Naval Architect\/Marine Engineer with 35 years of development in underwater acoustics systems RAFAEL\/ Israeli Navy\/Ministry of Defense.<\/p>"
-          }
-        },
-        "8203254c-46a9-4389-9075-c71bf7bd4639": {
-          "type": "block",
-          "settings": {
-            "title": "Eran Schul",
-            "author_image": "shopify:\/\/shop_images\/author7.png",
-            "subtitle": "COO",
-            "text": "<p>Entrepreneur, Innovator & C-Level executive with over 25 years of experience in leading multidisciplinary global teams in the consumer electronic space.<\/p>"
+            "subtitle": "CEO",
+            "text": "<p>Multi-disciplinary Entrepreneur with successful track Record.<\/p><p>Fformer Israeli Navy seal.<\/p><p><\/p>"
           }
         },
         "296fe7a8-2913-42e2-a11b-7be09b7034b4": {
@@ -145,8 +100,55 @@
             "text": "<p>Electronics Engineer & Software Developer with ~20 years of experience in the communications industry. Experienced in Audio & Digital Signal Processing.<\/p>"
           }
         },
+        "afec3fd9-6fe7-4757-a015-513132515d2c": {
+          "type": "block",
+          "settings": {
+            "title": "Tal Zuri",
+            "author_image": "shopify:\/\/shop_images\/author3.png",
+            "subtitle": "CFO & BD Director",
+            "text": "<p>Entrepreneur with background in finances. <\/p><p>Tal holds many years of experience as CFO in international companies and startups.<\/p><p><\/p>"
+          }
+        },
+        "49e408fc-7198-419d-b1a6-9a58108e3c14": {
+          "type": "block",
+          "settings": {
+            "title": "Amir Ben-Shlomo",
+            "author_image": "shopify:\/\/shop_images\/author1.png",
+            "subtitle": "Head of Sales and Marketing",
+            "text": "<p>Seasoned professional with more than 20 years of experience in high-tech projects and marketing management. D2C channels expert.<\/p>"
+          }
+        },
+        "8203254c-46a9-4389-9075-c71bf7bd4639": {
+          "type": "block",
+          "settings": {
+            "title": "Eran Schul",
+            "author_image": "shopify:\/\/shop_images\/author7.png",
+            "subtitle": "COO",
+            "text": "<p>Entrepreneur, Innovator & C-Level executive with over 25 years of experience in leading multidisciplinary global teams in the consumer electronic space.<\/p>"
+          }
+        },
+        "5bb53d6f-8cae-41b4-a1f1-650061ce09de": {
+          "type": "block",
+          "settings": {
+            "title": "Josef Rott",
+            "author_image": "shopify:\/\/shop_images\/Ellipse_95.png",
+            "subtitle": "Head of Acoustics R&D",
+            "text": "<p>Naval Architect\/Marine Engineer with 35 years of development in underwater acoustics systems RAFAEL\/ Israeli Navy\/Ministry of Defense.<\/p>"
+          }
+        },
+        "62c10467-169d-45b5-8b86-09202b9e743a": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Dr Asaf Frieman, M.D",
+            "author_image": "shopify:\/\/shop_images\/author2.png",
+            "subtitle": "Head of Medical Research",
+            "text": "<p>IDF Qualified in Field Diving Medicine, former Navy seal. Fourth year resident in Ophthalmology, Meir Hospital, Israel.<\/p>"
+          }
+        },
         "c4f62659-83ea-4482-a2f0-55b921dabea0": {
           "type": "block",
+          "disabled": true,
           "settings": {
             "title": "Josef Rott",
             "author_image": "shopify:\/\/shop_images\/Avatar_cd0e086a-ae71-464e-8bbb-33b48efe3f08.png",
@@ -156,13 +158,13 @@
         }
       },
       "block_order": [
-        "5bb53d6f-8cae-41b4-a1f1-650061ce09de",
-        "49e408fc-7198-419d-b1a6-9a58108e3c14",
-        "62c10467-169d-45b5-8b86-09202b9e743a",
-        "afec3fd9-6fe7-4757-a015-513132515d2c",
         "bb1fe83a-c2dd-4c43-b226-4dd3554e9211",
-        "8203254c-46a9-4389-9075-c71bf7bd4639",
         "296fe7a8-2913-42e2-a11b-7be09b7034b4",
+        "afec3fd9-6fe7-4757-a015-513132515d2c",
+        "49e408fc-7198-419d-b1a6-9a58108e3c14",
+        "8203254c-46a9-4389-9075-c71bf7bd4639",
+        "5bb53d6f-8cae-41b4-a1f1-650061ce09de",
+        "62c10467-169d-45b5-8b86-09202b9e743a",
         "c4f62659-83ea-4482-a2f0-55b921dabea0"
       ],
       "settings": {
@@ -201,12 +203,11 @@
         "title": "<p>Availability to <strong>purchase<\/strong><\/p>",
         "text": "<p>Pre-order your SOSense pool alarm detection unit now, for a huge early bird discount.<\/p>",
         "btn_text": "Order Now",
-        "btn_url": ""
+        "btn_url": "shopify:\/\/products\/test"
       }
     },
     "about-us-blog-section": {
       "type": "about-us-blog-section",
-      "disabled": true,
       "settings": {
         "heading": "<p>Press<\/p>",
         "blog": "business"
